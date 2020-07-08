@@ -1,0 +1,22 @@
+---
+---
+
+@font-face {
+  font-family: athelas;
+  src: url(../../fonts/Athelas-Regular.woff);
+}
+
+body{
+  margin: 30px;
+  background-color: white;
+}
+h1 {
+  /* padding: 30px; */
+  font-family: athelas;
+}
+p{
+  font-family: athelas;
+}
+.myrow{
+  height: 300px;
+}
