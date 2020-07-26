@@ -1,0 +1,26 @@
+:root {
+  --white: #fafbfb;
+  --lblue: #dce6ef;
+  --dblue: #76acd3;
+  --lorange: #f9885f;
+  --dorange: #da5538;
+  --navy: #1f355f;
+}
+
+@font-face {
+  font-family: 'Montserrat-M';
+  src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Montserrat-M';
+  src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: 'Montserrat-L';
+  src: url(../fonts/Montserrat/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: 'Montserrat-R';
+  src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
