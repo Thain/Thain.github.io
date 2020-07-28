@@ -1,5 +1,5 @@
 ---
-layout: "wrapper"
+layout: "mark"
 ---
 <div class="container-fluid" style="background-color:var(--white)">
   <div class="container markcon" style="height:97vh">
@@ -45,25 +45,14 @@ layout: "wrapper"
   <div class="container py-3 markcon">
       <div class="row markrow justify-content-center" style="height:15vw; min-height: 150px">
           <div class="col align-self-center markcol">
-            <h2 style="text-align:center">It looks a little something like <b>this:</b></h2>
+            <h2 style="text-align:center; padding-left:1em; padding-right:1em">It looks a little something like <b>this:</b></h2>
           </div>
       </div>
-      <div class="row markrow justify-content-center">
-          <div class="col markcol pr-2" style="padding: 0">
-            <img src="../assets/images/bigyoshi-orange.png" style="max-width: 100%; max-height: 100%; display: block">
-            <p class="pl-2">BIG YOSHI — Video</p>
-          </div>
-          <div class="col markcol pl-2" style="padding: 0">
-            <img src="../assets/images/bigyoshi-navy.png" style="max-width: 100%; max-height: 100%; display: block">
-            <p class="pl-2">BIG YOSHI BUT BLUE — Video</p>
-          </div>
-      </div>
-      <div class="row markrow justify-content-center">
-          <div class="col-2 markcol" style="height:15vw"></div>
+      {% include project-preview.html %}
+      <div class="row markrow justify-content-center" style="height:15vw; min-height: 125px">
           <div class="col align-self-center markcol">
             <h2 style="text-align:center"><a class="b" href="https://www.youtube.com/watch?v=3Yd3lQVbkYc">Check out more of our work.</a></h2>
           </div>
-          <div class="col-2 markcol" style="height:15vw"></div>
       </div>
   </div>
 </div>

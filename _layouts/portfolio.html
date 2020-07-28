@@ -6,7 +6,7 @@ layout: "wrapper"
   <div class="container markcon">
       <div class="row markrow align-items-center justify-content-between" style="height:20vh">{% include menu.html logo="white" button="work"%}</div>
       <div class="row markrow py-4 justify-content-between" style="height:57vh">
-          <div class="col-10 offset-1 offset-md-2 align-self-center markcol">
+          <div class="col-10 offset-md-1 align-self-center markcol">
             <h1>We work to tell <b>compelling stories</b> for <br>the voices that matter most.</h1>
           </div>
       </div>
@@ -15,16 +15,16 @@ layout: "wrapper"
   {% include circle.html color="lblue" size="30" top="10" left="3" z="0"%}
 </div>
 
-
-<div class="container-fluid markcon" style="background-color:var(--white); position: relative; z-index: 2">
-    <div class="container py-3 py-sm-5 markcon">
-      <div class="row markrow mt-3 mb-4">
-          <div class="col-10 offset-1 markcol">
-              <h2>The voices fighting for justice, opportunity, and habitability need to be <b>louder</b><span class="big-period" style="color:var(--navy)">.</span></h2>
+<div class="container-fluid" style="background-color:var(--white)">
+  <div class="container markcon">
+      <div class="row markrow justify-content-center" style="height:10vw; min-height: 150px">
+          <div class="col align-self-end py-3 markcol">
+            <button>filter by:</button><button>all</button><button>video</button><button>web</button><button>design</button>
           </div>
       </div>
-    </div>
-
-    {% include circle.html color="dblue" size="14" top="-12" left="75" z="1"%}
-    {% include circle.html color="lblue" size="7" top="4" left="5" z="1"%}
+      {% include project-preview.html %}
+      {% include project-preview.html %}
+      {% include project-preview.html %}
+      {% include project-preview.html %}
+  </div>
 </div>
