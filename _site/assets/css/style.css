@@ -26,10 +26,16 @@ p{
   font-size: 30px;
 }
 
-a { text-decoration: underline; }
-a.w { color: white; }
-a.b { color: black; }
-a.menu { text-decoration: none; }
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+a:hover a {
+  color: #cccbc8;
+}
+
+a.w { text-decoration: underline; color: white; }
+a.b { text-decoration: underline; color: black; }
 
 .big-period {
    font-weight: bold;
@@ -43,33 +49,25 @@ a.menu { text-decoration: none; }
   z-index: 1;
 }
 
-button {
+#menubar{ pointer-events: none }
+#menubar:hover .menubar{ opacity: .2 }
+.menubar:hover { opacity: 1 !important }
+
+.menubar {
+  pointer-events: auto;
   font-family: 'Montserrat-L';
   text-align: left;
   background-color: inherit;
   border: none;
   font-size: 30px;
-  padding-right: 4vw;
+  margin-right: 5.5vw;
   display: inline;
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-button.menu {
-  font-size: 25px;
-  text-align: right;
-}
-
-button:hover{
-  font-family: Montserrat-M;
-}
-
-button:focus{
-  /* font-family: Montserrat-M; */
-  outline: 0;
-  /* background-color: inherit; */
-}
-
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 991px) {
   .show-mobile {
     display: block;
   }
@@ -84,7 +82,7 @@ button:focus{
   }
 }
 
- @media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 992px) {
   .show-mobile {
     display: none;
   }
