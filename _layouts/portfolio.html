@@ -2,24 +2,38 @@
 layout: "wrapper"
 ---
 
-<div class="container-fluid" style="background-color:var(--dorange)">
-  <div class="container markcon" style="height:97vh">
-      <div class="row markrow align-items-center justify-content-between" style="height:20vh">{% include menu.html logo="white" button="work"%}</div>
+<div class="container-fluid" style="background-color:var(--white)">
+  <div class="container markcon" style="height:94vh">
+      <div class="row markrow align-items-center justify-content-between" style="height:20vh">{% include menu.html button="work"%}</div>
       <div class="row markrow py-4 justify-content-between" style="height:57vh">
           <div class="col-10 offset-md-1 align-self-center markcol">
             <h1>We work to tell <b>compelling stories</b> for <br>the voices that matter most.</h1>
           </div>
       </div>
       <div class="row markrow py-4 justify-content-between" style="height:20vh"><div class="col-xs-2 align-self-end markcol mx-4"><img src="../assets/images/logo-small.png" style="opacity: 0; height: 6vw; min-height: 50px"></div></div>
+      {% include circle.html color="lblue" size="30" top="20" left="3" z="0"%}
   </div>
-  {% include circle.html color="lblue" size="30" top="10" left="3" z="0"%}
 </div>
 
-<div class="container-fluid" style="background-color:var(--white)">
+<div class="container-fluid markcon" style="height:3vh">
+    <div class="row markrow">
+      <div class="col align-self-start">
+        <hr style="border: 1px solid #bbbbbb; border-radius: 1px; width: 90%; margin-bottom: 0rem !important">
+      </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="background-color:var(--white); position: relative; z-index: 2">
   <div class="container markcon">
       <div class="row markrow justify-content-center" style="height:10vw; min-height: 150px">
-          <div class="col align-self-end py-3 markcol">
-            <button>filter by:</button><button>all</button><button>video</button><button>web</button><button>design</button>
+          <div class="col offset-md-1 align-self-end py-3 markcol" style="display:inline">
+            <button class="filter" style="pointer-events: none">filter by:</button>
+            <div id="filterby" style="display:inline">
+              <button class="filter">all</button>
+              <button class="filter">video</button>
+              <button class="filter">web</button>
+              <button class="filter">design</button>
+            </div>
           </div>
       </div>
       {% include project-preview.html %}

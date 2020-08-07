@@ -18,9 +18,9 @@
 
 </head>
 <body>
-    <div class="container-fluid" style="background-color:var(--dorange)">
-  <div class="container markcon" style="height:97vh">
-      <div class="row markrow align-items-center justify-content-between" style="height:20vh"><div id="white" class="col-xs-2 markcol mx-4">
+    <div class="container-fluid" style="background-color:var(--white)">
+  <div class="container markcon" style="height:94vh">
+      <div class="row markrow align-items-center justify-content-between" style="height:20vh"><div class="col-xs-2 markcol mx-4">
   <a href="./index.html"><img src="../assets/images/logo-small.png" style="height: 4vw; min-height: 50px"></a>
 </div>
 
@@ -28,12 +28,12 @@
   <img src="../assets/images/hamburger.png" style="height: 4vw; min-height: 30px">
 </div>
 
-<div class="hide-mobile col-10 markcol text-right">
+<div class="hide-mobile col-10 markcol align-self-center text-right">
   <div id="menubar" style="display: inline">
-    <a class="menubar" href="./portfolio.html">work</a>
-    <a class="menubar" href="./about.html">about</a>
-    <a class="menubar" href="./jobs.html">jobs</a>
-    <a class="menubar" href="./contact.html">contact</a>
+    <div style="display:inline" id="work"><a class="menubar" href="./portfolio.html">work</a></div>
+    <div style="display:inline" id="about"><a class="menubar" href="./about.html">about</a></div>
+    <div style="display:inline" id="jobs"><a class="menubar" href="./jobs.html">jobs</a></div>
+    <div style="display:inline" id="contact"><a class="menubar" href="./contact.html">contact</a></div>
   </div>
   <p class="menubar" style="margin-right: 5.5vw">|</p>
   <a class="menubar" style="margin-right: 0vw" href="./404.html">fr</a>
@@ -42,8 +42,7 @@
 
 
 <script>
-// document.getElementById("work").innerHTML = "<button style='font-family: Montserrat-M; margin-bottom: 0em'>work<span style='color:var(--dblue); font-size: 40px; line-height: 0.5'>.</span></button>";
-document.getElementById("white").innerHTML = "<a href='./index.html'><img src='../assets/images/logo-small-white.png' style='height: 4vw; min-height: 50px'></a>";
+document.getElementById("work").innerHTML = "<p style='font-family: Montserrat-M; font-size: 25px; display: inline; margin-bottom: 0em; margin-right: 3vw'>work<span style='color:var(--dblue); font-size: 40px; line-height: 0.5'>.</span></p>";
 </script>
 </div>
       <div class="row markrow py-4 justify-content-between" style="height:57vh">
@@ -52,65 +51,135 @@ document.getElementById("white").innerHTML = "<a href='./index.html'><img src='.
           </div>
       </div>
       <div class="row markrow py-4 justify-content-between" style="height:20vh"><div class="col-xs-2 align-self-end markcol mx-4"><img src="../assets/images/logo-small.png" style="opacity: 0; height: 6vw; min-height: 50px"></div></div>
-  </div>
-  <div class="circle rellax" style="background-color: var(--lblue);
+      <div class="circle rellax" style="background-color: var(--lblue);
                            width: 30vw;
                            height: 30vw;
-                           top: 10vw;
+                           top: 20vw;
                            left: 3vw;
                            z-index: 0;
                            "></div>
 
+  </div>
 </div>
 
-<div class="container-fluid" style="background-color:var(--white)">
+<div class="container-fluid markcon" style="height:3vh">
+    <div class="row markrow">
+      <div class="col align-self-start">
+        <hr style="border: 1px solid #bbbbbb; border-radius: 1px; width: 90%; margin-bottom: 0rem !important">
+      </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="background-color:var(--white); position: relative; z-index: 2">
   <div class="container markcon">
       <div class="row markrow justify-content-center" style="height:10vw; min-height: 150px">
-          <div class="col align-self-end py-3 markcol">
-            <button>filter by:</button><button>all</button><button>video</button><button>web</button><button>design</button>
+          <div class="col offset-md-1 align-self-end py-3 markcol" style="display:inline">
+            <button class="filter" style="pointer-events: none">filter by:</button>
+            <div id="filterby" style="display:inline">
+              <button class="filter">all</button>
+              <button class="filter">video</button>
+              <button class="filter">web</button>
+              <button class="filter">design</button>
+            </div>
           </div>
       </div>
       <div class="row markrow pb-4 justify-content-center">
-    <div class="col markcol" style="padding: 0">
-      <img src="../assets/images/bigyoshi-orange.png" style="max-width: 100%; max-height: 100%; display: block">
-      <p class="pl-2">BIG YOSHI — Video</p>
+    <div class="col-lg-5 col-md-8 markcol">
+      <div class="contain">
+        <img src="../assets/images/bigyoshi-orange.png" style="max-width: 100%; max-height: 100%; display: block" class="image">
+        <div class="mid">
+            <div class="text">
+                my yoshi logo
+            </div>
+        </div>
+      </div>
+      <p class="pl-2">BIG YOSHI</p>
     </div>
-    <div class="col markcol" style="padding: 0">
-      <img src="../assets/images/bigyoshi-navy.png" style="max-width: 100%; max-height: 100%; display: block">
-      <p class="pl-2">BIG YOSHI BUT BLUE — Video</p>
-    </div>
-</div>
-
-      <div class="row markrow pb-4 justify-content-center">
-    <div class="col markcol" style="padding: 0">
-      <img src="../assets/images/bigyoshi-orange.png" style="max-width: 100%; max-height: 100%; display: block">
-      <p class="pl-2">BIG YOSHI — Video</p>
-    </div>
-    <div class="col markcol" style="padding: 0">
-      <img src="../assets/images/bigyoshi-navy.png" style="max-width: 100%; max-height: 100%; display: block">
-      <p class="pl-2">BIG YOSHI BUT BLUE — Video</p>
-    </div>
-</div>
-
-      <div class="row markrow pb-4 justify-content-center">
-    <div class="col markcol" style="padding: 0">
-      <img src="../assets/images/bigyoshi-orange.png" style="max-width: 100%; max-height: 100%; display: block">
-      <p class="pl-2">BIG YOSHI — Video</p>
-    </div>
-    <div class="col markcol" style="padding: 0">
-      <img src="../assets/images/bigyoshi-navy.png" style="max-width: 100%; max-height: 100%; display: block">
-      <p class="pl-2">BIG YOSHI BUT BLUE — Video</p>
+    <div class="col-lg-5 col-md-8 markcol">
+      <div class="contain">
+        <img src="../assets/images/bigyoshi-navy.png" style="max-width: 100%; max-height: 100%; display: block" class="image">
+        <div class="mid">
+            <div class="text">
+                my yoshi logo
+            </div>
+        </div>
+      </div>
+      <p class="pl-2">BIG YOSHI BUT BLUE</p>
     </div>
 </div>
 
       <div class="row markrow pb-4 justify-content-center">
-    <div class="col markcol" style="padding: 0">
-      <img src="../assets/images/bigyoshi-orange.png" style="max-width: 100%; max-height: 100%; display: block">
-      <p class="pl-2">BIG YOSHI — Video</p>
+    <div class="col-lg-5 col-md-8 markcol">
+      <div class="contain">
+        <img src="../assets/images/bigyoshi-orange.png" style="max-width: 100%; max-height: 100%; display: block" class="image">
+        <div class="mid">
+            <div class="text">
+                my yoshi logo
+            </div>
+        </div>
+      </div>
+      <p class="pl-2">BIG YOSHI</p>
     </div>
-    <div class="col markcol" style="padding: 0">
-      <img src="../assets/images/bigyoshi-navy.png" style="max-width: 100%; max-height: 100%; display: block">
-      <p class="pl-2">BIG YOSHI BUT BLUE — Video</p>
+    <div class="col-lg-5 col-md-8 markcol">
+      <div class="contain">
+        <img src="../assets/images/bigyoshi-navy.png" style="max-width: 100%; max-height: 100%; display: block" class="image">
+        <div class="mid">
+            <div class="text">
+                my yoshi logo
+            </div>
+        </div>
+      </div>
+      <p class="pl-2">BIG YOSHI BUT BLUE</p>
+    </div>
+</div>
+
+      <div class="row markrow pb-4 justify-content-center">
+    <div class="col-lg-5 col-md-8 markcol">
+      <div class="contain">
+        <img src="../assets/images/bigyoshi-orange.png" style="max-width: 100%; max-height: 100%; display: block" class="image">
+        <div class="mid">
+            <div class="text">
+                my yoshi logo
+            </div>
+        </div>
+      </div>
+      <p class="pl-2">BIG YOSHI</p>
+    </div>
+    <div class="col-lg-5 col-md-8 markcol">
+      <div class="contain">
+        <img src="../assets/images/bigyoshi-navy.png" style="max-width: 100%; max-height: 100%; display: block" class="image">
+        <div class="mid">
+            <div class="text">
+                my yoshi logo
+            </div>
+        </div>
+      </div>
+      <p class="pl-2">BIG YOSHI BUT BLUE</p>
+    </div>
+</div>
+
+      <div class="row markrow pb-4 justify-content-center">
+    <div class="col-lg-5 col-md-8 markcol">
+      <div class="contain">
+        <img src="../assets/images/bigyoshi-orange.png" style="max-width: 100%; max-height: 100%; display: block" class="image">
+        <div class="mid">
+            <div class="text">
+                my yoshi logo
+            </div>
+        </div>
+      </div>
+      <p class="pl-2">BIG YOSHI</p>
+    </div>
+    <div class="col-lg-5 col-md-8 markcol">
+      <div class="contain">
+        <img src="../assets/images/bigyoshi-navy.png" style="max-width: 100%; max-height: 100%; display: block" class="image">
+        <div class="mid">
+            <div class="text">
+                my yoshi logo
+            </div>
+        </div>
+      </div>
+      <p class="pl-2">BIG YOSHI BUT BLUE</p>
     </div>
 </div>
 

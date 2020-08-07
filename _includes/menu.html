@@ -1,4 +1,4 @@
-<div id="white" class="col-xs-2 markcol mx-4">
+<div class="col-xs-2 markcol mx-4">
   <a href="./index.html"><img src="../assets/images/logo-small.png" style="height: 4vw; min-height: 50px"></a>
 </div>
 
@@ -6,12 +6,12 @@
   <img src="../assets/images/hamburger.png" style="height: 4vw; min-height: 30px">
 </div>
 
-<div class="hide-mobile col-10 markcol text-right">
+<div class="hide-mobile col-10 markcol align-self-center text-right">
   <div id="menubar" style="display: inline">
-    <a class="menubar" href="./portfolio.html">work</a>
-    <a class="menubar" href="./about.html">about</a>
-    <a class="menubar" href="./jobs.html">jobs</a>
-    <a class="menubar" href="./contact.html">contact</a>
+    <div style="display:inline" id="work"><a class="menubar" href="./portfolio.html">work</a></div>
+    <div style="display:inline" id="about"><a class="menubar" href="./about.html">about</a></div>
+    <div style="display:inline" id="jobs"><a class="menubar" href="./jobs.html">jobs</a></div>
+    <div style="display:inline" id="contact"><a class="menubar" href="./contact.html">contact</a></div>
   </div>
   <p class="menubar" style="margin-right: 5.5vw">|</p>
   <a class="menubar" style="margin-right: 0vw" href="./404.html">fr</a>
@@ -20,6 +20,5 @@
 
 
 <script>
-// document.getElementById("{{ include.button }}").innerHTML = "<button style='font-family: Montserrat-M; margin-bottom: 0em'>{{ include.button }}<span style='color:var(--dblue); font-size: 40px; line-height: 0.5'>.</span></button>";
-document.getElementById("{{ include.logo }}").innerHTML = "<a href='./index.html'><img src='../assets/images/logo-small-white.png' style='height: 4vw; min-height: 50px'></a>";
+document.getElementById("{{ include.button }}").innerHTML = "<p style='font-family: Montserrat-M; font-size: 25px; display: inline; margin-bottom: 0em; margin-right: 3vw'>{{ include.button }}<span style='color:var(--dblue); font-size: 40px; line-height: 0.5'>.</span></p>";
 </script>
