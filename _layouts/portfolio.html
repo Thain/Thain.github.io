@@ -7,15 +7,15 @@ layout: "wrapper"
       <div class="row markrow align-items-center justify-content-between" style="height:20vh">{% include menu.html button="work"%}</div>
       <div class="row markrow py-4 justify-content-between" style="height:57vh">
           <div class="col-10 offset-md-1 align-self-center markcol">
-            <h1>We work to tell <b>compelling stories</b> for <br>the voices that matter most.</h1>
+            <h2>We work to tell <b>compelling stories</b> for <br>the voices that matter most.</h2>
           </div>
       </div>
-      <div class="row markrow py-4 justify-content-between" style="height:20vh"><div class="col-xs-2 align-self-end markcol mx-4"><img src="../assets/images/logo-small.png" style="opacity: 0; height: 6vw; min-height: 50px"></div></div>
-      {% include circle.html color="lblue" size="30" top="20" left="3" z="0"%}
+      <div class="row markrow py-4 justify-content-between" style="height:20vh"><div class="col-xs-2 align-self-end markcol mx-4"><img src="../assets/img/logo-small.png" style="opacity: 0; height: 6vw; min-height: 50px"></div></div>
+      {% include circle.html color="dblue" size="30" top="20" left="3" z="0"%}
   </div>
 </div>
 
-<div class="container-fluid markcon" style="height:3vh">
+<div class="container-fluid markcon" style="height:18px">
     <div class="row markrow">
       <div class="col align-self-start">
         <hr style="border: 1px solid #bbbbbb; border-radius: 1px; width: 90%; margin-bottom: 0rem !important">
@@ -29,16 +29,30 @@ layout: "wrapper"
           <div class="col offset-md-1 align-self-end py-3 markcol" style="display:inline">
             <button class="filter" style="pointer-events: none">filter by:</button>
             <div id="filterby" style="display:inline">
-              <button class="filter">all</button>
-              <button class="filter">video</button>
-              <button class="filter">web</button>
-              <button class="filter">design</button>
+              <button class="filter" onclick="clickAll()">all</button>
+              <button class="filter" onclick="clickVid()">video</button>
+              <button class="filter" onclick="clickWeb()">web</button>
+              <button class="filter" onclick="clickDes()">design</button>
             </div>
           </div>
       </div>
-      {% include project-preview.html %}
-      {% include project-preview.html %}
-      {% include project-preview.html %}
-      {% include project-preview.html %}
+      <div class="row markrow pb-4 justify-content-center">
+        {% include project-preview.html type="vid" name="BIG YOSHI" picname="bigyoshi-orange.png" logoname="my yoshi logo"%}
+        {% include project-preview.html type="web" name="BIG YOSHI BUT BLUE" picname="bigyoshi-navy.png" logoname="my yoshi logo"%}
+      </div>
+      <div class="row markrow pb-4 justify-content-center">
+        {% include project-preview.html type="vid" name="BIG YOSHI" picname="bigyoshi-orange.png" logoname="my yoshi logo"%}
+        {% include project-preview.html type="web" name="BIG YOSHI BUT BLUE" picname="bigyoshi-navy.png" logoname="my yoshi logo"%}
+      </div>
+      <div class="row markrow pb-4 justify-content-center">
+        {% include project-preview.html type="vid" name="BIG YOSHI" picname="bigyoshi-orange.png" logoname="my yoshi logo"%}
+        {% include project-preview.html type="web" name="BIG YOSHI BUT BLUE" picname="bigyoshi-navy.png" logoname="my yoshi logo"%}
+      </div>
+      <div class="row markrow pb-4 justify-content-center">
+        {% include project-preview.html type="vid" name="BIG YOSHI" picname="bigyoshi-orange.png" logoname="my yoshi logo"%}
+        {% include project-preview.html type="web" name="BIG YOSHI BUT BLUE" picname="bigyoshi-navy.png" logoname="my yoshi logo"%}
+      </div>
   </div>
 </div>
+
+<script src="../assets/js/filter.js"></script>

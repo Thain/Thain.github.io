@@ -10,7 +10,7 @@ h1, h2, h3, h4, p, img {
 }
 h1 {
   font-family: 'Montserrat-M';
-  font-size: 40px;
+  font-size: 80px;
 }
 h2 {
   font-family: 'Montserrat-M';
@@ -21,10 +21,15 @@ h3 {
   font-size: 25px;
   text-align: center;
 }
+h4 {
+  font-size:33px;
+  font-family:Montserrat-R;
+}
 p{
   font-family: 'Montserrat-M';
   font-size: 30px;
 }
+p.w { color: white }
 
 a:hover {
   text-decoration: none;
@@ -49,6 +54,12 @@ button:focus { outline: 0 }
   z-index: 1;
 }
 
+iframe {
+       width: 100%;
+}
+
+/* This is all menu things, from hover effects to general styling */
+
 #menubar{ pointer-events: none }
 #menubar:hover .menubar{ opacity: .2 }
 .menubar:hover { opacity: 1 !important }
@@ -71,6 +82,10 @@ button:focus { outline: 0 }
 .menubar { font-size: 25px; margin-right: 4vw}
 .filter { font-size: 30px; margin-right: 5vw}
 
+
+
+/* This determines when the screen is small enough to trade the normal menu for the hamburger */
+
 @media only screen and (max-width: 991px) {
   .show-mobile {
     display: block;
@@ -78,10 +93,13 @@ button:focus { outline: 0 }
   .hide-mobile {
     display: none;
   }
+  h1 {
+    font-size: 40px;
+  }
   h2 {
     font-size: 30px;
   }
-  p {
+  p,h4{
     font-size: 20px;
   }
 }
@@ -95,12 +113,13 @@ button:focus { outline: 0 }
   }
 }
 
+
+
 /* This is ugly but it's what gives the hover logo effect */
 
 .contain { position: relative }
 .contain:hover .image { opacity: 0.3 }
 .contain:hover .mid { opacity: 1 }
-
 .image {
   opacity: 1;
   display: block;
@@ -109,7 +128,6 @@ button:focus { outline: 0 }
   transition: .5s ease;
   backface-visibility: hidden;
 }
-
 .mid {
   transition: .5s ease;
   opacity: 0;
@@ -119,4 +137,8 @@ button:focus { outline: 0 }
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.hideThumbnail {
+  display: none;
 }

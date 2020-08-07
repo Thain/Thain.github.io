@@ -1,7 +1,7 @@
-<div class="row markrow pb-4 justify-content-center">
+<!-- <div class="row markrow pb-4 justify-content-center">
     <div class="col-lg-5 col-md-8 markcol">
       <div class="contain">
-        <img src="../assets/images/bigyoshi-orange.png" style="max-width: 100%; max-height: 100%; display: block" class="image">
+        <img src="../assets/img/bigyoshi-orange.png" style="max-width: 100%; max-height: 100%; display: block" class="image">
         <div class="mid">
             <div class="text">
                 my yoshi logo
@@ -12,7 +12,7 @@
     </div>
     <div class="col-lg-5 col-md-8 markcol">
       <div class="contain">
-        <img src="../assets/images/bigyoshi-navy.png" style="max-width: 100%; max-height: 100%; display: block" class="image">
+        <img src="../assets/img/bigyoshi-navy.png" style="max-width: 100%; max-height: 100%; display: block" class="image">
         <div class="mid">
             <div class="text">
                 my yoshi logo
@@ -21,4 +21,16 @@
       </div>
       <p class="pl-2">BIG YOSHI BUT BLUE</p>
     </div>
+</div> -->
+
+<div class="col-lg-5 col-md-8 markcol {{ include.type }}">
+  <div class="contain">
+    <a href="./divest.html"><img src="../assets/img/{{ include.picname }}" style="max-width: 100%; max-height: 100%; display: block" class="image"></a>
+    <div class="mid">
+        <div class="text">
+            {{ include.logoname }}
+        </div>
+    </div>
+  </div>
+  <p class="pl-1">{{ include.name }}</p>
 </div>
