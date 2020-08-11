@@ -25,13 +25,15 @@ layout: "wrapper"
 
 <div class="container-fluid" style="background-color:var(--white); position: relative; z-index: 2">
   <div class="container markcon">
-      <div class="row markrow justify-content-center" style="height:10vw; min-height: 150px">
+      <div class="row markrow justify-content-center" style="height:5vw; min-height: 100px">
           <div class="col offset-md-1 align-self-end py-3 markcol" style="display:inline">
-            <button class="filter" style="pointer-events: none">filter by:</button>
             <div id="filterby" style="display:inline">
               <button class="filter" onclick="clickAll()">all</button>
+              <p class="filter-line">|</p>
               <button class="filter" onclick="clickVid()">video</button>
+              <p class="filter-line">|</p>
               <button class="filter" onclick="clickWeb()">web</button>
+              <p class="filter-line">|</p>
               <button class="filter" onclick="clickDes()">design</button>
             </div>
           </div>

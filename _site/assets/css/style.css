@@ -66,9 +66,10 @@ iframe {
 
 #filterby{ pointer-events: none }
 #filterby:hover .filter{ opacity: .2 }
+#filterby:hover .filter-line{ opacity: .2 }
 .filter:hover { opacity: 1 !important }
 
-.menubar, .filter {
+.menubar, .filter, .filter-line {
   pointer-events: auto;
   font-family: 'Montserrat-L';
   text-align: left;
@@ -80,7 +81,7 @@ iframe {
   transition: 0.3s;
 }
 .menubar { font-size: 25px; margin-right: 4vw}
-.filter { font-size: 30px; margin-right: 5vw}
+.filter, .filter-line { font-size: 25px; margin-right: 1vw}
 
 
 
