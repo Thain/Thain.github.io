@@ -1,12 +1,19 @@
 :root {
-  --white: #fafbfb;
-  --lblue: #dce6ef;
-  --dblue: #76acd3;
-  --lorange: #f9885f;
-  --dorange: #da5538;
-  --navy: #1f355f;
+  --white: #ffffff;
+  --grey: #f3f4f5;
+  --black: #1c1b1b;
+  --lblue: #e1e9f0;
+  --dblue: #8bb7d9;
+  --lorange: #e98d6a;
+  --dorange: #e06d4b;
+  --navy: #1e3461;
 }
 
+@font-face {
+  font-family: 'Montserrat-S';
+  src: url(../fonts/Montserrat/Montserrat-SemiBold.ttf);
+  font-weight: bold;
+}
 @font-face {
   font-family: 'Montserrat-M';
   src: url(../fonts/Montserrat/Montserrat-Bold.ttf);

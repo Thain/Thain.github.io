@@ -8,25 +8,28 @@ h1, h2, h3, h4, p, img {
   position: relative;
   z-index: 4 !important;
 }
+/* Semi bold, headings */
 h1 {
-  font-family: 'Montserrat-M';
-  font-size: 80px;
+  font-family: 'Montserrat-S';
+  font-size: 70px;
 }
+/* Medium, for sub-headings */
 h2 {
   font-family: 'Montserrat-M';
-  font-size: 40px;
+  font-size: 37px;
 }
+/* Regular, for titles */
 h3 {
-  font-family: 'Montserrat-L';
-  font-size: 25px;
-  text-align: center;
+  font-family: 'Montserrat-R';
+  font-size: 50px;
 }
 h4 {
-  font-size:33px;
-  font-family:Montserrat-R;
+  font-family: 'Montserrat-L';
+  font-size: 33px;
 }
+/* Light, for body text */
 p{
-  font-family: 'Montserrat-M';
+  font-family: 'Montserrat-L';
   font-size: 30px;
 }
 p.w { color: white }
@@ -80,7 +83,7 @@ iframe {
   text-decoration: none;
   transition: 0.3s;
 }
-.menubar { font-size: 25px; margin-right: 4vw}
+.menubar { font-size: 25px; margin-right: 3.5vw}
 .filter, .filter-line { font-size: 25px; margin-right: 1vw}
 
 
@@ -119,14 +122,15 @@ iframe {
 /* This is ugly but it's what gives the hover logo effect */
 
 .contain { position: relative }
-.contain:hover .image { opacity: 0.3 }
+.contain:hover .image { opacity: 0.1 }
 .contain:hover .mid { opacity: 1 }
 .image {
   opacity: 1;
   display: block;
   width: 100%;
   height: auto;
-  transition: .5s ease;
+  transition: .6s ease;
+  transition-delay: .1s;
   backface-visibility: hidden;
 }
 .mid {
