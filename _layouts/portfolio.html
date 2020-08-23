@@ -2,55 +2,61 @@
 layout: "wrapper"
 ---
 
-<div class="container-fluid" style="background-color:var(--lblue); height:97vh;">
-  <div style="margin-left: 8vw; margin-right: 8vw">
-    <div class="row markrow align-items-center justify-content-between" style="height:20vh">{% include menu.html button="work"%}</div>
-    <div class="row markrow py-4 justify-content-between" style="height:57vh">
-        <div class="col-10 offset-md-1 align-self-center markcol">
-          <h1>My Media is focused on work <br>that gets results<span style='color:var(--lorange); font-size: 80px; line-height: 0.1'>.</span></h1>
-          <h2>We use campaigns, content, and design to help you grow and express your mission. Our focus is your (measurable) success.</h2>
+<div class="container-fluid" style="background-color:var(--grey); height:100vh; padding-left: 8vw; padding-right:8vw">
+    {% include menu.html button="work"%}
+    <div class="row markrow" style="height:5vw"></div>
+    <div class="row markrow py-4 justify-content-start">
+        <div class="col-7 offset-md-1 align-self-center markcol">
+          <h1>My Media tells stories that get results<span style='color:var(--lorange); font-size: 80px; line-height: 0.1'>.</span></h1>
         </div>
     </div>
-    <!-- <div class="row markrow py-4 justify-content-between" style="height:20vh"><div class="col-xs-2 align-self-end markcol mx-4"><img src="../assets/img/logo-small.png" style="opacity: 0; height: 6vw; min-height: 50px"></div></div> -->
+    <div class="row markrow py-4 justify-content-between">
+        <div class="col-9 offset-md-1 align-self-center markcol">
+          <h2>We use campaigns, content, and design to help you grow, engage others, and express your mission. Our focus is your (measurable) success.</h2>
+        </div>
+    </div>
     {% include circle.html color="white" size="7" top="14" left="13" z="0"%}
     {% include circle.html color="black" size="3" top="10" left="69" z="0"%}
     {% include circle.html color="dorange" size="20" top="40" left="65" z="0"%}
-  </div>
 </div>
 
-<div class="container-fluid" style="background-color:var(--white); position: relative; z-index: 2">
+<div class="container-fluid" style="background-color:var(--white); position: relative; z-index: 2; padding-left: 12vw; padding-right:12vw">
+      <div class="row markrow" style="height:5vw; min-height: 100px"></div>
       <div class="row markrow justify-content-end" style="height:10vw; min-height: 100px">
-        <div class="col offset-md-1 align-self-end pt-5 markcol">
-          <h3>Our Portfolio</h3>
+        <div class="col align-self-end markcol">
+          <h1>Our Portfolio</h1>
         </div>
       </div>
-      <div class="row markrow justify-content-center" style="height:6vw; min-height: 100px">
-          <div class="col offset-md-1 align-self-start pb-3 markcol" style="display:inline">
+      <div class="row markrow justify-content-center mb-3" style="height:6vw; min-height: 100px">
+          <div class="col align-self-center markcol" style="display:inline">
             <div id="filterby" style="display:inline">
               <button class="filter" onclick="clickAll()">all</button>
               <p class="filter-line">|</p>
               <button class="filter" onclick="clickVid()">video</button>
               <button class="filter" onclick="clickWeb()">web</button>
-              <button class="filter" onclick="clickDes()">design</button>
+              <button class="filter" onclick="clickDes()">brand</button>
+              <button class="filter" onclick="clickDes()">social media</button>
             </div>
           </div>
       </div>
-      <div class="row markrow pb-4 justify-content-center">
-        {% include project-preview.html type="vid" name="BIG YOSHI" picname="SOMM.png" logoname="my yoshi logo"%}
-        {% include project-preview.html type="web" name="BIG YOSHI BUT BLUE" picname="Indigirecruit.png" logoname="my yoshi logo"%}
+      <div class="row markrow py-5 justify-content-between">
+        {% include project-preview.html type="vid" name="The School of Music Montreal" picname="SOMM.png" logoname="my yoshi logo"%}
+        {% include project-preview.html type="web" name="IndigIrecruit" picname="Indigirecruit.png" logoname="my yoshi logo"%}
       </div>
-      <div class="row markrow pb-4 justify-content-center">
-        {% include project-preview.html type="vid" name="BIG YOSHI" picname="Thrive.png" logoname="my yoshi logo"%}
-        {% include project-preview.html type="web" name="BIG YOSHI BUT BLUE" picname="Divest.png" logoname="my yoshi logo"%}
+      <div class="row markrow py-5 justify-content-between">
+        {% include project-preview.html type="vid" name="Thrive Collective" picname="Thrive.png" logoname="my yoshi logo"%}
+        {% include project-preview.html type="web" name="Divest McGill" picname="Divest.png" logoname="my yoshi logo"%}
       </div>
-      <div class="row markrow pb-4 justify-content-center">
-        {% include project-preview.html type="vid" name="BIG YOSHI" picname="TCC.png" logoname="my yoshi logo"%}
-        {% include project-preview.html type="web" name="BIG YOSHI BUT BLUE" picname="BSN.png" logoname="my yoshi logo"%}
+      <div class="row markrow py-5 justify-content-between">
+        {% include project-preview.html type="vid" name="Third Culture Collective" picname="TCC.png" logoname="my yoshi logo"%}
+        {% include project-preview.html type="web" name="Black Students Network" picname="BSN.png" logoname="my yoshi logo"%}
       </div>
-      <div class="row markrow pb-4 justify-content-center">
-        {% include project-preview.html type="vid" name="BIG YOSHI" picname="YIC.png" logoname="my yoshi logo"%}
-        {% include project-preview.html type="web" name="BIG YOSHI BUT BLUE" picname="Mealcare.png" logoname="my yoshi logo"%}
+      <div class="row markrow py-5 justify-content-between">
+        {% include project-preview.html type="vid" name="Youth Impact Challenge" picname="YIC.png" logoname="my yoshi logo"%}
+        {% include project-preview.html type="web" name="MealCare National" picname="Mealcare.png" logoname="my yoshi logo"%}
       </div>
 </div>
+
+{% include footer.html %}
 
 <script src="../assets/js/filter.js"></script>
