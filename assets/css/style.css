@@ -1,10 +1,5 @@
-* {
-  font-size: 10px
-}
-
-body{
-  background-color: var(--white);
-}
+* { font-size: 10px }
+body{ background-color: var(--white) }
 
 h1, h2, h3, h4, p, img {
   line-height: 1.5;
@@ -12,29 +7,17 @@ h1, h2, h3, h4, p, img {
   position: relative;
   z-index: 4 !important;
 }
+
 /* Semi bold, headings */
-h1 {
-  font-family: 'Montserrat-S';
-}
+h1 { font-family: 'Montserrat-S' }
 /* Medium, for sub-headings */
-h2 {
-  font-family: 'Montserrat-M';
-  font-size: 37px;
-}
+h2 { font-family: 'Montserrat-M' }
 /* Regular, for titles */
-h3 {
-  font-family: 'Montserrat-R';
-  font-size: 50px;
-}
-h4 {
-  font-family: 'Montserrat-L';
-  font-size: 33px;
-}
+h3 { font-family: 'Montserrat-R' }
 /* Light, for body text */
-p{
-  font-family: 'Montserrat-L';
-  font-size: 30px;
-}
+h4 { font-family: 'Montserrat-L' }
+p  { font-family: 'Montserrat-L' }
+
 p.w { color: white }
 
 a:hover {
@@ -50,9 +33,18 @@ button:focus { outline: 0 }
 
 .big-period {
    font-weight: bold;
-   line-height: .5;
-   font-size: 50px !important;
+   line-height: .1;
+   font-size: 1.1em;
 }
+
+h1.thumbnail-title {
+  text-align: center;
+  color: black;
+  margin-bottom: 0
+}
+h3.thumbnail-title { text-align:center }
+
+.footer-text > h2 { line-height:2.5 }
 
 .circle{
   border-radius: 50%;
@@ -81,7 +73,8 @@ button:focus { outline: 0 }
   text-decoration: none;
   transition: 0.3s;
 }
-.menubar { font-size: 35px; margin-right: 3vw}
+.menubar { font-size: 30px; margin-right: 3vw}
+#menubold { font-family: Montserrat-S; font-size: 30px; display: inline; margin-bottom: 0em; margin-right: 2.2vw }
 .filter, .filter-line { font-size: 25px; margin-right: 1vw}
 
 
@@ -111,6 +104,4 @@ button:focus { outline: 0 }
   text-align: center;
 }
 
-.hideThumbnail {
-  display: none;
-}
+.hideThumbnail { display: none }
