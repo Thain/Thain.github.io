@@ -1,4 +1,3 @@
-* { font-size: 10px }
 body{ background-color: var(--white) }
 
 h1, h2, h3, h4, p, img {
@@ -25,9 +24,6 @@ a.w:hover { color: white }
 a:hover { text-decoration: none; color: inherit }
 a.ul { text-decoration : underline }
 a { color: black; font-size: inherit }
-
-/* if this doesnt cause a problem a while from now, cut it */
-/* button:focus { outline: 0 } */
 
 .big-period {
    font-weight: bold;

@@ -4,93 +4,54 @@
 @media only screen and (max-width: 600px) {
   .show-mobile { display: block; }
   .hide-mobile { display: none; }
-  h1 {
-    font-size: 40px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  p,h4{
-    font-size: 20px;
-  }
+  * { font-size: 5px }
 }
-
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 601px) {
   .show-mobile { display: block; }
   .hide-mobile { display: none; }
-  h1 {
-    font-size: 40px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  p,h4{
-    font-size: 20px;
-  }
+  * { font-size: 6px }
 }
-
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .show-mobile { display: block; }
   .hide-mobile { display: none; }
-  h1 {
-    font-size: 2em;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  p,h4{
-    font-size: 20px;
-  }
+  * { font-size: 6.5px }
 }
-
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .show-mobile { display: block }
   .hide-mobile { display: none }
-  h1 { font-size: 40px }
+  * { font-size: 7px }
 }
 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+ /* Extra large devices */
 @media only screen and (min-width: 1200px) {
   .show-mobile { display: none }
   .hide-mobile { display: block }
-
-  h1 { font-size: 4em }
-  h2 { font-size: 2.3em }
-
-  h1.thumbnail-title { font-size: 2.5em }
-  h3.thumbnail-title { font-size: 2.2em }
-
-  .footer-text > h1 { font-size: 2.5em }
-  .footer-text > h2 { font-size: 1.7em }
-  #footer-connect { font-size: 4em }
-
-  .menubar, #menubold { font-size: 2em }
+  * { font-size: 7.5px }
 }
-
 
 /* Extra EXTRA Large devices */
 @media only screen and (min-width: 1640px) {
   .show-mobile { display: none }
   .hide-mobile { display: block }
-
-  h1 { font-size: 5.4em }
-  h2 { font-size: 3.2em }
-
-  h1.thumbnail-title { font-size: 3.7em }
-  h3.thumbnail-title { font-size: 3em }
-
-  .footer-text > h1 { font-size: 3em }
-  .footer-text > h2 { font-size: 2.2em }
-  #footer-connect { font-size: 5em }
-
-  .menubar, #menubold { font-size: 3em }
+  * { font-size: 10px }
 }
 
 .icon-title { font-size: 3em }
+
+h1 { font-size: 5.4em }
+h2 { font-size: 3.2em }
+
+h1.thumbnail-title { font-size: 3.7em }
+h3.thumbnail-title { font-size: 3em }
+
+.footer-text > h1 { font-size: 3em }
+.footer-text > h2 { font-size: 2.2em }
+#footer-connect { font-size: 5em }
+
+.menubar, #menubold { font-size: 3em }

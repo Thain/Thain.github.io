@@ -1,10 +1,76 @@
----
-layout: "wrapper"
----
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
-<!-- Header -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/fonts.css">
+  <link rel="stylesheet" href="../assets/css/fader.css">
+  <link rel="stylesheet" href="../assets/css/screen-sizes.css">
+
+</head>
+<body>
+    <svg id="fader"></svg>
+    <script src="../assets/js/fade.js"></script>
+    <script> fadeInPage(); </script>
+    <!-- Header -->
 <div class="container-fluid" style="background-color:var(--navy); height:120vh; padding-left: 8vw; padding-right:8vw">
-    {% include menu-white.html button="education"%}
+    <div class="row markrow align-items-center justify-content-between" style="height:25vh; margin-left:-4vw; margin-right:-4vw">
+      <div class="col-xs-2 markcol mx-4">
+        <a href="/"><img src="../assets/img/logo-small-white.png" style="height: 5vw; min-height: 50px"></a>
+      </div>
+
+      <div class="col-xs-2 markcol mt-2 mx-4 show-mobile">
+        <img src="../assets/img/hamburger-white.png" style="height: 4vw; min-height: 30px">
+      </div>
+
+      <div class="hide-mobile col-10 markcol text-right">
+        <div id="menubar" style="display: inline">
+          <div id="work"><a class="menubar w" href="/work">work</a></div>
+          <div id="education"><a class="menubar w" href="/education">education</a></div>
+          <div id="jobs"><a class="menubar w" href="/jobs">jobs</a></div>
+          <div id="about"><a class="menubar w" href="/about">about</a></div>
+          <div id="contact"><a class="menubar w" href="/contact">contact</a></div>
+        </div>
+        <p class="menubar w">|</p>
+        <a class="menubar w" style="margin-right: 0vw" href="/404.html">fr</a>
+      </div>
+</div>
+
+<style type="text/CSS">
+  #menubar{ pointer-events: none }
+  #menubar:hover .menubar{ opacity: .2 }
+  #menubar > div { display: inline }
+  .menubar:hover { opacity: 1 !important }
+  .menubar {
+    pointer-events: auto;
+    font-family: 'Montserrat-M';
+    text-align: left;
+    background-color: inherit;
+    border: none;
+    display: inline;
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
+    margin-right: 3vw;
+  }
+  #menubold { font-family: Montserrat-S; display: inline; pointer-events:auto; margin-bottom: 0em; margin-right: 2.2vw }
+</style>
+
+<script>
+document.getElementById("education").innerHTML = "<a id='menubold' class='w' href='/education'>education<span class='big-period' style='color:var(--dblue)'>.</span></a>";
+</script>
+
     <div class="row " style="height:5vw"></div>
     <div class="row  py-4 justify-content-start">
         <div class="col-11 offset-md-1 align-self-center ">
@@ -16,8 +82,38 @@ layout: "wrapper"
           <h2 class="edu-header">That's why we deliver workshops, mentorship, and hands-on learning experiences to young people who want to learn video, design, web development, and marketing skills.</h2>
         </div>
     </div>
-    {% include circle.html color="black" size="3" top="10" left="69" z="0"%}
-    {% include circle.html color="dorange" size="20" top="40" left="65" z="0"%}
+    <div class="circle rellax" style="background-color: var(--black);
+                           width: 3em;
+                           height: 3em;
+                           top: 10em;
+                           left: 69em;
+                           z-index: 0;
+                           "></div>
+
+<style>
+  .circle{
+    border-radius: 50%;
+    position: absolute !important;
+    z-index: 1;
+  }
+</style>
+
+    <div class="circle rellax" style="background-color: var(--dorange);
+                           width: 20em;
+                           height: 20em;
+                           top: 40em;
+                           left: 65em;
+                           z-index: 0;
+                           "></div>
+
+<style>
+  .circle{
+    border-radius: 50%;
+    position: absolute !important;
+    z-index: 1;
+  }
+</style>
+
 </div>
 
 <!-- "World changing" through to "Contact us" CTAs -->
@@ -94,4 +190,50 @@ layout: "wrapper"
   .numbered > h2 { font-size: 2.7em}
 </style>
 
-{% include footer.html %}
+<div class="container-fluid" style="background-color:var(--grey); padding-left:7vw; padding-right:7vw; height:600px">
+  <div class="row markrow align-items-start justify-content-between" style="padding-top: 100px; margin-left:3vw; margin-right:3vw">
+        <div class="col-3 markcol">
+          <h1 id='footer-connect'>Connect <br> with us<span class="big-period" style='color:var(--lorange)'>.</span></h1>
+        </div>
+
+        <div class="col-2 markcol footer-text">
+          <h1 class="mb-5">Menu</h1>
+          <h2>
+              Work <br>
+              Education <br>
+              Jobs <br>
+              About <br>
+              Contact
+          </h2>
+        </div>
+        <div class="col-2 markcol mr-5 footer-text">
+          <h1 class="mb-5">Contact us</h1>
+          <h2>
+              Work with us <br>
+              Join our team <br>
+              Learn with us
+          </h2>
+        </div>
+        <div class="col-2 markcol mr-5 footer-text">
+          <h1 class="mb-5">Follow us</h1>
+          <h2>socials here <br></h2>
+          <a class="uf" href="#"><h2 class="emails">outreach@mymediacreative.org</h2></a>
+          <a class="uf" href="#"><h2 class="emails">mymediacreative.org</h2></a>
+        </div>
+  </div>
+</div>
+
+<style>
+  .footer-text > h2 { line-height: 2.5 }
+  .emails { font-size: 1.8em; line-height: 1.5 }
+</style>
+
+
+    <script src="../assets/js/rellax/rellax.min.js"></script>
+    <script>
+      var rellax = new Rellax('.rellax', {
+      center: true
+      });
+    </script>
+</body>
+</html>

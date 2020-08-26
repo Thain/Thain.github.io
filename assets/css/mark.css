@@ -1,9 +1,9 @@
-.markcon{
+.container{
   border: 2px solid green;
 }
-.markrow{
+.row{
   border: 2px solid red;
 }
-.markcol{
+.col{
   border: 3px dotted blue;
 }

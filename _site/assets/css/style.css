@@ -1,4 +1,3 @@
-* { font-size: 10px }
 body{ background-color: var(--white) }
 
 h1, h2, h3, h4, p, img {
@@ -19,89 +18,15 @@ h4 { font-family: 'Montserrat-L' }
 p  { font-family: 'Montserrat-L' }
 
 p.w { color: white }
+a.w { color: white }
+a.w:hover { color: white }
 
-a:hover {
-  text-decoration: none;
-  color: black;
-}
-
-a.w { color: white; }
-a.b { color: black; }
-a.text { text-decoration : underline }
-
-button:focus { outline: 0 }
+a:hover { text-decoration: none; color: inherit }
+a.ul { text-decoration : underline }
+a { color: black; font-size: inherit }
 
 .big-period {
    font-weight: bold;
    line-height: .1;
    font-size: 1.1em;
 }
-
-h1.thumbnail-title {
-  text-align: center;
-  color: black;
-  margin-bottom: 0
-}
-h3.thumbnail-title { text-align:center }
-
-.footer-text > h2 { line-height:2.5 }
-
-.circle{
-  border-radius: 50%;
-  position: absolute !important;
-  z-index: 1;
-}
-
-/* This is all menu things, from hover effects to general styling */
-#menubar{ pointer-events: none }
-#menubar:hover .menubar{ opacity: .2 }
-.menubar:hover { opacity: 1 !important }
-
-#filterby{ pointer-events: none }
-#filterby:hover .filter{ opacity: .2 }
-#filterby:hover .filter-line{ opacity: .2 }
-.filter:hover { opacity: 1 !important }
-
-.menubar, .filter, .filter-line {
-  pointer-events: auto;
-  font-family: 'Montserrat-M';
-  text-align: left;
-  background-color: inherit;
-  border: none;
-  display: inline;
-  color: black;
-  text-decoration: none;
-  transition: 0.3s;
-}
-.menubar { font-size: 30px; margin-right: 3vw}
-#menubold { font-family: Montserrat-S; font-size: 30px; display: inline; margin-bottom: 0em; margin-right: 2.2vw }
-.filter, .filter-line { font-size: 25px; margin-right: 1vw}
-
-
-
-/* This is ugly but it's what gives the hover logo effect */
-
-.contain { position: relative }
-.contain:hover .image { opacity: 0.1 }
-.contain:hover .mid { opacity: 1 }
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .6s ease;
-  transition-delay: .1s;
-  backface-visibility: hidden;
-}
-.mid {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.hideThumbnail { display: none }

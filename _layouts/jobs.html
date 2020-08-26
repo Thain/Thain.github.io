@@ -5,14 +5,14 @@ layout: "wrapper"
 <!-- Header -->
 <div class="container-fluid" style="background-color:var(--white); height:120vh; padding-left: 8vw; padding-right:8vw">
     {% include menu.html button="jobs"%}
-    <div class="row markrow" style="height:3vw"></div>
-    <div class="row markrow py-4 justify-content-start">
-        <div class="col-9 align-self-center markcol">
+    <div class="row " style="height:3vw"></div>
+    <div class="row  py-4 justify-content-start">
+        <div class="col-9 align-self-center ">
           <h1 class="jobs-header">My Media is on the hunt for passionate creative people.</h1>
         </div>
     </div>
-    <div class="row markrow py-4 justify-content-between">
-        <div class="col-9 align-self-center markcol">
+    <div class="row  py-4 justify-content-between">
+        <div class="col-9 align-self-center ">
           <h2 class="jobs-header">Do you want to work with impactful organizations? <br> use and grow your skills? Build your network and <br> portfolio? Get paid?</h2>
         </div>
     </div>
@@ -23,30 +23,30 @@ layout: "wrapper"
 
 <!-- "The voices" through to icons -->
 <div class="container-fluid" style="background-color:var(--grey); position: relative; z-index: 2; padding-left: 12vw; padding-right:12vw">
-      <div class="row markrow" style="height:5vw; min-height: 100px"></div>
-      <div class="row markrow justify-content-end" style="height:10vw; min-height: 100px">
-        <div class="col align-self-end markcol">
+      <div class="row " style="height:5vw; min-height: 100px"></div>
+      <div class="row  justify-content-end" style="height:10vw; min-height: 100px">
+        <div class="col align-self-end ">
           <h1>We want people to join our creative team.</h1>
         </div>
       </div>
-      <div class="row markrow justify-content-end" style="height:10vw; min-height: 100px">
-        <div class="col align-self-end markcol">
+      <div class="row  justify-content-end" style="height:10vw; min-height: 100px">
+        <div class="col align-self-end ">
           <h2>Our creative team runs campaigns, creates content, builds brands, and makes websites for organizations that want to make the world better. We're looking for people who have skills in:</h2>
         </div>
       </div>
-      <div class="row markrow justify-content-between align-items-center" style="height:20vw">
-        <div class="col markcol"><img src="../assets/img/logo-small.png" style="height: 5.5vw; min-height: 50px"><h1 class="icon-title ml-4">Video.</h1></div>
-        <div class="col markcol"><img src="../assets/img/logo-small.png" style="height: 5.5vw; min-height: 50px"><h1 class="icon-title ml-4">Design.</h1></div>
-        <div class="col markcol"><img src="../assets/img/logo-small.png" style="height: 5.5vw; min-height: 50px"><h1 class="icon-title ml-4">Web.</h1></div>
-        <div class="col markcol"><img src="../assets/img/logo-small.png" style="height: 5.5vw; min-height: 50px"><h1 class="icon-title ml-4">Strategy.</h1></div>
+      <div class="row  justify-content-between align-items-center" style="height:20vw">
+        <div class="col "><img src="../assets/img/logo-small.png" style="height: 5.5vw; min-height: 50px"><h1 class="icon-title ml-4">Video.</h1></div>
+        <div class="col "><img src="../assets/img/logo-small.png" style="height: 5.5vw; min-height: 50px"><h1 class="icon-title ml-4">Design.</h1></div>
+        <div class="col "><img src="../assets/img/logo-small.png" style="height: 5.5vw; min-height: 50px"><h1 class="icon-title ml-4">Web.</h1></div>
+        <div class="col "><img src="../assets/img/logo-small.png" style="height: 5.5vw; min-height: 50px"><h1 class="icon-title ml-4">Strategy.</h1></div>
       </div>
 </div>
 
 <!-- Bullets through to Typeform embed -->
 <div class="container-fluid" style="background-color:var(--white); padding-left: 12vw; padding-right:12vw">
-      <div class="row markrow" style="height:5vw; min-height: 100px"></div>
-      <div class="row markrow justify-content-start">
-        <div class="col markcol">
+      <div class="row " style="height:5vw; min-height: 100px"></div>
+      <div class="row  justify-content-start">
+        <div class="col ">
           <h1 style="margin-bottom: .7em">You should join our creative team if you:</h1>
           <ul>
             <li><h2>Want to have an impact.</h2></li>
@@ -59,19 +59,21 @@ layout: "wrapper"
         </div>
       </div>
 
-      <div class="row markrow" style="height:7vw; min-height: 100px"></div>
-      <div class="row markrow justify-content-start">
-        <div class="col markcol">
+      <div class="row " style="height:7vw; min-height: 100px"></div>
+      <div class="row  justify-content-start">
+        <div class="col ">
           <h1 style="margin-bottom: .7em">If you're interested, it's easy.</h1>
           <h2 style="margin-bottom: .7em">Just fill out the form below or email <a class="ul" href="#">outreach@mymediacreative.org</a>.</h2>
           <h1>TYPEFORM EMBED HERE</h1>
         </div>
       </div>
-      <div class="row markrow" style="height:7vw; min-height: 100px"></div>
+      <div class="row " style="height:7vw; min-height: 100px"></div>
 </div>
 
 <style>
   .jobs-header { text-align: right }
+  h1.jobs-header { font-size: 6em}
+  h2.jobs-header { font-size: 3.7em}
 
   ul { list-style: none; line-height: 2 }
   ul h2 { display: inline }
@@ -83,34 +85,6 @@ layout: "wrapper"
      width: 1.5em; /* Also needed for space (tweak if needed) */
      font-size: 3em;
      /* margin-left: -1em; */
-  }
-
-  /* This determines when the screen is small enough for certain fonts, and to trade the normal menu for the hamburger */
-  /* Extra small devices (phones, 600px and down) */
-  @media only screen and (max-width: 600px) {
-
-  }
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 601px) {
-
-  }
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-
-  }
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-
-  }
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    h1.jobs-header { font-size: 5.5em }
-    h2.jobs-header { font-size: 2.6em }
-  }
-  /* Extra EXTRA Large devices */
-  @media only screen and (min-width: 1640px) {
-    h1.jobs-header { font-size: 6em}
-    h2.jobs-header { font-size: 3.7em}
   }
 </style>
 
