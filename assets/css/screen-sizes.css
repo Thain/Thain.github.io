@@ -61,18 +61,17 @@
   .show-mobile { display: none }
   .hide-mobile { display: block }
 
-  h1 { font-size: 4.2em }
-  h2 { font-size: 2.5em }
+  h1 { font-size: 4em }
+  h2 { font-size: 2.3em }
 
   h1.thumbnail-title { font-size: 2.5em }
   h3.thumbnail-title { font-size: 2.2em }
 
-  .footer-text > h1 { font-size: 1.7em }
+  .footer-text > h1 { font-size: 2.5em }
   .footer-text > h2 { font-size: 1.7em }
   #footer-connect { font-size: 4em }
 
-  .home-header { font-size: 5em }
-  .menubar, #menubold { font-size: 2.5em }
+  .menubar, #menubold { font-size: 2em }
 }
 
 
@@ -81,18 +80,17 @@
   .show-mobile { display: none }
   .hide-mobile { display: block }
 
-  h1 { font-size: 6em }
-  h2 { font-size: 3.7em }
+  h1 { font-size: 5.4em }
+  h2 { font-size: 3.2em }
 
   h1.thumbnail-title { font-size: 3.7em }
   h3.thumbnail-title { font-size: 3em }
 
-  .footer-text > h1 { font-size: 2.2em }
+  .footer-text > h1 { font-size: 3em }
   .footer-text > h2 { font-size: 2.2em }
   #footer-connect { font-size: 5em }
 
-  .home-header { font-size: 8em }
-  .menubar, #menubold { font-size: 3.5em }
+  .menubar, #menubold { font-size: 3em }
 }
 
 .icon-title { font-size: 3em }

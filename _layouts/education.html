@@ -1,0 +1,126 @@
+---
+layout: "wrapper"
+---
+
+<!-- Header -->
+<div class="container-fluid" style="background-color:var(--navy); height:120vh; padding-left: 8vw; padding-right:8vw">
+    {% include menu-white.html button="education"%}
+    <div class="row markrow" style="height:5vw"></div>
+    <div class="row markrow py-4 justify-content-start">
+        <div class="col-11 offset-md-1 align-self-center markcol">
+          <h1 class="edu-header">When it comes to helping you pick up creative skills, our philosophy is simple: <br> we want you to learn by doing.</h1>
+        </div>
+    </div>
+    <div class="row markrow py-4 justify-content-between">
+        <div class="col-11 offset-md-1 align-self-center markcol">
+          <h2 class="edu-header">That's why we deliver workshops, mentorship, and hands-on learning experiences to young people who want to learn video, design, web development, and marketing skills.</h2>
+        </div>
+    </div>
+    {% include circle.html color="black" size="3" top="10" left="69" z="0"%}
+    {% include circle.html color="dorange" size="20" top="40" left="65" z="0"%}
+</div>
+
+<!-- "World changing" through to "Contact us" CTAs -->
+<div class="container-fluid" style="background-color:var(--white); position: relative; z-index: 2; padding-left: 14vw; padding-right:14vw">
+      <div class="row markrow" style="height:15vw; min-height: 200px"></div>
+      <div class="row markrow justify-content-end" style="min-height: 100px">
+        <div class="col-7 align-self-start markcol numbered">
+          <h1><span style="font-family: Montserrat-L; font-size:inherit">1 / 3</span><br><br>
+            We teach <span style="color: var(--dorange);  font-size: inherit">workshops, </span> so you can wrap your head around the basics.</h1>
+          <h2><br>Our creative team leads weekly workshops on storytelling, videography, design, and more. Check out the workshops that we've got coming up in the next month.</h2>
+          <a href="/education"><h2 style="margin-top: 1.1em; font-family: Montserrat-S; color: var(--navy)">View our calendar.</h2></a>
+        </div>
+      </div>
+
+      <div class="row markrow" style="height:15vw; min-height: 200px"></div>
+      <div class="row markrow justify-content-start" style=" min-height: 100px">
+        <div class="col-7 align-self-start markcol numbered">
+          <h1><span style="font-family: Montserrat-L; font-size:inherit">2 / 3</span><br><br>
+            We provide <span style="color: var(--dorange);  font-size: inherit">mentorship, </span> because a little makes all the difference.</h1>
+          <h2><br>We'l connect you to one of our creatives so that you can shadow them while they work on an ongoing campaign. They can answer your questions and give you a little guidance on where to go next.</h2>
+          <a href="/education"><h2 style="margin-top: 1.1em; font-family: Montserrat-S; color: var(--navy)">Get acquainted with some of our team members.</h2></a>
+        </div>
+      </div>
+
+      <div class="row markrow" style="height:15vw; min-height: 200px"></div>
+      <div class="row markrow justify-content-end" style=" min-height: 100px">
+        <div class="col-7 align-self-start markcol numbered">
+          <h1><span style="font-family: Montserrat-L; font-size:inherit">3 / 3</span><br><br>
+            Eventually, we want you to <span style="color: var(--dorange);  font-size: inherit">take the wheel.</span></h1>
+          <h2><br>After a couple workshops and some shadowing &mdash; we'll connect you, and a couple of other learners, to an organization that needs your support. At that point, what yo ucreate is up to you (but we'll always be around to help).</h2>
+          <a href="/education"><h2 style="margin-top: 1.1em; font-family: Montserrat-S; color: var(--navy)">See some of the work that our learners have put together.</h2></a>
+        </div>
+      </div>
+
+      <div class="row markrow" style="height:15vw; min-height: 250px"></div>
+
+</div>
+
+<!-- Map box -->
+<div class="container-fluid" style="background-color:var(--grey); width: 88vw; padding-left: 6vw; padding-right: 9.5vw">
+  <div class="row markrow" style="height:5vw"></div>
+  <div class="row markrow py-5"><div class="col markcol">
+          <h1>All of this is built around community.</h1>
+  </div></div>
+  <div class="row markrow py-5"><div class="col markcol">
+          <h2>We know that connection and collaboration are at the essence of creativity. That's why we hold weekly community meetings at Building 21 at 6:30 pm on Thursdays. These are spaces to connect, discuss, critique, and collaborate. Come around.</h2>
+  </div></div>
+  <div class="row markrow py-5">
+        <div class="col-12 markcol"><img src="../assets/img/map.png" style="display: block; max-width: 100%; max-height: 100%;" class="image"></div>
+  </div>
+  <div class="row markrow py-5">
+      <div class="col-11 markcol">
+        <h2 class="after-map-text"><span style="font-size: 1.4em; font-family: Montserrat-S">Want more information?</span><br>
+          Come to our community meeting at <a style="color: var(--dorange)" href="#">Building 21, 651 Sherbrooke St W, Montreal H3A 1E3</a>.<br>
+          Check out our full <a style="color: var(--dorange)" href="/education">year long curriculum</a>.<br>
+          Check out some of our <a style="color: var(--dorange)" href="#">tutorials</a> online.<br>
+          Reach out to us at <a style="color: var(--dorange)" href="#">education@mymediacreative.org</a>.<br>
+        </h2>
+      </div>
+  </div>
+  <div class="row markrow" style="height:5vw"></div>
+</div>
+<div class="row markrow" style="height:15vw"></div>
+
+<style>
+  .edu-header { color: white }
+  .after-map-text { line-height: 2.5 }
+
+  /* This determines when the screen is small enough for certain fonts, and to trade the normal menu for the hamburger */
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+
+  }
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 601px) {
+
+  }
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+
+  }
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+
+  }
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    h1.edu-header { font-size: 4.5em}
+    h2.edu-header { font-size: 2.6em}
+    .after-map-text { font-size: 2em }
+
+    .numbered > h1 { font-size: 4.3em}
+    .numbered > h2 { font-size: 2.7em}
+  }
+  /* Extra EXTRA Large devices */
+  @media only screen and (min-width: 1640px) {
+    h1.edu-header { font-size: 6em}
+    h2.edu-header { font-size: 3.7em}
+    .after-map-text { font-size: 2.5em }
+
+    .numbered > h1 { font-size: 4.3em}
+    .numbered > h2 { font-size: 2.7em}
+  }
+</style>
+
+{% include footer.html %}

@@ -4,15 +4,15 @@ layout: "wrapper"
 
 <div class="container-fluid" style="background-color:var(--grey); height:120vh; padding-left: 8vw; padding-right:8vw">
     {% include menu.html button="work"%}
-    <div class="row markrow" style="height:5vw"></div>
+    <div class="row markrow" style="height:3vw"></div>
     <div class="row markrow py-4 justify-content-start">
-        <div class="col-7 offset-md-1 align-self-center markcol">
-          <h1>My Media tells stories that get results<span class='big-period' style='color:var(--lorange)'>.</span></h1>
+        <div class="col-8 offset-md-1 align-self-center markcol">
+          <h1 class="work-header">My Media tells stories that get results<span class='big-period' style='color:var(--lorange)'>.</span></h1>
         </div>
     </div>
     <div class="row markrow py-4 justify-content-between">
         <div class="col-9 offset-md-1 align-self-center markcol">
-          <h2>We use campaigns, content, and design to help you grow, engage others, and express your mission. Our focus is your (measurable) success.</h2>
+          <h2 class="work-header">We use campaigns, content, and design to help you grow, engage others, and express your mission. Our focus is your (measurable) success.</h2>
         </div>
     </div>
     {% include circle.html color="white" size="7" top="14" left="13" z="0"%}
@@ -20,7 +20,7 @@ layout: "wrapper"
     {% include circle.html color="dorange" size="20" top="40" left="65" z="0"%}
 </div>
 
-<div class="container-fluid" style="background-color:var(--white); position: relative; z-index: 2; padding-left: 12vw; padding-right:12vw">
+<div class="container-fluid" style="background-color:var(--white); position: relative; z-index: 2; padding-left: 13vw; padding-right:13vw">
       <div class="row markrow" style="height:5vw; min-height: 100px"></div>
       <div class="row markrow justify-content-end" style="height:10vw; min-height: 100px">
         <div class="col align-self-end markcol">
@@ -57,6 +57,55 @@ layout: "wrapper"
       </div>
       <div class="row markrow" style="height:20vh"></div>
 </div>
+
+<style>
+  /* This is all menu things, from hover effects to general styling */
+  #filterby{ pointer-events: none }
+  #filterby:hover .filter{ opacity: .2 }
+  #filterby:hover .filter-line{ opacity: .2 }
+  .filter:hover { opacity: 1 !important }
+
+  .filter, .filter-line {
+    pointer-events: auto;
+    font-family: 'Montserrat-M';
+    text-align: left;
+    background-color: inherit;
+    border: none;
+    display: inline;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .filter, .filter-line { font-size: 25px; margin-right: 1vw}
+
+  /* This determines when the screen is small enough for certain fonts, and to trade the normal menu for the hamburger */
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+
+  }
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 601px) {
+
+  }
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+
+  }
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+
+  }
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    h1.work-header { font-size: 5.5em }
+    h2.work-header { font-size: 2.6em }
+  }
+  /* Extra EXTRA Large devices */
+  @media only screen and (min-width: 1640px) {
+    h1.work-header { font-size: 8em }
+    h2.work-header { font-size: 3.7em }
+  }
+</style>
 
 {% include footer.html %}
 
