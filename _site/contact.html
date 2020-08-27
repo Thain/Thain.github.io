@@ -27,11 +27,11 @@
 <div class="container-fluid" style="background-color:var(--lblue); padding-left: 8vw; padding-right:8vw">
     <div class="row markrow align-items-center justify-content-between" style="height:25vh; margin-left:-4vw; margin-right:-4vw">
       <div class="col-xs-2 markcol mx-4">
-        <a href="/"><img src="../assets/img/logo-small.png" style="height: 5vw; min-height: 50px"></a>
+        <a href="/"><img src="../assets/icons/logo-small.png" style="height: 5vw; min-height: 50px"></a>
       </div>
 
       <div class="col-xs-2 markcol mt-2 mx-4 show-mobile">
-        <img src="../assets/img/hamburger.png" style="height: 4vw; min-height: 30px">
+        <img src="../assets/icons/hamburger.png" style="height: 4vw; min-height: 30px">
       </div>
 
       <div class="hide-mobile col-10 markcol text-right">
@@ -78,10 +78,10 @@ document.getElementById("contact").innerHTML = "<a id='menubold' href='/contact'
         </div>
     </div>
     <div class="row justify-content-start" style="padding-top: 3em; padding-bottom: 13em">
-      <div class="col-1 align-self-center icon"><img src="../assets/img/logo-small.png"></div>
-      <div class="col-1 align-self-center icon"><img src="../assets/img/logo-small.png"></div>
-      <div class="col-1 align-self-center icon"><img src="../assets/img/logo-small.png"></div>
-      <div class="col-1 align-self-center icon"><img src="../assets/img/logo-small.png"></div>
+      <div class="col-1 align-self-center icon"><a href="https://www.facebook.com/mymediacreativegroup"><img src="../assets/icons/social-fb.png"></a></div>
+      <div class="col-1 align-self-center icon"><a href="https://www.instagram.com/mymediacreative/"><img src="../assets/icons/social-ig.png"></a></div>
+      <div class="col-1 align-self-center icon"><a href="https://www.linkedin.com/company/my-media-creative/"><img src="../assets/icons/social-li.png"></a></div>
+      <div class="col-1 align-self-center icon"><a href="https://www.youtube.com/channel/UCBtnLqiba6ACrA63AHFTMUw"><img src="../assets/icons/social-yt.png"></a></div>
     </div>
     <div class="container-fluid" style="background-color:var(--white); height: 800px">
       <h1>TYPEFORM EMBED HERE</h1>
@@ -92,18 +92,18 @@ document.getElementById("contact").innerHTML = "<a id='menubold' href='/contact'
 <style>
   h1.ctct-header { font-size: 6em; padding-bottom: .6em }
   h2.ctct-header { font-size: 3.7em; padding-bottom: 1em }
-  img { display: inline; max-height: 100%; max-width: 100% }
-  .icon { margin-right: 7em }
+  img { display: inline; max-height: 100%; max-width: 100%; min-height: 50px; min-width: 50px }
+  div.icon { margin-right: 7em }
 
 </style>
 
-<div class="container-fluid" style="background-color:var(--grey); padding-left:7vw; padding-right:7vw; height:600px">
+<div class="container-fluid hide-mobile" style="background-color:var(--grey); padding-left:7vw; padding-right:7vw; height:600px">
   <div class="row markrow align-items-start justify-content-between" style="padding-top: 100px; margin-left:3vw; margin-right:3vw">
         <div class="col-3 markcol">
           <h1 id='footer-connect'>Connect <br> with us<span class="big-period" style='color:var(--lorange)'>.</span></h1>
         </div>
 
-        <div class="col-2 markcol footer-text">
+        <div class="col-2 footer-text">
           <h1 class="mb-5">Menu</h1>
           <h2>
               Work <br>
@@ -113,7 +113,7 @@ document.getElementById("contact").innerHTML = "<a id='menubold' href='/contact'
               Contact
           </h2>
         </div>
-        <div class="col-2 markcol mr-5 footer-text">
+        <div class="col-2 footer-text">
           <h1 class="mb-5">Contact us</h1>
           <h2>
               Work with us <br>
@@ -121,10 +121,13 @@ document.getElementById("contact").innerHTML = "<a id='menubold' href='/contact'
               Learn with us
           </h2>
         </div>
-        <div class="col-2 markcol mr-5 footer-text">
-          <h1 class="mb-5">Follow us</h1>
-          <h2>socials here <br></h2>
-          <a class="uf" href="#"><h2 class="emails">outreach@mymediacreative.org</h2></a>
+        <div class="col-3 footer-text">
+          <h1 style="margin-bottom: 1.7em">Follow us</h1>
+          <a href="https://www.facebook.com/mymediacreativegroup"><img src="../assets/icons/social-fb.png" class="icon"></a>
+          <a href="https://www.instagram.com/mymediacreative/"><img src="../assets/icons/social-ig.png" class="icon"></a>
+          <a href="https://www.linkedin.com/company/my-media-creative/"><img src="../assets/icons/social-li.png" class="icon"></a>
+          <a href="https://www.youtube.com/channel/UCBtnLqiba6ACrA63AHFTMUw"><img src="../assets/icons/social-yt.png" class="icon"></a>
+          <a class="uf" href="#"><h2 class="emails" style="margin-top: 2em">outreach@mymediacreative.org</h2></a>
           <a class="uf" href="#"><h2 class="emails">mymediacreative.org</h2></a>
         </div>
   </div>
@@ -133,6 +136,8 @@ document.getElementById("contact").innerHTML = "<a id='menubold' href='/contact'
 <style>
   .footer-text > h2 { line-height: 2.5 }
   .emails { font-size: 1.8em; line-height: 1.5 }
+  img.icon { display: inline; height: 2.5vw; width: 2.5vw; min-height: 30px; min-width: 30px; margin-right: 2em }
+
 </style>
 
 

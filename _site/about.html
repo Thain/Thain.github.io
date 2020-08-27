@@ -24,14 +24,14 @@
     <script src="../assets/js/fade.js"></script>
     <script> fadeInPage(); </script>
     <!-- Header -->
-<div class="container-fluid" style="background-color:var(--white); height:120vh; padding-left: 8vw; padding-right:8vw">
+<div class="container-fluid" style="background-color:var(--white); padding-left: 8vw; padding-right:8vw">
     <div class="row markrow align-items-center justify-content-between" style="height:25vh; margin-left:-4vw; margin-right:-4vw">
       <div class="col-xs-2 markcol mx-4">
-        <a href="/"><img src="../assets/img/logo-small.png" style="height: 5vw; min-height: 50px"></a>
+        <a href="/"><img src="../assets/icons/logo-small.png" style="height: 5vw; min-height: 50px"></a>
       </div>
 
       <div class="col-xs-2 markcol mt-2 mx-4 show-mobile">
-        <img src="../assets/img/hamburger.png" style="height: 4vw; min-height: 30px">
+        <img src="../assets/icons/hamburger.png" style="height: 4vw; min-height: 30px">
       </div>
 
       <div class="hide-mobile col-10 markcol text-right">
@@ -71,64 +71,15 @@
 document.getElementById("about").innerHTML = "<a id='menubold' href='/about'>about<span class='big-period' style='color:var(--dblue)'>.</span></a>";
 </script>
 
-    <div class="row  justify-content-start" style="padding-top: 10em; padding-bottom: 3em">
-        <div class="col-6 align-self-center ">
-          <h1 class="work-header">My Media is a creative agency for the unheard<span class='big-period' style='color:var(--dorange)'>.</span></h1>
+    <div class="row justify-content-start">
+        <div class="col-7" style="padding-top: 10em; padding-bottom: 30em">
+          <h1 class="about-header">My Media is a creative agency for the unheard<span class='big-period' style='color:var(--dorange)'>.</span></h1>
+          <h2 class="about-header">We work with nonprofits, social enterprises, community organizations, and activist groups to tell compelling stories.</h2>
+        </div>
+        <div class="col-5">
+          <img src="../assets/icons/about.png" style="max-height: 120%; max-width: 120%; padding-top: 5em" class="float-right">
         </div>
     </div>
-    <div class="row  justify-content-between">
-        <div class="col-6 align-self-center ">
-          <h2 class="work-header">We work with nonprofits, social enterprises, community organizations, and activist groups to tell compelling stories.</h2>
-        </div>
-    </div>
-    <div class="circle rellax" style="background-color: var(--dblue);
-                           width: 7em;
-                           height: 7em;
-                           top: 14em;
-                           left: 76em;
-                           z-index: 0;
-                           "></div>
-
-<style>
-  .circle{
-    border-radius: 50%;
-    position: absolute !important;
-    z-index: 1;
-  }
-</style>
-
-    <div class="circle rellax" style="background-color: var(--lorange);
-                           width: 3em;
-                           height: 3em;
-                           top: 10em;
-                           left: 69em;
-                           z-index: 0;
-                           "></div>
-
-<style>
-  .circle{
-    border-radius: 50%;
-    position: absolute !important;
-    z-index: 1;
-  }
-</style>
-
-    <div class="circle rellax" style="background-color: var(--dorange);
-                           width: 20em;
-                           height: 20em;
-                           top: 40em;
-                           left: 65em;
-                           z-index: 0;
-                           "></div>
-
-<style>
-  .circle{
-    border-radius: 50%;
-    position: absolute !important;
-    z-index: 1;
-  }
-</style>
-
 </div>
 
 <!-- "stories make change" through to icons -->
@@ -144,17 +95,17 @@ document.getElementById("about").innerHTML = "<a id='menubold' href='/about'>abo
       </div>
       <div class="row  justify-content-between align-items-start" style="padding-bottom: 20em">
         <div class="col-3 ">
-          <img src="../assets/img/logo-small.png" style="height: 3vw; min-height: 50px; margin-left: 3em">
+          <img src="../assets/icons/icon-learn.png" style="height: 5vw; min-height: 50px; margin-left: 3em">
           <h1 class="icon-title">Learn.</h1>
           <h2 class="icon-title">We start by learning. Our creative process is rooted in research and discussion &mdash; so we can make something that is true to you. We’ll start by getting to know your org.</h2>
         </div>
         <div class="col-3 ">
-          <img src="../assets/img/logo-small.png" style="height: 3vw; min-height: 50px; margin-left: 3em">
+          <img src="../assets/icons/icon-collab.png" style="height: 5vw; min-height: 50px; margin-left: 3em">
           <h1 class="icon-title">Collaborate.</h1>
           <h2 class="icon-title">Community is the engine of our creativity. We’ll bring the project to our team of creatives, and think through a bunch of ideas. This collaborative approach unlocks innovate creativity.</h2>
         </div>
         <div class="col-3 ">
-          <img src="../assets/img/logo-small.png" style="height: 3vw; min-height: 50px; margin-left: 3em">
+          <img src="../assets/icons/icon-create.png" style="height: 5vw; min-height: 50px; margin-left: 3em">
           <h1 class="icon-title">Create.</h1>
           <h2 class="icon-title">We execute with precision. Once we’ve pitched you an idea that you love, our passionate team of videographers, designers, and marketers will bring it to life (with your input).</h2>
         </div>
@@ -282,8 +233,11 @@ document.getElementById("about").innerHTML = "<a id='menubold' href='/about'>abo
 </div>
 
 <style>
+  h1.about-header { font-size: 6em; padding-bottom: .6em }
+  h2.about-header { font-size: 3.7em; padding-bottom: 1em }
   h1.icon-title { font-size: 3em; margin-bottom: .7em; margin-top: .7em }
   h2.icon-title { font-size: 2em }
+  img { display: inline; max-height: 100%; max-width: 100%; min-height: 50px; min-width: 50px }
 
   /* This is all menu things, from hover effects to general styling */
   #filterby{ pointer-events: none }
@@ -306,13 +260,13 @@ document.getElementById("about").innerHTML = "<a id='menubold' href='/about'>abo
 
 </style>
 
-<div class="container-fluid" style="background-color:var(--grey); padding-left:7vw; padding-right:7vw; height:600px">
+<div class="container-fluid hide-mobile" style="background-color:var(--grey); padding-left:7vw; padding-right:7vw; height:600px">
   <div class="row markrow align-items-start justify-content-between" style="padding-top: 100px; margin-left:3vw; margin-right:3vw">
         <div class="col-3 markcol">
           <h1 id='footer-connect'>Connect <br> with us<span class="big-period" style='color:var(--lorange)'>.</span></h1>
         </div>
 
-        <div class="col-2 markcol footer-text">
+        <div class="col-2 footer-text">
           <h1 class="mb-5">Menu</h1>
           <h2>
               Work <br>
@@ -322,7 +276,7 @@ document.getElementById("about").innerHTML = "<a id='menubold' href='/about'>abo
               Contact
           </h2>
         </div>
-        <div class="col-2 markcol mr-5 footer-text">
+        <div class="col-2 footer-text">
           <h1 class="mb-5">Contact us</h1>
           <h2>
               Work with us <br>
@@ -330,10 +284,13 @@ document.getElementById("about").innerHTML = "<a id='menubold' href='/about'>abo
               Learn with us
           </h2>
         </div>
-        <div class="col-2 markcol mr-5 footer-text">
-          <h1 class="mb-5">Follow us</h1>
-          <h2>socials here <br></h2>
-          <a class="uf" href="#"><h2 class="emails">outreach@mymediacreative.org</h2></a>
+        <div class="col-3 footer-text">
+          <h1 style="margin-bottom: 1.7em">Follow us</h1>
+          <a href="https://www.facebook.com/mymediacreativegroup"><img src="../assets/icons/social-fb.png" class="icon"></a>
+          <a href="https://www.instagram.com/mymediacreative/"><img src="../assets/icons/social-ig.png" class="icon"></a>
+          <a href="https://www.linkedin.com/company/my-media-creative/"><img src="../assets/icons/social-li.png" class="icon"></a>
+          <a href="https://www.youtube.com/channel/UCBtnLqiba6ACrA63AHFTMUw"><img src="../assets/icons/social-yt.png" class="icon"></a>
+          <a class="uf" href="#"><h2 class="emails" style="margin-top: 2em">outreach@mymediacreative.org</h2></a>
           <a class="uf" href="#"><h2 class="emails">mymediacreative.org</h2></a>
         </div>
   </div>
@@ -342,6 +299,8 @@ document.getElementById("about").innerHTML = "<a id='menubold' href='/about'>abo
 <style>
   .footer-text > h2 { line-height: 2.5 }
   .emails { font-size: 1.8em; line-height: 1.5 }
+  img.icon { display: inline; height: 2.5vw; width: 2.5vw; min-height: 30px; min-width: 30px; margin-right: 2em }
+
 </style>
 
 

@@ -27,11 +27,11 @@
 <div class="container-fluid" style="background-color:var(--grey); padding-left: 8vw; padding-right:8vw">
     <div class="row markrow align-items-center justify-content-between" style="height:25vh; margin-left:-4vw; margin-right:-4vw">
       <div class="col-xs-2 markcol mx-4">
-        <a href="/"><img src="../assets/img/logo-small.png" style="height: 5vw; min-height: 50px"></a>
+        <a href="/"><img src="../assets/icons/logo-small.png" style="height: 5vw; min-height: 50px"></a>
       </div>
 
       <div class="col-xs-2 markcol mt-2 mx-4 show-mobile">
-        <img src="../assets/img/hamburger.png" style="height: 4vw; min-height: 30px">
+        <img src="../assets/icons/hamburger.png" style="height: 4vw; min-height: 30px">
       </div>
 
       <div class="hide-mobile col-10 markcol text-right">
@@ -72,7 +72,7 @@ document.getElementById("").innerHTML = "<a id='menubold' href='/'><span class='
 </script>
 
     <div class="row" style="height:75vh">
-        <div class="col-9 offset-md-1" style="padding-top: 20em">
+        <div class="col-lg-9 offset-md-1" style="padding-top: 20em">
           <h1 id="home-header">My Media tells stories for people who move the world forward.</h1>
         </div>
     </div>
@@ -83,15 +83,15 @@ document.getElementById("").innerHTML = "<a id='menubold' href='/'><span class='
 <div class="container-fluid" style="background-color:var(--white); position: relative; z-index: 2; padding-left: 12vw; padding-right:12vw">
       <div class="row justify-content-end" style="padding-top: 20em">
         <div class="col align-self-end ">
-          <h1>The voices fighting for justice, opportunity, <br> and habitability need to be louder.</h1>
+          <h1>The voices fighting for justice, opportunity, and habitability need to be louder.</h1>
           <h2><br>Our creative team runs campaigns, creates content, builds brands, and makes websites for organizations that want to make the world better. We're looking for people who have skills in:</h2>
         </div>
       </div>
       <div class="row justify-content-between" style="padding-top: 10em; padding-bottom: 10em">
-        <div class="col "><img src="../assets/img/logo-small.png" style="height: 5.5vw; min-height: 50px"><h1 class="icon-title ml-4">Video.</h1></div>
-        <div class="col "><img src="../assets/img/logo-small.png" style="height: 5.5vw; min-height: 50px"><h1 class="icon-title ml-4">Design.</h1></div>
-        <div class="col "><img src="../assets/img/logo-small.png" style="height: 5.5vw; min-height: 50px"><h1 class="icon-title ml-4">Web.</h1></div>
-        <div class="col "><img src="../assets/img/logo-small.png" style="height: 5.5vw; min-height: 50px"><h1 class="icon-title ml-4">Strategy.</h1></div>
+        <div class="col justify-content-center"><img class="icon-skills" src="../assets/icons/icon-vid.png"><h1 class="icon-title ml-4">Video.</h1></div>
+        <div class="col justify-content-center"><img class="icon-skills" src="../assets/icons/icon-des.png"><h1 class="icon-title ml-4">Design.</h1></div>
+        <div class="col justify-content-center"><img class="icon-skills" src="../assets/icons/icon-web.png"><h1 class="icon-title ml-4">Web.</h1></div>
+        <div class="col justify-content-center"><img class="icon-skills" src="../assets/icons/icon-strat.png"><h1 class="icon-title ml-4">Strategy.</h1></div>
       </div>
 </div>
 
@@ -108,7 +108,7 @@ document.getElementById("").innerHTML = "<a id='menubold' href='/'><span class='
         <div class="col-4 px-5 align-self-end">
           <a href="./divest.html"><h1 class="py-3 thumbnail-title">The School of Music Montreal</h1></a>
           <h3 class="thumbnail-title pb-5"">video</h3>
-          <a href="./divest.html"><img src="../assets/img/logo-small.png" style="height: 5vw; min-height: 50px"></a>
+          <a href="./divest.html"><img class="arrow" src="../assets/icons/icon-arrow.png"></a>
         </div>
   </div>
   <div class="row py-5">
@@ -121,7 +121,7 @@ document.getElementById("").innerHTML = "<a id='menubold' href='/'><span class='
         <div class="col-4 px-5 align-self-end">
           <a href="./divest.html"><h1 class="py-3 thumbnail-title">IndigIrecruit</h1></a>
           <h3 class="thumbnail-title pb-5"">brand</h3>
-          <a href="./divest.html"><img src="../assets/img/logo-small.png" style="height: 5vw; min-height: 50px"></a>
+          <a href="./divest.html"><img class="arrow" src="../assets/icons/icon-arrow.png"></a>
         </div>
   </div>
   <h2 style="padding-bottom: 4em">Check out the rest of our portfolio <a class="ul" href="/work">here</a>.</h2>
@@ -162,6 +162,8 @@ document.getElementById("").innerHTML = "<a id='menubold' href='/'><span class='
 </div>
 
 <style>
+  .arrow { height: 2.7vw; min-height: 25px }
+  .icon-skills { height: 5.5vw; min-height: 50px; margin-left: 1em; margin-bottom: 1em }
   h1.thumbnail-title {
     text-align: left;
     color: black;
@@ -199,13 +201,13 @@ document.getElementById("").innerHTML = "<a id='menubold' href='/'><span class='
   #home-header { font-size: 9em }
 </style>
 
-<div class="container-fluid" style="background-color:var(--grey); padding-left:7vw; padding-right:7vw; height:600px">
+<div class="container-fluid hide-mobile" style="background-color:var(--grey); padding-left:7vw; padding-right:7vw; height:600px">
   <div class="row markrow align-items-start justify-content-between" style="padding-top: 100px; margin-left:3vw; margin-right:3vw">
         <div class="col-3 markcol">
           <h1 id='footer-connect'>Connect <br> with us<span class="big-period" style='color:var(--lorange)'>.</span></h1>
         </div>
 
-        <div class="col-2 markcol footer-text">
+        <div class="col-2 footer-text">
           <h1 class="mb-5">Menu</h1>
           <h2>
               Work <br>
@@ -215,7 +217,7 @@ document.getElementById("").innerHTML = "<a id='menubold' href='/'><span class='
               Contact
           </h2>
         </div>
-        <div class="col-2 markcol mr-5 footer-text">
+        <div class="col-2 footer-text">
           <h1 class="mb-5">Contact us</h1>
           <h2>
               Work with us <br>
@@ -223,10 +225,13 @@ document.getElementById("").innerHTML = "<a id='menubold' href='/'><span class='
               Learn with us
           </h2>
         </div>
-        <div class="col-2 markcol mr-5 footer-text">
-          <h1 class="mb-5">Follow us</h1>
-          <h2>socials here <br></h2>
-          <a class="uf" href="#"><h2 class="emails">outreach@mymediacreative.org</h2></a>
+        <div class="col-3 footer-text">
+          <h1 style="margin-bottom: 1.7em">Follow us</h1>
+          <a href="https://www.facebook.com/mymediacreativegroup"><img src="../assets/icons/social-fb.png" class="icon"></a>
+          <a href="https://www.instagram.com/mymediacreative/"><img src="../assets/icons/social-ig.png" class="icon"></a>
+          <a href="https://www.linkedin.com/company/my-media-creative/"><img src="../assets/icons/social-li.png" class="icon"></a>
+          <a href="https://www.youtube.com/channel/UCBtnLqiba6ACrA63AHFTMUw"><img src="../assets/icons/social-yt.png" class="icon"></a>
+          <a class="uf" href="#"><h2 class="emails" style="margin-top: 2em">outreach@mymediacreative.org</h2></a>
           <a class="uf" href="#"><h2 class="emails">mymediacreative.org</h2></a>
         </div>
   </div>
@@ -235,6 +240,8 @@ document.getElementById("").innerHTML = "<a id='menubold' href='/'><span class='
 <style>
   .footer-text > h2 { line-height: 2.5 }
   .emails { font-size: 1.8em; line-height: 1.5 }
+  img.icon { display: inline; height: 2.5vw; width: 2.5vw; min-height: 30px; min-width: 30px; margin-right: 2em }
+
 </style>
 
 

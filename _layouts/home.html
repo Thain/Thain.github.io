@@ -6,7 +6,7 @@ layout: "wrapper"
 <div class="container-fluid" style="background-color:var(--grey); padding-left: 8vw; padding-right:8vw">
     {% include menu.html button=""%}
     <div class="row" style="height:75vh">
-        <div class="col-9 offset-md-1" style="padding-top: 20em">
+        <div class="col-lg-9 offset-md-1" style="padding-top: 20em">
           <h1 id="home-header">My Media tells stories for people who move the world forward.</h1>
         </div>
     </div>
@@ -17,15 +17,15 @@ layout: "wrapper"
 <div class="container-fluid" style="background-color:var(--white); position: relative; z-index: 2; padding-left: 12vw; padding-right:12vw">
       <div class="row justify-content-end" style="padding-top: 20em">
         <div class="col align-self-end ">
-          <h1>The voices fighting for justice, opportunity, <br> and habitability need to be louder.</h1>
+          <h1>The voices fighting for justice, opportunity, and habitability need to be louder.</h1>
           <h2><br>Our creative team runs campaigns, creates content, builds brands, and makes websites for organizations that want to make the world better. We're looking for people who have skills in:</h2>
         </div>
       </div>
       <div class="row justify-content-between" style="padding-top: 10em; padding-bottom: 10em">
-        <div class="col "><img src="../assets/img/logo-small.png" style="height: 5.5vw; min-height: 50px"><h1 class="icon-title ml-4">Video.</h1></div>
-        <div class="col "><img src="../assets/img/logo-small.png" style="height: 5.5vw; min-height: 50px"><h1 class="icon-title ml-4">Design.</h1></div>
-        <div class="col "><img src="../assets/img/logo-small.png" style="height: 5.5vw; min-height: 50px"><h1 class="icon-title ml-4">Web.</h1></div>
-        <div class="col "><img src="../assets/img/logo-small.png" style="height: 5.5vw; min-height: 50px"><h1 class="icon-title ml-4">Strategy.</h1></div>
+        <div class="col justify-content-center"><img class="icon-skills" src="../assets/icons/icon-vid.png"><h1 class="icon-title ml-4">Video.</h1></div>
+        <div class="col justify-content-center"><img class="icon-skills" src="../assets/icons/icon-des.png"><h1 class="icon-title ml-4">Design.</h1></div>
+        <div class="col justify-content-center"><img class="icon-skills" src="../assets/icons/icon-web.png"><h1 class="icon-title ml-4">Web.</h1></div>
+        <div class="col justify-content-center"><img class="icon-skills" src="../assets/icons/icon-strat.png"><h1 class="icon-title ml-4">Strategy.</h1></div>
       </div>
 </div>
 
@@ -42,7 +42,7 @@ layout: "wrapper"
         <div class="col-4 px-5 align-self-end">
           <a href="./divest.html"><h1 class="py-3 thumbnail-title">The School of Music Montreal</h1></a>
           <h3 class="thumbnail-title pb-5"">video</h3>
-          <a href="./divest.html"><img src="../assets/img/logo-small.png" style="height: 5vw; min-height: 50px"></a>
+          <a href="./divest.html"><img class="arrow" src="../assets/icons/icon-arrow.png"></a>
         </div>
   </div>
   <div class="row py-5">
@@ -55,7 +55,7 @@ layout: "wrapper"
         <div class="col-4 px-5 align-self-end">
           <a href="./divest.html"><h1 class="py-3 thumbnail-title">IndigIrecruit</h1></a>
           <h3 class="thumbnail-title pb-5"">brand</h3>
-          <a href="./divest.html"><img src="../assets/img/logo-small.png" style="height: 5vw; min-height: 50px"></a>
+          <a href="./divest.html"><img class="arrow" src="../assets/icons/icon-arrow.png"></a>
         </div>
   </div>
   <h2 style="padding-bottom: 4em">Check out the rest of our portfolio <a class="ul" href="/work">here</a>.</h2>
@@ -96,6 +96,8 @@ layout: "wrapper"
 </div>
 
 <style>
+  .arrow { height: 2.7vw; min-height: 25px }
+  .icon-skills { height: 5.5vw; min-height: 50px; margin-left: 1em; margin-bottom: 1em }
   h1.thumbnail-title {
     text-align: left;
     color: black;
