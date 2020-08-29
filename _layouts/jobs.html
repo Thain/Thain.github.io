@@ -3,17 +3,12 @@ layout: "wrapper"
 ---
 
 <!-- Header -->
-<div class="container-fluid" style="background-color:var(--white); height:120vh; padding-left: 8vw; padding-right:8vw">
+<div class="container-fluid" style="background-color:var(--white); padding-left: 8vw; padding-right:8vw">
     {% include menu.html button="jobs"%}
-    <div class="row " style="height:3vw"></div>
-    <div class="row  py-4 justify-content-start">
+    <div class="row justify-content-start">
         <div class="col-9 align-self-center ">
-          <h1 class="jobs-header">My Media is on the hunt for passionate creative people.</h1>
-        </div>
-    </div>
-    <div class="row  py-4 justify-content-between">
-        <div class="col-9 align-self-center ">
-          <h2 class="jobs-header">Do you want to work with impactful organizations? <br> use and grow your skills? Build your network and <br> portfolio? Get paid?</h2>
+          <h1 class="header r">My Media is on the hunt for passionate creative people.</h1>
+          <h2 class="header r">Do you want to work with impactful organizations? Use and grow your skills? Build your network and <br> portfolio? Get paid?</h2>
         </div>
     </div>
     {% include circle.html color="white" size="7" top="14" left="13" z="0"%}
@@ -23,18 +18,12 @@ layout: "wrapper"
 
 <!-- "The voices" through to icons -->
 <div class="container-fluid" style="background-color:var(--grey); position: relative; z-index: 2; padding-left: 12vw; padding-right:12vw">
-      <div class="row " style="height:5vw; min-height: 100px"></div>
-      <div class="row  justify-content-end" style="height:10vw; min-height: 100px">
-        <div class="col align-self-end ">
+      <div class="row"><div class="col" style="padding-top: 20em; padding-bottom: 10em">
           <h1>We want people to join our creative team.</h1>
+          <h2><br>Our creative team runs campaigns, creates content, builds brands, and makes websites for organizations that want to make the world better. We're looking for people who have skills in:</h2>
         </div>
       </div>
-      <div class="row  justify-content-end" style="height:10vw; min-height: 100px">
-        <div class="col align-self-end ">
-          <h2>Our creative team runs campaigns, creates content, builds brands, and makes websites for organizations that want to make the world better. We're looking for people who have skills in:</h2>
-        </div>
-      </div>
-      <div class="row  justify-content-between align-items-center" style="height:20vw">
+      <div class="row justify-content-between" style="padding-bottom: 20em">
         <div class="col "><img src="../assets/icons/logo-small.png" style="height: 5.5vw; min-height: 50px"><h1 class="icon-title ml-4">Video.</h1></div>
         <div class="col "><img src="../assets/icons/logo-small.png" style="height: 5.5vw; min-height: 50px"><h1 class="icon-title ml-4">Design.</h1></div>
         <div class="col "><img src="../assets/icons/logo-small.png" style="height: 5.5vw; min-height: 50px"><h1 class="icon-title ml-4">Web.</h1></div>
@@ -44,9 +33,7 @@ layout: "wrapper"
 
 <!-- Bullets through to Typeform embed -->
 <div class="container-fluid" style="background-color:var(--white); padding-left: 12vw; padding-right:12vw">
-      <div class="row " style="height:5vw; min-height: 100px"></div>
-      <div class="row  justify-content-start">
-        <div class="col ">
+      <div class="row"><div class="col" style="padding-top: 20em; padding-bottom: 20em">
           <h1 style="margin-bottom: .7em">You should join our creative team if you:</h1>
           <ul>
             <li><h2>Want to have an impact.</h2></li>
@@ -56,35 +43,26 @@ layout: "wrapper"
             <li><h2>Want to build your portfolio.</h2></li>
             <li><h2>Want to expand your network.</h2></li>
           </ul>
-        </div>
-      </div>
+      </div></div>
 
-      <div class="row " style="height:7vw; min-height: 100px"></div>
-      <div class="row  justify-content-start">
-        <div class="col ">
-          <h1 style="margin-bottom: .7em">If you're interested, it's easy.</h1>
-          <h2 style="margin-bottom: .7em">Just fill out the form below or email <a class="ul" href="#">outreach@mymediacreative.org</a>.</h2>
+      <div class="row"><div class="col">
+          <h1 style="margin-bottom: 1em">If you're interested, it's easy.</h1>
+          <h2 style="margin-bottom: 1.5em">Just fill out the form below or email <a class="ul" href="#">outreach@mymediacreative.org</a>.</h2>
           <h1>TYPEFORM EMBED HERE</h1>
-        </div>
-      </div>
-      <div class="row " style="height:7vw; min-height: 100px"></div>
+      </div></div>
 </div>
 
 <style>
-  .jobs-header { text-align: right }
-  h1.jobs-header { font-size: 6em}
-  h2.jobs-header { font-size: 3.7em}
+  .r { text-align: right }
 
   ul { list-style: none; line-height: 2 }
   ul h2 { display: inline }
   ul li::before {
      content: "\2022";  /* \2022 is the CSS Code/unicode for a bullet */
-     color: var(--dorange); /* Change the color */
-     /* font-weight: bold; */
+     color: var(--dorange);
      display: inline-block; /* Needed to add space between the bullet and the text */
-     width: 1.5em; /* Also needed for space (tweak if needed) */
+     width: 1.5em; /* Spacing between bullet and text */
      font-size: 3em;
-     /* margin-left: -1em; */
   }
 </style>
 

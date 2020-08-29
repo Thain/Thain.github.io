@@ -27,7 +27,7 @@
 <div class="container-fluid" style="background-color:var(--navy); height:120vh; padding-left: 8vw; padding-right:8vw">
     <div class="row markrow align-items-center justify-content-between" style="height:25vh; margin-left:-4vw; margin-right:-4vw">
       <div class="col-xs-2 markcol mx-4">
-        <a href="/"><img src="../assets/icons/logo-small-white.png" style="height: 5vw; min-height: 50px"></a>
+        <a href="/"><img src="../assets/icons/logo-small-white.png" style="height: 4.5vw; min-height: 50px"></a>
       </div>
 
       <div class="col-xs-2 markcol mt-2 mx-4 show-mobile">
@@ -71,15 +71,10 @@
 document.getElementById("education").innerHTML = "<a id='menubold' class='w' href='/education'>education<span class='big-period' style='color:var(--dblue)'>.</span></a>";
 </script>
 
-    <div class="row " style="height:5vw"></div>
-    <div class="row  py-4 justify-content-start">
+    <div class="row">
         <div class="col-11 offset-md-1 align-self-center ">
-          <h1 class="edu-header">When it comes to helping you pick up creative skills, our philosophy is simple: we want you to learn by doing.</h1>
-        </div>
-    </div>
-    <div class="row  py-4 justify-content-between">
-        <div class="col-11 offset-md-1 align-self-center ">
-          <h2 class="edu-header">That's why we deliver workshops, mentorship, and hands-on learning experiences to young people who want to learn video, design, web development, and marketing skills.</h2>
+          <h1 class="header w">When it comes to helping you pick up creative skills, our philosophy is simple: we want you to learn by doing.</h1>
+          <h2 class="header w">That's why we deliver workshops, mentorship, and hands-on learning experiences to young people who want to learn video, design, web development, and marketing skills.</h2>
         </div>
     </div>
     <div class="circle rellax" style="background-color: var(--black);
@@ -118,9 +113,8 @@ document.getElementById("education").innerHTML = "<a id='menubold' class='w' hre
 
 <!-- "World changing" through to "Contact us" CTAs -->
 <div class="container-fluid" style="background-color:var(--white); position: relative; z-index: 2; padding-left: 14vw; padding-right:14vw">
-      <div class="row " style="height:15vw; min-height: 200px"></div>
-      <div class="row  justify-content-end" style="min-height: 100px">
-        <div class="col-7 align-self-start  numbered">
+      <div class="row justify-content-end" style="padding-top: 30em">
+        <div class="col-7 numbered">
           <h1><span style="font-family: Montserrat-L; font-size:inherit">1 / 3</span><br><br>
             We teach <span style="color: var(--dorange);  font-size: inherit">workshops, </span> so you can wrap your head around the basics.</h1>
           <h2><br>Our creative team leads weekly workshops on storytelling, videography, design, and more. Check out the workshops that we've got coming up in the next month.</h2>
@@ -128,9 +122,8 @@ document.getElementById("education").innerHTML = "<a id='menubold' class='w' hre
         </div>
       </div>
 
-      <div class="row " style="height:15vw; min-height: 200px"></div>
-      <div class="row  justify-content-start" style=" min-height: 100px">
-        <div class="col-7 align-self-start  numbered">
+      <div class="row" style="padding-top: 30em">
+        <div class="col-7 numbered">
           <h1><span style="font-family: Montserrat-L; font-size:inherit">2 / 3</span><br><br>
             We provide <span style="color: var(--dorange);  font-size: inherit">mentorship, </span> because a little makes all the difference.</h1>
           <h2><br>We'l connect you to one of our creatives so that you can shadow them while they work on an ongoing campaign. They can answer your questions and give you a little guidance on where to go next.</h2>
@@ -138,9 +131,8 @@ document.getElementById("education").innerHTML = "<a id='menubold' class='w' hre
         </div>
       </div>
 
-      <div class="row " style="height:15vw; min-height: 200px"></div>
-      <div class="row  justify-content-end" style=" min-height: 100px">
-        <div class="col-7 align-self-start  numbered">
+      <div class="row justify-content-end" style="padding-top: 30em">
+        <div class="col-7 numbered">
           <h1><span style="font-family: Montserrat-L; font-size:inherit">3 / 3</span><br><br>
             Eventually, we want you to <span style="color: var(--dorange);  font-size: inherit">take the wheel.</span></h1>
           <h2><br>After a couple workshops and some shadowing &mdash; we'll connect you, and a couple of other learners, to an organization that needs your support. At that point, what yo ucreate is up to you (but we'll always be around to help).</h2>
@@ -182,8 +174,8 @@ document.getElementById("education").innerHTML = "<a id='menubold' class='w' hre
   .edu-header { color: white }
   .after-map-text { line-height: 2.5 }
 
-  h1.edu-header { font-size: 5.7em}
-  h2.edu-header { font-size: 3.7em}
+  h1.w { color: white }
+  h2.w { color: white }
   .after-map-text { font-size: 2.5em }
 
   .numbered > h1 { font-size: 4.3em}
@@ -199,19 +191,19 @@ document.getElementById("education").innerHTML = "<a id='menubold' class='w' hre
         <div class="col-2 footer-text">
           <h1 class="mb-5">Menu</h1>
           <h2>
-              Work <br>
-              Education <br>
-              Jobs <br>
-              About <br>
-              Contact
+              <a href="/work">work</a><br>
+              <a href="/education">education</a><br>
+              <a href="/jobs">jobs</a><br>
+              <a href="/about">about</a><br>
+              <a href="/contact">contact</a>          
           </h2>
         </div>
         <div class="col-2 footer-text">
           <h1 class="mb-5">Contact us</h1>
           <h2>
-              Work with us <br>
-              Join our team <br>
-              Learn with us
+              work with us <br>
+              join our team <br>
+              learn with us
           </h2>
         </div>
         <div class="col-3 footer-text">

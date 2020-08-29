@@ -27,7 +27,7 @@
 <div class="container-fluid" style="background-color:var(--grey); padding-left: 8vw; padding-right:8vw">
     <div class="row markrow align-items-center justify-content-between" style="height:25vh; margin-left:-4vw; margin-right:-4vw">
       <div class="col-xs-2 markcol mx-4">
-        <a href="/"><img src="../assets/icons/logo-small.png" style="height: 5vw; min-height: 50px"></a>
+        <a href="/"><img src="../assets/icons/logo-small.png" style="height: 4.5vw; min-height: 50px"></a>
       </div>
 
       <div class="col-xs-2 markcol mt-2 mx-4 show-mobile">
@@ -54,7 +54,7 @@
   .menubar:hover { color: black; opacity: 1 !important }
   .menubar {
     pointer-events: auto;
-    font-family: 'Montserrat-M';
+    font-family: 'Montserrat-R';
     text-align: left;
     background-color: inherit;
     border: none;
@@ -71,27 +71,24 @@
 document.getElementById("").innerHTML = "<a id='menubold' href='/'><span class='big-period' style='color:var(--dblue)'>.</span></a>";
 </script>
 
-    <div class="row" style="height:75vh">
-        <div class="col-lg-9 offset-md-1" style="padding-top: 20em">
+    <div class="row"><div class="col-lg-9 offset-md-1" style="padding-top: 20em; padding-bottom: 15em">
           <h1 id="home-header">My Media tells stories for people who move the world forward.</h1>
-        </div>
-    </div>
-    <div class="row " style="height:5vw; min-height: 5vh"></div>
+    </div></div>
 </div>
 
 <!-- "The voices" through to icons -->
 <div class="container-fluid" style="background-color:var(--white); position: relative; z-index: 2; padding-left: 12vw; padding-right:12vw">
-      <div class="row justify-content-end" style="padding-top: 20em">
-        <div class="col align-self-end ">
+      <div class="row" style="padding-top: 20em">
+        <div class="col">
           <h1>The voices fighting for justice, opportunity, and habitability need to be louder.</h1>
           <h2><br>Our creative team runs campaigns, creates content, builds brands, and makes websites for organizations that want to make the world better. We're looking for people who have skills in:</h2>
         </div>
       </div>
       <div class="row justify-content-between" style="padding-top: 10em; padding-bottom: 10em">
-        <div class="col justify-content-center"><img class="icon-skills" src="../assets/icons/icon-vid.png"><h1 class="icon-title ml-4">Video.</h1></div>
-        <div class="col justify-content-center"><img class="icon-skills" src="../assets/icons/icon-des.png"><h1 class="icon-title ml-4">Design.</h1></div>
-        <div class="col justify-content-center"><img class="icon-skills" src="../assets/icons/icon-web.png"><h1 class="icon-title ml-4">Web.</h1></div>
-        <div class="col justify-content-center"><img class="icon-skills" src="../assets/icons/icon-strat.png"><h1 class="icon-title ml-4">Strategy.</h1></div>
+        <div class="col"><img class="icon-skills center-block" src="../assets/icons/icon-vid.png"><h1 class="icon-title ml-4">Video.</h1></div>
+        <div class="col"><img class="icon-skills center-block" src="../assets/icons/icon-des.png"><h1 class="icon-title ml-4">Design.</h1></div>
+        <div class="col"><img class="icon-skills center-block" src="../assets/icons/icon-web.png"><h1 class="icon-title ml-4">Web.</h1></div>
+        <div class="col"><img class="icon-skills center-block" src="../assets/icons/icon-strat.png"><h1 class="icon-title ml-4">Strategy.</h1></div>
       </div>
 </div>
 
@@ -161,6 +158,17 @@ document.getElementById("").innerHTML = "<a id='menubold' href='/'><span class='
       </div>
 </div>
 
+<div class="col-3" style="padding-top:8em">
+  <h4 style="text-align:right">It is <span id="hour"></span>:<span id="min"></span> <span id="ampm"></span> <br>
+                              <span id="day"></span> <span id="mon"></span> <span id="date"></span>.<br>
+                              <a class="ul" href="about">help/about.</a><br><a class="ul" href="/">home.</a></h4>
+</div>
+
+<script src="../assets/js/time.js"></script>
+<script language="JavaScript">setTime()</script>
+<style>span { font-size: inherit; }</style>
+
+
 <style>
   .arrow { height: 2.7vw; min-height: 25px }
   .icon-skills { height: 5.5vw; min-height: 50px; margin-left: 1em; margin-bottom: 1em }
@@ -210,19 +218,19 @@ document.getElementById("").innerHTML = "<a id='menubold' href='/'><span class='
         <div class="col-2 footer-text">
           <h1 class="mb-5">Menu</h1>
           <h2>
-              Work <br>
-              Education <br>
-              Jobs <br>
-              About <br>
-              Contact
+              <a href="/work">work</a><br>
+              <a href="/education">education</a><br>
+              <a href="/jobs">jobs</a><br>
+              <a href="/about">about</a><br>
+              <a href="/contact">contact</a>          
           </h2>
         </div>
         <div class="col-2 footer-text">
           <h1 class="mb-5">Contact us</h1>
           <h2>
-              Work with us <br>
-              Join our team <br>
-              Learn with us
+              work with us <br>
+              join our team <br>
+              learn with us
           </h2>
         </div>
         <div class="col-3 footer-text">

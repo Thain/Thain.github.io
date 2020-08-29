@@ -9,11 +9,11 @@ h1, h2, h3, h4, p, img {
 
 /* Semi bold, headings */
 h1 { font-family: 'Montserrat-S' }
-/* Medium, for sub-headings */
-h2 { font-family: 'Montserrat-M' }
-/* Regular, for titles */
+/* Regular, for body text */
+h2 { font-family: 'Montserrat-R' }
+/* Regular, for sub-headings */
 h3 { font-family: 'Montserrat-R' }
-/* Light, for body text */
+/* Light, for style */
 h4 { font-family: 'Montserrat-L' }
 p  { font-family: 'Montserrat-L' }
 
