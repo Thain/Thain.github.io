@@ -2,15 +2,13 @@ var d = new Date();
 var mon = processMon(d.getMonth());
 var date = d.getDate();
 var day = processDay(d.getDay());
-var hr = processHr(d.getHours());
-var ampm = processAMPM(d.getHours());
+var hr = processHr(d.getUTCHours());
+var ampm = processAMPM(d.getUTCHours());
 var min = d.getMinutes();
 
-var localOffset = d.getTimezoneOffset()/60;
-
 function setTime() {
-  document.getElementById("hour").innerHTML = hr.toString();
-  document.getElementById("min").innerHTML = min.toString();
+  document.getElementById("hour").innerHTML = getHour();
+  document.getElementById("min").innerHTML = getMin();
   document.getElementById("ampm").innerHTML = ampm;
   document.getElementById("day").innerHTML = day;
   document.getElementById("mon").innerHTML = mon;
@@ -18,8 +16,16 @@ function setTime() {
 }
 
 function getDay(){ return d.getDay() }
-function getHour(){ return d.getHours() + localOffset - 4 }
-function getMin(){ return d.getMinutes() }
+function getHour(){
+  var x = d.getUTCHours()
+  if ( x < 4 ) return x + 20
+  else return (x - 4).toString()
+}
+function getMin(){
+  var x = d.getUTCMinutes()
+  if ( x > 9 ) return x.toString()
+  else return "0" + x.toString()
+}
 
 function processMon(month){
   let monthMap = new Map([
