@@ -6,6 +6,8 @@ var hr = processHr(d.getHours());
 var ampm = processAMPM(d.getHours());
 var min = d.getMinutes();
 
+var localOffset = d.getTimezoneOffset()/60;
+
 function setTime() {
   document.getElementById("hour").innerHTML = hr.toString();
   document.getElementById("min").innerHTML = min.toString();
@@ -16,7 +18,7 @@ function setTime() {
 }
 
 function getDay(){ return d.getDay() }
-function getHour(){ return d.getHours() }
+function getHour(){ return d.getHours() + localOffset - 4 }
 function getMin(){ return d.getMinutes() }
 
 function processMon(month){
