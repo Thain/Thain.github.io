@@ -3,19 +3,16 @@ permalink: /404.html
 layout: wrapper
 ---
 
-<div class="container-fluid" style="background-color:var(--white); height:100vh">
-    <div class="container markcon">
-        <div class="row markrow align-items-center justify-content-between" style="height:20vh">{% include menu.html %}</div>
-        <div class="row markrow justify-content-center align-items-center" style="height:60vh">
-            <div class="col markcol">
-              <h1 style="text-align: center"><b>Page not found</b><span class="big-period" style="color:var(--dorange)">.</span></h1>
-            </div>
-        </div>
-        <div class="row markrow py-4 justify-content-between" style="height:20vh"><div class="col-xs-2 align-self-end markcol mx-4"><img src="../assets/images/logo-small.png" style="opacity: 0; height: 6vw; min-height: 50px"></div></div>
-    </div>
+<!-- Header -->
+<div class="container-fluid" style="background-color:var(--white); padding-left: 8vw; padding-right:8vw; position: relative; overflow: hidden">
+    {% include menu.html button=""%}
+    <div class="row"><div class="col offset-lg-4" style="padding-top: 20em; padding-bottom: 50em">
+          <h1 id="home-header">Page not found.</h1>
+    </div></div>
+    {% include circle.html mobile="hide-mobile" color="dblue" size="30" top="10" left="-15" z="0"%}
+    {% include circle.html mobile="hide-mobile" color="lblue" size="35" top="17" left="90" z="0"%}
+    {% include circle.html mobile="hide-mobile" color="white" size="28" top="-20" left="180" z="0"%}
+    {% include circle.html mobile="hide-mobile" color="dorange" size="15" top="90" left="20" z="0"%}
+    {% include circle.html mobile="hide-mobile" color="lorange" size="20" top="100" left="110" z="0"%}
+    {% include circle.html mobile="hide-mobile" color="navy" size="10" top="60" left="160" z="0"%}
 </div>
-
-{% include circle.html color="lblue" size="21" top="23" left="9"%}
-{% include circle.html color="dorange" size="7" top="10" left="60"%}
-{% include circle.html color="lorange" size="14" top="35" left="75"%}
-{% include circle.html color="navy" size="7" top="28" left="50"%}

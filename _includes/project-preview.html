@@ -1,13 +1,11 @@
 <div class="col markcol {{ include.type }}">
   <div class="contain">
-    <a href="./divest.html"><img src="../assets/img/{{ include.picname }}" style="display: block" class="image"></a>
+    <a href="/work/{{ include.shortname }}"><img src="../assets/img/{{ include.shortname }}.png" style="display: block" class="image"></a>
     <div class="mid">
-        <div class="text">
-            {{ include.logoname }}
-        </div>
+        <img src="../assets/img/{{ include.shortname }}-logo.png" style="display: block" class="image">
     </div>
   </div>
-  <a href="./divest.html"><h1 class="pl-1 pt-2 thumbnail-title">{{ include.name }}</h1></a>
+  <a href="/work/{{ include.shortname }}"><h1 class="pl-1 pt-2 thumbnail-title">{{ include.fullname }}</h1></a>
   <h3 class="thumbnail-title"">video</h3>
 </div>
 

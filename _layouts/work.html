@@ -3,20 +3,20 @@ layout: "wrapper"
 ---
 
 <!-- Header -->
-<div class="container-fluid" style="background-color:var(--grey); padding-left: 8vw; padding-right:8vw">
+<div class="container-fluid" style="background-color:var(--grey); padding-left: 8vw; padding-right:8vw; position: relative; overflow: hidden;">
     {% include menu.html button="work"%}
     <div class="row justify-content-start">
-        <div class="col-8 offset-md-1 align-self-center ">
-          <h1 class="header">My Media tells stories that get results<span class='big-period' style='color:var(--lorange)'>.</span></h1>
-          <h2 class="header">We use campaigns, content, and design to help you grow, engage others, and express your mission. Our focus is your (measurable) success.</h2>
+        <div class="col-9 offset-md-1 align-self-center ">
+          <h1 class="header">Our work is tied together by two things: <span style='color:var(--lorange); font-size: inherit'>passion</span> and <span style='color:var(--lorange); font-size: inherit'>care.</span></h1>
+          <h2 class="header">That’s the common thread between every campaign, brand, website, and piece of content. It’s what makes My Media what it is. Take a look.</h2>
         </div>
     </div>
-    {% include circle.html color="dblue" size="30" top="25" left="-15" z="0"%}
-    {% include circle.html color="lblue" size="35" top="17" left="70" z="0"%}
-    {% include circle.html color="white" size="7" top="14" left="13" z="0"%}
-    {% include circle.html color="dorange" size="7" top="14" left="13" z="0"%}
-    {% include circle.html color="lorange" size="7" top="14" left="13" z="0"%}
-    {% include circle.html color="navy" size="3" top="10" left="69" z="0"%}
+    {% include circle.html mobile="hide-mobile" color="dblue" size="30" top="10" left="-15" z="0"%}
+    {% include circle.html mobile="hide-mobile" color="lblue" size="35" top="17" left="90" z="0"%}
+    {% include circle.html mobile="hide-mobile" color="white" size="28" top="-20" left="180" z="0"%}
+    {% include circle.html mobile="hide-mobile" color="dorange" size="15" top="90" left="20" z="0"%}
+    {% include circle.html mobile="hide-mobile" color="lorange" size="20" top="100" left="110" z="0"%}
+    {% include circle.html mobile="hide-mobile" color="navy" size="10" top="60" left="160" z="0"%}
 </div>
 
 <div class="container-fluid" style="background-color:var(--white); position: relative; z-index: 2; padding-left: 13vw; padding-right:13vw">
@@ -39,20 +39,20 @@ layout: "wrapper"
           </div>
       </div>
       <div class="row  py-5 justify-content-between">
-        {% include project-preview.html type="vid" name="The School of Music Montreal" picname="SOMM.png" logoname="my yoshi logo"%}
-        {% include project-preview.html type="web" name="IndigIrecruit" picname="Indigirecruit.png" logoname="my yoshi logo"%}
+        {% include project-preview.html type="vid" fullname="The School of Music Montreal" shortname="SOMM"%}
+        {% include project-preview.html type="web" fullname="IndigIrecruit" shortname="indigirecruit"%}
       </div>
       <div class="row  py-5 justify-content-between">
-        {% include project-preview.html type="vid" name="Thrive Collective" picname="Thrive.png" logoname="my yoshi logo"%}
-        {% include project-preview.html type="web" name="Divest McGill" picname="Divest.png" logoname="my yoshi logo"%}
+        {% include project-preview.html type="vid" fullname="Thrive Collective" shortname="thrive"%}
+        {% include project-preview.html type="web" fullname="Divest McGill" shortname="divest"%}
       </div>
       <div class="row  py-5 justify-content-between">
-        {% include project-preview.html type="vid" name="Third Culture Collective" picname="TCC.png" logoname="my yoshi logo"%}
-        {% include project-preview.html type="web" name="Black Students Network" picname="BSN.png" logoname="my yoshi logo"%}
+        {% include project-preview.html type="vid" fullname="Third Culture Collective" shortname="TCC"%}
+        {% include project-preview.html type="web" fullname="Black Students Network" shortname="BSN"%}
       </div>
       <div class="row  py-5 justify-content-between">
-        {% include project-preview.html type="vid" name="Youth Impact Challenge" picname="YIC.png" logoname="my yoshi logo"%}
-        {% include project-preview.html type="web" name="MealCare National" picname="Mealcare.png" logoname="my yoshi logo"%}
+        {% include project-preview.html type="vid" fullname="Youth Impact Challenge" shortname="YIC"%}
+        {% include project-preview.html type="web" fullname="MealCare National" shortname="mealcare"%}
       </div>
       <div class="row " style="height:20vh"></div>
 </div>
@@ -77,7 +77,5 @@ layout: "wrapper"
   }
   .filter, .filter-line { font-size: 3em; margin-right: 1vw }
 </style>
-
-{% include footer.html %}
 
 <script src="../assets/js/filter.js"></script>

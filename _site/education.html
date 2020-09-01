@@ -24,10 +24,10 @@
     <script src="../assets/js/fade.js"></script>
     <script> fadeInPage(); </script>
     <!-- Header -->
-<div class="container-fluid" style="background-color:var(--navy); height:120vh; padding-left: 8vw; padding-right:8vw">
+<div class="container-fluid" style="background-color:var(--navy); height:120vh; padding-left: 8vw; padding-right:8vw; position: relative; z-index: 2">
     <div class="row markrow align-items-center justify-content-between" style="height:25vh; margin-left:-4vw; margin-right:-4vw">
       <div class="col-xs-2 markcol mx-4">
-        <a href="/"><img src="../assets/icons/logo-small-white.png" style="height: 4.5vw; min-height: 50px"></a>
+        <a href="/"><img src="../assets/icons/logo-small-white.png" style="height: 4.5vw; min-height: 50px; background-color:transparent"></a>
       </div>
 
       <div class="col-xs-2 markcol mt-2 mx-4 show-mobile">
@@ -73,31 +73,15 @@ document.getElementById("education").innerHTML = "<a id='menubold' class='w' hre
 
     <div class="row">
         <div class="col-11 offset-md-1 align-self-center ">
-          <h1 class="header w">When it comes to helping you pick up creative skills, our philosophy is simple: we want you to learn by doing.</h1>
-          <h2 class="header w">That's why we deliver workshops, mentorship, and hands-on learning experiences to young people who want to learn video, design, web development, and marketing skills.</h2>
+          <h1 class="header w">We want to help you develop creative skills through experiential learning.</h1>
+          <h2 class="header w">That’s why we deliver workshops, mentorship, and hands-on learning experiences to young people who want to learn video, design, and marketing.</h2>
         </div>
     </div>
-    <div class="circle rellax" style="background-color: var(--black);
-                           width: 3em;
-                           height: 3em;
-                           top: 10em;
-                           left: 69em;
-                           z-index: 0;
-                           "></div>
-
-<style>
-  .circle{
-    border-radius: 50%;
-    position: absolute !important;
-    z-index: 1;
-  }
-</style>
-
-    <div class="circle rellax" style="background-color: var(--dorange);
-                           width: 20em;
-                           height: 20em;
-                           top: 40em;
-                           left: 65em;
+    <div class="circle rellax hide-mobile" style="background-color: var(--dorange);
+                           width: 40em;
+                           height: 40em;
+                           top: 20em;
+                           left: 20em;
                            z-index: 0;
                            "></div>
 
@@ -111,13 +95,13 @@ document.getElementById("education").innerHTML = "<a id='menubold' class='w' hre
 
 </div>
 
-<!-- "World changing" through to "Contact us" CTAs -->
-<div class="container-fluid" style="background-color:var(--white); position: relative; z-index: 2; padding-left: 14vw; padding-right:14vw">
+<!-- 1 2 3 -->
+<div class="container-fluid" style="background-color:var(--white); padding-left: 14vw; padding-right:14vw">
       <div class="row justify-content-end" style="padding-top: 30em">
         <div class="col-7 numbered">
           <h1><span style="font-family: Montserrat-L; font-size:inherit">1 / 3</span><br><br>
-            We teach <span style="color: var(--dorange);  font-size: inherit">workshops, </span> so you can wrap your head around the basics.</h1>
-          <h2><br>Our creative team leads weekly workshops on storytelling, videography, design, and more. Check out the workshops that we've got coming up in the next month.</h2>
+            We teach <span style="color: var(--dorange);  font-size: inherit">workshops.</span></h1>
+          <h2><br>Our creative team leads weekly workshops on storytelling, videography, design, and more. Check out the workshops that we’ve got coming up in the next month.</h2>
           <a href="/education"><h2 style="margin-top: 1.1em; font-family: Montserrat-S; color: var(--navy)">View our calendar.</h2></a>
         </div>
       </div>
@@ -125,27 +109,137 @@ document.getElementById("education").innerHTML = "<a id='menubold' class='w' hre
       <div class="row" style="padding-top: 30em">
         <div class="col-7 numbered">
           <h1><span style="font-family: Montserrat-L; font-size:inherit">2 / 3</span><br><br>
-            We provide <span style="color: var(--dorange);  font-size: inherit">mentorship, </span> because a little makes all the difference.</h1>
-          <h2><br>We'l connect you to one of our creatives so that you can shadow them while they work on an ongoing campaign. They can answer your questions and give you a little guidance on where to go next.</h2>
+            We provide <span style="color: var(--dorange);  font-size: inherit">mentorship.</span></h1>
+          <h2><br>We’ll connect you to one of our creatives so that you can shadow them while they work on an ongoing campaign. They can answer your questions and give you a little guidance on where to go next.</h2>
           <a href="/education"><h2 style="margin-top: 1.1em; font-family: Montserrat-S; color: var(--navy)">Get acquainted with some of our team members.</h2></a>
         </div>
       </div>
 
-      <div class="row justify-content-end" style="padding-top: 30em">
+      <div class="row justify-content-end" style="padding-top: 30em; padding-bottom: 30em">
         <div class="col-7 numbered">
           <h1><span style="font-family: Montserrat-L; font-size:inherit">3 / 3</span><br><br>
-            Eventually, we want you to <span style="color: var(--dorange);  font-size: inherit">take the wheel.</span></h1>
-          <h2><br>After a couple workshops and some shadowing &mdash; we'll connect you, and a couple of other learners, to an organization that needs your support. At that point, what yo ucreate is up to you (but we'll always be around to help).</h2>
+            You get <span style="color: var(--dorange);  font-size: inherit">hands-on experience.</span></h1>
+          <h2><br>After a couple workshops and some shadowing &mdash; we'll connect you, and a couple of other learners, to an organization that needs your support. At that point, what you create is up to you (but we'll always be around to help).</h2>
           <a href="/education"><h2 style="margin-top: 1.1em; font-family: Montserrat-S; color: var(--navy)">See some of the work that our learners have put together.</h2></a>
         </div>
       </div>
 
-      <div class="row " style="height:15vw; min-height: 250px"></div>
+      <div class="circle rellax hide-mobile" style="background-color: var(--dorange);
+                           width: 10em;
+                           height: 10em;
+                           top: 120em;
+                           left: 60em;
+                           z-index: 0;
+                           "></div>
+
+<style>
+  .circle{
+    border-radius: 50%;
+    position: absolute !important;
+    z-index: 1;
+  }
+</style>
+
+      <div class="circle rellax hide-mobile" style="background-color: var(--navy);
+                           width: 17em;
+                           height: 17em;
+                           top: 180em;
+                           left: 25em;
+                           z-index: 0;
+                           "></div>
+
+<style>
+  .circle{
+    border-radius: 50%;
+    position: absolute !important;
+    z-index: 1;
+  }
+</style>
+
+      <div class="circle rellax hide-mobile" style="background-color: var(--lblue);
+                           width: 14em;
+                           height: 14em;
+                           top: 205em;
+                           left: 100em;
+                           z-index: 0;
+                           "></div>
+
+<style>
+  .circle{
+    border-radius: 50%;
+    position: absolute !important;
+    z-index: 1;
+  }
+</style>
+
+      <div class="circle rellax hide-mobile" style="background-color: var(--lorange);
+                           width: 20em;
+                           height: 20em;
+                           top: 240em;
+                           left: 130em;
+                           z-index: 0;
+                           "></div>
+
+<style>
+  .circle{
+    border-radius: 50%;
+    position: absolute !important;
+    z-index: 1;
+  }
+</style>
+
+      <div class="circle rellax hide-mobile" style="background-color: var(--navy);
+                           width: 7em;
+                           height: 7em;
+                           top: 285em;
+                           left: 60em;
+                           z-index: 0;
+                           "></div>
+
+<style>
+  .circle{
+    border-radius: 50%;
+    position: absolute !important;
+    z-index: 1;
+  }
+</style>
+
+      <div class="circle rellax hide-mobile" style="background-color: var(--lblue);
+                           width: 30em;
+                           height: 30em;
+                           top: 320em;
+                           left: 20em;
+                           z-index: 0;
+                           "></div>
+
+<style>
+  .circle{
+    border-radius: 50%;
+    position: absolute !important;
+    z-index: 1;
+  }
+</style>
+
+      <div class="circle rellax hide-mobile" style="background-color: var(--dorange);
+                           width: 25em;
+                           height: 25em;
+                           top: 380em;
+                           left: 80em;
+                           z-index: 0;
+                           "></div>
+
+<style>
+  .circle{
+    border-radius: 50%;
+    position: absolute !important;
+    z-index: 1;
+  }
+</style>
 
 </div>
 
 <!-- Map box -->
-<div class="container-fluid" style="background-color:var(--grey); width: 88vw; padding-left: 6vw; padding-right: 9.5vw">
+<div class="container-fluid" style="background-color:var(--grey); width: 88vw; padding-left: 6vw; padding-right: 9.5vw; position: relative; z-index: 2">
   <div class="row " style="height:5vw"></div>
   <div class="row  py-5"><div class="col ">
           <h1>All of this is built around community.</h1>
@@ -182,7 +276,13 @@ document.getElementById("education").innerHTML = "<a id='menubold' class='w' hre
   .numbered > h2 { font-size: 2.7em}
 </style>
 
-<div class="container-fluid hide-mobile" style="background-color:var(--grey); padding-left:7vw; padding-right:7vw; height:600px">
+    <script src="../assets/js/rellax/rellax.min.js"></script>
+    <script>
+      var rellax = new Rellax('.rellax', {
+      center: true
+      });
+    </script>
+    <div class="container-fluid hide-mobile" style="background-color:var(--grey); padding-left:7vw; padding-right:7vw; height:600px">
   <div class="row markrow align-items-start justify-content-between" style="padding-top: 100px; margin-left:3vw; margin-right:3vw">
         <div class="col-3 markcol">
           <h1 id='footer-connect'>Connect <br> with us<span class="big-period" style='color:var(--lorange)'>.</span></h1>
@@ -195,7 +295,7 @@ document.getElementById("education").innerHTML = "<a id='menubold' class='w' hre
               <a href="/education">education</a><br>
               <a href="/jobs">jobs</a><br>
               <a href="/about">about</a><br>
-              <a href="/contact">contact</a>          
+              <a href="/contact">contact</a>
           </h2>
         </div>
         <div class="col-2 footer-text">
@@ -226,11 +326,5 @@ document.getElementById("education").innerHTML = "<a id='menubold' class='w' hre
 </style>
 
 
-    <script src="../assets/js/rellax/rellax.min.js"></script>
-    <script>
-      var rellax = new Rellax('.rellax', {
-      center: true
-      });
-    </script>
 </body>
 </html>

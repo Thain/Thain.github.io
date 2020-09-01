@@ -3,31 +3,31 @@ layout: "wrapper"
 ---
 
 <!-- Header -->
-<div class="container-fluid" style="background-color:var(--white); padding-left: 8vw; padding-right:8vw">
+<div class="container-fluid" style="background-color:var(--white); padding-left: 8vw; padding-right:8vw; position: relative; overflow: hidden">
     {% include menu.html button="jobs"%}
     <div class="row justify-content-start">
-        <div class="col-9 align-self-center ">
-          <h1 class="header r">My Media is on the hunt for passionate creative people.</h1>
-          <h2 class="header r">Do you want to work with impactful organizations? Use and grow your skills? Build your network and <br> portfolio? Get paid?</h2>
+        <div class="col-9">
+          <h1 class="header r">We're always on the hunt for passionate people.</h1>
+          <h2 class="header r">People who want to use their creative skills to <br> tackle social and environmental issues.</h2>
+        </div>
+        <div class="col-3">
+          <img class="graphic rellax float-left" src="../assets/icons/mmc-lines.png">
         </div>
     </div>
-    {% include circle.html color="white" size="7" top="14" left="13" z="0"%}
-    {% include circle.html color="black" size="3" top="10" left="69" z="0"%}
-    {% include circle.html color="dorange" size="20" top="40" left="65" z="0"%}
 </div>
 
 <!-- "The voices" through to icons -->
 <div class="container-fluid" style="background-color:var(--grey); position: relative; z-index: 2; padding-left: 12vw; padding-right:12vw">
       <div class="row"><div class="col" style="padding-top: 20em; padding-bottom: 10em">
-          <h1>We want people to join our creative team.</h1>
+          <h1>You’ll have a real impact with your creativity.</h1>
           <h2><br>Our creative team runs campaigns, creates content, builds brands, and makes websites for organizations that want to make the world better. We're looking for people who have skills in:</h2>
         </div>
       </div>
-      <div class="row justify-content-between" style="padding-bottom: 20em">
-        <div class="col "><img src="../assets/icons/logo-small.png" style="height: 5.5vw; min-height: 50px"><h1 class="icon-title ml-4">Video.</h1></div>
-        <div class="col "><img src="../assets/icons/logo-small.png" style="height: 5.5vw; min-height: 50px"><h1 class="icon-title ml-4">Design.</h1></div>
-        <div class="col "><img src="../assets/icons/logo-small.png" style="height: 5.5vw; min-height: 50px"><h1 class="icon-title ml-4">Web.</h1></div>
-        <div class="col "><img src="../assets/icons/logo-small.png" style="height: 5.5vw; min-height: 50px"><h1 class="icon-title ml-4">Strategy.</h1></div>
+      <div class="row justify-content-between" style="margin-right: 5em; padding-bottom: 10em">
+        <div class="col-3"><div style="text-align:center"><img class="icon-skills" src="../assets/icons/icon-vid.png"></div><h1 class="icon-title">Video.</h1></div>
+        <div class="col-3"><div style="text-align:center"><img class="icon-skills" src="../assets/icons/icon-des.png"></div><h1 class="icon-title">Design.</h1></div>
+        <div class="col-3"><div style="text-align:center"><img class="icon-skills" src="../assets/icons/icon-web.png"></div><h1 class="icon-title">Web.</h1></div>
+        <div class="col-3"><div style="text-align:center; margin-right:2em"><img class="icon-skills" src="../assets/icons/icon-strat.png"></div><h1 class="icon-title">Strategy.</h1></div>
       </div>
 </div>
 
@@ -39,6 +39,7 @@ layout: "wrapper"
             <li><h2>Want to have an impact.</h2></li>
             <li><h2>Want to be part of a supportive community.</h2></li>
             <li><h2>Want to get paid.</h2></li>
+            <li><h2>Want to make cool things.</h2></li>
             <li><h2>Want to develop your craft.</h2></li>
             <li><h2>Want to build your portfolio.</h2></li>
             <li><h2>Want to expand your network.</h2></li>
@@ -50,10 +51,18 @@ layout: "wrapper"
           <h2 style="margin-bottom: 1.5em">Just fill out the form below or email <a class="ul" href="#">outreach@mymediacreative.org</a>.</h2>
           <h1>TYPEFORM EMBED HERE</h1>
       </div></div>
+      {% include circle.html mobile="hide-mobile" color="lblue" size="35" top="185" left="10" z="0"%}
+      {% include circle.html mobile="hide-mobile" color="navy" size="15" top="240" left="130" z="0"%}
 </div>
 
 <style>
   .r { text-align: right }
+
+  .icon-title { font-size: 3em; text-align: center }
+  .icon-skills { height: 7vw; min-height: 50px; margin-bottom: 1em }
+
+
+  .graphic { display: inline; width: 30vw; height: auto; position: absolute; top: -48vw; left: -5vw }
 
   ul { list-style: none; line-height: 2 }
   ul h2 { display: inline }
@@ -63,7 +72,7 @@ layout: "wrapper"
      display: inline-block; /* Needed to add space between the bullet and the text */
      width: 1.5em; /* Spacing between bullet and text */
      font-size: 3em;
+     position: relative;
+     z-index: 5;
   }
 </style>
-
-{% include footer.html %}

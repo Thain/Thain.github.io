@@ -25,9 +25,9 @@
     <script> fadeInPage(); </script>
     <!-- Header -->
 <div class="container-fluid" style="background-color:var(--white); padding-left: 8vw; padding-right:8vw">
-    <div class="row markrow align-items-center justify-content-between" style="height:25vh; margin-left:-4vw; margin-right:-4vw">
+    <div class="row markrow align-items-center justify-content-between" style="height:25vh; margin-left:-4vw; margin-right:-4vw; position: relative; z-index: 5">
       <div class="col-xs-2 markcol mx-4">
-        <a href="/"><img src="../assets/icons/logo-small.png" style="height: 4.5vw; min-height: 50px"></a>
+        <a href="/"><img src="../assets/icons/logo-small.png" style="height: 4.5vw; min-height: 50px; background-color:transparent"></a>
       </div>
 
       <div class="col-xs-2 markcol mt-2 mx-4 show-mobile">
@@ -72,12 +72,12 @@ document.getElementById("about").innerHTML = "<a id='menubold' href='/about'>abo
 </script>
 
     <div class="row justify-content-start">
-        <div class="col-7">
-          <h1 class="header">My Media is a creative agency for the unheard<span class='big-period' style='color:var(--dorange)'>.</span></h1>
-          <h2 class="header">We work with nonprofits, social enterprises, community organizations, and activist groups to tell compelling stories.</h2>
+        <div class="col-9">
+          <h1 class="header">My Media is a youth-run <br> creative agency for the unheard<span class='big-period' style='color:var(--dorange)'>.</span></h1>
+          <h2 class="header">We work with nonprofits, social enterprises, <br> community organizations, and activist <br> groups to tell compelling stories.</h2>
         </div>
-        <div class="col-5">
-          <img src="../assets/icons/about.png" style="max-height: 120%; max-width: 120%; padding-top: 4em" class="float-right">
+        <div class="col-3">
+          <img src="../assets/icons/about.png" style="max-height: 200%; max-width: 200%; padding-top: 4em" class="float-right">
         </div>
     </div>
 </div>
@@ -227,6 +227,38 @@ document.getElementById("about").innerHTML = "<a id='menubold' href='/about'>abo
 </style>
 
   <div class="row" style="height: 15em"></div>
+  <div class="circle rellax hide-mobile" style="background-color: var(--lblue);
+                           width: 25em;
+                           height: 25em;
+                           top: 255em;
+                           left: 10em;
+                           z-index: 0;
+                           "></div>
+
+<style>
+  .circle{
+    border-radius: 50%;
+    position: absolute !important;
+    z-index: 1;
+  }
+</style>
+
+  <div class="circle rellax hide-mobile" style="background-color: var(--dorange);
+                           width: 15em;
+                           height: 15em;
+                           top: 300em;
+                           left: 130em;
+                           z-index: 0;
+                           "></div>
+
+<style>
+  .circle{
+    border-radius: 50%;
+    position: absolute !important;
+    z-index: 1;
+  }
+</style>
+
 </div>
 
 <style>
@@ -255,7 +287,13 @@ document.getElementById("about").innerHTML = "<a id='menubold' href='/about'>abo
 
 </style>
 
-<div class="container-fluid hide-mobile" style="background-color:var(--grey); padding-left:7vw; padding-right:7vw; height:600px">
+    <script src="../assets/js/rellax/rellax.min.js"></script>
+    <script>
+      var rellax = new Rellax('.rellax', {
+      center: true
+      });
+    </script>
+    <div class="container-fluid hide-mobile" style="background-color:var(--grey); padding-left:7vw; padding-right:7vw; height:600px">
   <div class="row markrow align-items-start justify-content-between" style="padding-top: 100px; margin-left:3vw; margin-right:3vw">
         <div class="col-3 markcol">
           <h1 id='footer-connect'>Connect <br> with us<span class="big-period" style='color:var(--lorange)'>.</span></h1>
@@ -268,7 +306,7 @@ document.getElementById("about").innerHTML = "<a id='menubold' href='/about'>abo
               <a href="/education">education</a><br>
               <a href="/jobs">jobs</a><br>
               <a href="/about">about</a><br>
-              <a href="/contact">contact</a>          
+              <a href="/contact">contact</a>
           </h2>
         </div>
         <div class="col-2 footer-text">
@@ -299,11 +337,5 @@ document.getElementById("about").innerHTML = "<a id='menubold' href='/about'>abo
 </style>
 
 
-    <script src="../assets/js/rellax/rellax.min.js"></script>
-    <script>
-      var rellax = new Rellax('.rellax', {
-      center: true
-      });
-    </script>
 </body>
 </html>
