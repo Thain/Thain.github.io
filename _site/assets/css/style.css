@@ -30,3 +30,4 @@ a { color: black; font-size: inherit }
    line-height: .1;
    font-size: 1.1em;
 }
+span.avoidwrap { display:inline-block; font-size: inherit }

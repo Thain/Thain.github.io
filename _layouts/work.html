@@ -5,29 +5,30 @@ layout: "wrapper"
 <!-- Header -->
 <div class="container-fluid" style="background-color:var(--grey); padding-left: 8vw; padding-right:8vw; position: relative; overflow: hidden;">
     {% include menu.html button="work"%}
-    <div class="row justify-content-start">
-        <div class="col-9 offset-md-1 align-self-center ">
-          <h1 class="header">Our work is tied together by two things: <span style='color:var(--lorange); font-size: inherit'>passion</span> and <span style='color:var(--lorange); font-size: inherit'>care.</span></h1>
-          <h2 class="header">That’s the common thread between every campaign, brand, website, and piece of content. It’s what makes My Media what it is. Take a look.</h2>
-        </div>
-    </div>
-    {% include circle.html mobile="hide-mobile" color="dblue" size="30" top="10" left="-15" z="0"%}
-    {% include circle.html mobile="hide-mobile" color="lblue" size="35" top="17" left="90" z="0"%}
-    {% include circle.html mobile="hide-mobile" color="white" size="28" top="-20" left="180" z="0"%}
-    {% include circle.html mobile="hide-mobile" color="dorange" size="15" top="90" left="20" z="0"%}
-    {% include circle.html mobile="hide-mobile" color="lorange" size="20" top="100" left="110" z="0"%}
-    {% include circle.html mobile="hide-mobile" color="navy" size="10" top="60" left="160" z="0"%}
+    <div class="row"><div class="col-10 col-md-9 offset-sm-1 header">
+          <h1>Our work is tied together by two things: <span style='color:var(--dorange); font-size: inherit'>passion</span> <span class="avoidwrap">and <span style='color:var(--dorange); font-size: inherit'>care</span>.</span></h1>
+          <h2>That’s the common thread between every campaign, brand, website, and piece of content. It’s what makes My Media what it is. Take a look.</h2>
+    </div></div>
+    {% include circle.html mobile="hide-mobile" color="dblue" size="19" top="10" left="-9" z="0"%}
+    {% include circle.html mobile="hide-mobile" color="lblue" size="22" top="17" left="56" z="0"%}
+    {% include circle.html mobile="hide-mobile" color="white" size="17" top="-20" left="95" z="0"%}
+    {% include circle.html mobile="hide-mobile" color="dorange" size="9.3" top="90" left="12" z="0"%}
+    {% include circle.html mobile="hide-mobile" color="lorange" size="12" top="100" left="62" z="0"%}
+    {% include circle.html mobile="hide-mobile" color="navy" size="6" top="60" left="85" z="0"%}
+
+    {% include circle.html mobile="show-mobile" color="dblue" size="19" top="130" left="-9" z="0"%}
+    {% include circle.html mobile="show-mobile" color="lblue" size="22" top="35" left="36" z="0"%}
+    {% include circle.html mobile="show-mobile" color="white" size="23" top="-30" left="80" z="0"%}
+    {% include circle.html mobile="show-mobile" color="navy" size="6" top="5" left="18" z="0"%}
+    {% include circle.html mobile="show-mobile" color="dorange" size="12" top="160" left="62" z="0"%}
+    {% include circle.html mobile="show-mobile" color="lorange" size="9" top="70" left="85" z="0"%}
 </div>
 
 <div class="container-fluid" style="background-color:var(--white); position: relative; z-index: 2; padding-left: 13vw; padding-right:13vw">
-      <div class="row " style="height:5vw; min-height: 100px"></div>
-      <div class="row  justify-content-end" style="height:10vw; min-height: 100px">
-        <div class="col align-self-end ">
+      <div class="row justify-content-end"><div class="col" style="margin-top: 10em; margin-bottom: 5em">
           <h1>Our Portfolio</h1>
-        </div>
-      </div>
-      <div class="row  justify-content-center mb-3" style="height:6vw; min-height: 100px">
-          <div class="col align-self-center " style="display:inline">
+      </div></div>
+      <div class="row"><div class="col" style="display:inline; margin-bottom: 5em">
             <div id="filterby" style="display:inline">
               <button class="filter" onclick="clickAll()">all</button>
               <p class="filter-line">|</p>
@@ -35,26 +36,25 @@ layout: "wrapper"
               <button class="filter" onclick="clickWeb()">web</button>
               <button class="filter" onclick="clickDes()">brand</button>
               <button class="filter" onclick="clickDes()">social media</button>
-            </div>
-          </div>
+      </div></div>
       </div>
-      <div class="row  py-5 justify-content-between">
+      <div class="row py-5 justify-content-between">
         {% include project-preview.html type="vid" fullname="The School of Music Montreal" shortname="SOMM"%}
         {% include project-preview.html type="web" fullname="IndigIrecruit" shortname="indigirecruit"%}
       </div>
-      <div class="row  py-5 justify-content-between">
+      <div class="row py-5 justify-content-between">
         {% include project-preview.html type="vid" fullname="Thrive Collective" shortname="thrive"%}
         {% include project-preview.html type="web" fullname="Divest McGill" shortname="divest"%}
       </div>
-      <div class="row  py-5 justify-content-between">
+      <div class="row py-5 justify-content-between">
         {% include project-preview.html type="vid" fullname="Third Culture Collective" shortname="TCC"%}
         {% include project-preview.html type="web" fullname="Black Students Network" shortname="BSN"%}
       </div>
-      <div class="row  py-5 justify-content-between">
+      <div class="row py-5 justify-content-between">
         {% include project-preview.html type="vid" fullname="Youth Impact Challenge" shortname="YIC"%}
         {% include project-preview.html type="web" fullname="MealCare National" shortname="mealcare"%}
       </div>
-      <div class="row " style="height:20vh"></div>
+      <div class="row" style="height:25em"></div>
 </div>
 
 <style>
