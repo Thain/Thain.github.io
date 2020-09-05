@@ -28,10 +28,12 @@ body {
     display: block;
 }
 
-@media only screen and (max-width: 600px) { #myNav a { font-size:8em } .overlay-content { padding-top:20em } }
-@media only screen and (min-width: 601px) { #myNav a { font-size:6em } .overlay-content { padding-top:3em } }
+@media only screen and (max-width: 600px) { #myNav a { font-size:6em } .overlay-content { padding-top:5vh } }
+@media only screen and (min-width: 601px) { #myNav a { font-size:4em } .overlay-content { margin-top:-5vh } }
 
-
+.fixed-position {
+   position: fixed;
+}
 
 #myNav a:hover,
 #myNav a:focus {

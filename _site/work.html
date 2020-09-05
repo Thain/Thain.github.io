@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="../assets/css/screen-sizes.css">
 
 </head>
-<body>
+<body id="body">
     <svg id="fader"></svg>
     <script src="../assets/js/fade.js"></script>
     <script> fadeInPage(); </script>
@@ -29,7 +29,7 @@
     <div class="container-fluid" id="myNav" style="background-color:var(--grey); padding-left: 8vw; padding-right:8vw; overflow: hidden">
       <div class="row align-items-center justify-content-end" style="height:30em; margin-left:-4vw; margin-right:-4vw; position: relative; z-index: 5">
             <div class="col-xs-2 mt-2 mx-4 show-mobile">
-              <img src="../assets/icons/hamburger.png" style="height: 4vw; min-height: 30px" onclick="closeNav()">
+              <img src="../assets/icons/hamburger.png" style="height: 4vw; min-height: 20px" onclick="closeNav()">
             </div>
       </div>
       <div class="row align-items-center justify-content-center">
@@ -45,14 +45,14 @@
       </div>
     </div>
     <!-- Header -->
-<div class="container-fluid" style="background-color:var(--grey); padding-left: 8vw; padding-right:8vw; position: relative; overflow: hidden;">
+<div class="container-fluid" style="background-color:var(--grey); padding-left: 8vw; padding-right:8vw; position: relative; overflow: hidden; min-height: 80vh">
     <div class="row align-items-center justify-content-between" style="height:30em; margin-left:-4vw; margin-right:-4vw; position: relative; z-index: 5">
       <div class="col-xs-2 mx-4">
-        <a href="/"><img src="../assets/icons/logo-small.png" style="height: 4.5vw; min-height: 50px; background-color:transparent"></a>
+        <a href="/"><img src="../assets/icons/logo-small.png" style="height: 4.5vw; min-height: 40px; background-color:transparent"></a>
       </div>
 
       <div class="col-xs-2 mt-2 mx-4 show-mobile">
-        <img src="../assets/icons/hamburger.png" style="height: 4vw; min-height: 30px" onclick="openNav()">
+        <img src="../assets/icons/hamburger.png" style="height: 4vw; min-height: 20px" onclick="openNav()">
       </div>
 
       <div class="hide-mobile col-10 text-right">
@@ -92,7 +92,7 @@
 document.getElementById("work").innerHTML = "<a id='menubold' href='/work'>work<span class='big-period' style='color:var(--dblue)'>.</span></a>";
 </script>
 
-    <div class="row"><div class="col-10 col-md-9 offset-sm-1 header">
+    <div class="row"><div class="col-10 col-md-9 offset-sm-1 header align-self-center">
           <h1>Our work is tied together by two things: <span style='color:var(--dorange); font-size: inherit'>passion</span> <span class="avoidwrap">and <span style='color:var(--dorange); font-size: inherit'>care</span>.</span></h1>
           <h2>That’s the common thread between every campaign, brand, website, and piece of content. It’s what makes My Media what it is. Take a look.</h2>
     </div></div>
@@ -777,19 +777,19 @@ document.getElementById("work").innerHTML = "<a id='menubold' href='/work'>work<
         <div class="col-6 footer-text">
           <h1 class="mb-5">Contact</h1>
           <h2>
-              work with us <br>
-              join our team <br>
-              learn with us
+              <a href="https://mymediacreative.typeform.com/to/KeQjBw"></a>work with us <br>
+              <a href="https://mymediacreative.typeform.com/to/b9U3k7">join our team</a><br>
+              <a href="https://mymediacreative.typeform.com/to/d0WtUy">learn with us</a>
           </h2>
         </div>
   </div>
   <div class="row" style="padding-top: 30px; margin-left:3vw; margin-right:3vw; padding-bottom: 10em">
         <div class="col footer-text">
           <h1 style="margin-bottom: 1.7em">Follow us</h1>
-          <a href="https://www.facebook.com/mymediacreativegroup"><img src="../assets/icons/social-fb.png" class="icon"></a>
-          <a href="https://www.instagram.com/mymediacreative/"><img src="../assets/icons/social-ig.png" class="icon"></a>
-          <a href="https://www.linkedin.com/company/my-media-creative/"><img src="../assets/icons/social-li.png" class="icon"></a>
-          <a href="https://www.youtube.com/channel/UCBtnLqiba6ACrA63AHFTMUw"><img src="../assets/icons/social-yt.png" class="icon"></a>
+          <a href="https://www.facebook.com/mymediacreativegroup"><img src="../assets/icons/social-fb.png" class="icon-mobile"></a>
+          <a href="https://www.instagram.com/mymediacreative/"><img src="../assets/icons/social-ig.png" class="icon-mobile"></a>
+          <a href="https://www.linkedin.com/company/my-media-creative/"><img src="../assets/icons/social-li.png" class="icon-mobile"></a>
+          <a href="https://www.youtube.com/channel/UCBtnLqiba6ACrA63AHFTMUw"><img src="../assets/icons/social-yt.png" class="icon-mobile"></a>
           <a class="uf" href="#"><h2 class="emails" style="margin-top: 2em">outreach@mymediacreative.org</h2></a>
           <a class="uf" href="#"><h2 class="emails">mymediacreative.org</h2></a>
         </div>
@@ -799,8 +799,8 @@ document.getElementById("work").innerHTML = "<a id='menubold' href='/work'>work<
 <style>
   .footer-text > h2 { line-height: 2.5 }
   .emails { font-size: 1.8em; line-height: 1.5 }
-  img.icon { display: inline; height: 2.5vw; width: 2.5vw; min-height: 30px; min-width: 30px; margin-right: 4em }
-
+  img.icon-mobile { display: inline; height: 2.5vw; width: 2.5vw; min-height: 30px; min-width: 30px; margin-right: 4em }
+  img.icon { display: inline; height: 2.5vw; width: 2.5vw; min-height: 30px; min-width: 30px; margin-right: 2em }
 </style>
 
 

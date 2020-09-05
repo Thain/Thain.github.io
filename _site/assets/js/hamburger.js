@@ -2,6 +2,8 @@ function openNav() {
   document.getElementById("myNav").style.opacity = "100%";
   document.getElementById("myNav").style.zIndex = 10;
 
+  document.getElementById("body").style.overflow = "hidden";
+
   var ops = document.getElementsByClassName("hb-op");
   var i;
   for (i = 0; i < ops.length; i++) {
@@ -15,6 +17,8 @@ function closeNav() {
   document.getElementById("myNav").style.transitionDelay = ".3s";
   document.getElementById("myNav").style.opacity = "0%";
   document.getElementById("myNav").style.zIndex = 0;
+
+  document.getElementById("body").style.overflow = "visible";
 
   var ops = document.getElementsByClassName("hb-op");
   var i;
