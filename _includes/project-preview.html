@@ -1,12 +1,12 @@
-<div class="col-md-6 markcol {{ include.type }}">
+<div class="col-md-6 {{ include.type }} proj-prev">
   <div class="contain">
-    <a href="/work/{{ include.shortname }}"><img src="../assets/img/{{ include.shortname }}.png" style="display: block" class="image"></a>
+    <a href="/work/{{ include.shortname }}"><img src="../assets/img/{{ include.shortname }}/thumbnail.png" style="display: block" class="image"></a>
     <div class="mid">
-        <img src="../assets/img/{{ include.shortname }}-logo.png" style="display: block" class="image">
+        <img src="../assets/img/{{ include.shortname }}/logo.png" style="display: block; opacity: 1" class="image">
     </div>
   </div>
-  <a href="/work/{{ include.shortname }}"><h1 class="pl-1 pt-2 thumbnail-title">{{ include.fullname }}</h1></a>
-  <h3 class="thumbnail-title" style="padding-bottom: 3em">video</h3>
+  <a href="/work/{{ include.shortname }}"><h1 class="pl-1 pt-3 thumbnail-title">{{ include.fullname }}</h1></a>
+  <h3 class="thumbnail-title" style="padding-bottom: 3em">{{ include.subtitle }}</h3>
 </div>
 
 <style>
@@ -27,7 +27,7 @@
     display: block;
     width: 100%;
     height: auto;
-    transition: .6s ease;
+    transition: .8s ease;
     transition-delay: .1s;
     backface-visibility: hidden;
   }
@@ -41,6 +41,4 @@
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
-
-  .hideThumbnail { display: none }
 </style>

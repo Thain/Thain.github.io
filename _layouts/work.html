@@ -30,29 +30,34 @@ layout: "wrapper"
       </div></div>
       <div class="row"><div class="col" style="display:inline; margin-bottom: 5em">
             <div id="filterby" style="display:inline">
-              <button class="filter" onclick="clickAll()">all</button>
+              <button class="filter" id="all" onclick="filterSelection('all')">all</button>
               <p class="filter-line">|</p>
-              <button class="filter" onclick="clickVid()">video</button>
-              <button class="filter" onclick="clickWeb()">web</button>
-              <button class="filter" onclick="clickDes()">brand</button>
-              <button class="filter" onclick="clickDes()">social media</button>
+              <button class="filter" onclick="filterSelection('vid')">video</button>
+              <button class="filter" onclick="filterSelection('web')">web</button>
+              <button class="filter" onclick="filterSelection('brand')">brand</button>
+              <button class="filter" onclick="filterSelection('socmed')">social media</button>
       </div></div>
       </div>
-      <div class="row py-5 justify-content-between">
-        {% include project-preview.html type="vid" fullname="The School of Music Montreal" shortname="SOMM"%}
-        {% include project-preview.html type="web" fullname="IndigIrecruit" shortname="indigirecruit"%}
-      </div>
-      <div class="row py-5 justify-content-between">
-        {% include project-preview.html type="vid" fullname="Thrive Collective" shortname="thrive"%}
-        {% include project-preview.html type="web" fullname="Divest McGill" shortname="divest"%}
-      </div>
-      <div class="row py-5 justify-content-between">
-        {% include project-preview.html type="vid" fullname="Third Culture Collective" shortname="TCC"%}
-        {% include project-preview.html type="web" fullname="Black Students Network" shortname="BSN"%}
-      </div>
-      <div class="row py-5 justify-content-between">
-        {% include project-preview.html type="vid" fullname="Youth Impact Challenge" shortname="YIC"%}
-        {% include project-preview.html type="web" fullname="MealCare National" shortname="mealcare"%}
+      <div class="row py-5 justify-content-between proj-cont">
+        {% include project-preview.html type="vid" fullname="The School of Music Montreal" shortname="SOMM" subtitle="video" %}
+        {% include project-preview.html type="brand" fullname="IndigIrecruit" shortname="indigirecruit" subtitle="brand" %}
+        {% include project-preview.html type="vid" fullname="Thrive Collective" shortname="thrive" subtitle="video" %}
+        {% include project-preview.html type="vid web" fullname="Divest McGill" shortname="divest" subtitle="video + website" %}
+        {% include project-preview.html type="vid" fullname="Third Culture Apparel" shortname="TCA" subtitle="video" %}
+        {% include project-preview.html type="vid web" fullname="Black Students Network" shortname="BSN" subtitle="video + website" %}
+        {% include project-preview.html type="vid" fullname="MealCare National" shortname="mealcare" subtitle="video" %}
+        {% include project-preview.html type="brand socmed" fullname="Youth Impact Challenge" shortname="YIC" subtitle="brand + social media" %}
+        {% include project-preview.html type="vid web" fullname="Canadian Business Youth Council" shortname="CBYC" subtitle="video + website" %}
+        {% include project-preview.html type="brand" fullname="COVID-19 Response" shortname="covid-response" subtitle="brand" %}
+        {% include project-preview.html type="vid" fullname="DriveSafe" shortname="drivesafe" subtitle="video" %}
+        {% include project-preview.html type="vid" fullname="Eating Disorder Resource & Support Centre" shortname="EDRSC" subtitle="video" %}
+        {% include project-preview.html type="vid" fullname="Youth Outreach Program" shortname="YOP" subtitle="video" %}
+        {% include project-preview.html type="vid" fullname="McGill African Students Society" shortname="MASS" subtitle="video" %}
+        {% include project-preview.html type="brand" fullname="Welcomia" shortname="welcomia" subtitle="brand" %}
+        {% include project-preview.html type="vid" fullname="Kitchen 24" shortname="kitchen-24" subtitle="video" %}
+        {% include project-preview.html type="vid" fullname="Teacher's Life" shortname="teachers-life" subtitle="video" %}
+        {% include project-preview.html type="brand socmed" fullname="MMC Fest" shortname="mmc-fest" subtitle="brand + social media" %}
+        {% include project-preview.html type="brand" fullname="Milton Parc Citizen's Committee" shortname="MPCC" subtitle="brand" %}
       </div>
       <div class="row" style="height:25em"></div>
 </div>
@@ -63,6 +68,7 @@ layout: "wrapper"
   #filterby:hover .filter{ opacity: .2 }
   #filterby:hover .filter-line{ opacity: .2 }
   .filter:hover { opacity: 1 !important }
+  .filter:focus { outline: none; text-decoration: underline }
 
   .filter, .filter-line {
     pointer-events: auto;
@@ -73,7 +79,7 @@ layout: "wrapper"
     display: inline;
     color: black;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.5s;
   }
   .filter, .filter-line { font-size: 3em; margin-right: 1vw }
 </style>

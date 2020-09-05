@@ -4,14 +4,14 @@ layout: "wrapper"
 
 <!-- Header -->
 <div class="container-fluid" style="background-color:var(--white); padding-left: 8vw; padding-right:8vw">
-    {% include menu.html button=""%}
+    {% include menu.html button="work"%}
     <div class="row"><div class="col-lg-9" style="padding-top: 5em; padding-bottom: 5em">
-      <h1 class="home-header">IndigIrecruit<span style="color:var(--dorange)" class="big-period">.</span></h1>
-      <p class="home-header">brand</p>
+      <h1 class="home-header">{{ page.title }}<span style="color:var(--dorange)" class="big-period">.</span></h1>
+      <p class="home-header">{{ page.type-work }}</p>
     </div></div>
 
     <div class="row"><div class="col-12">
-      <img src="../assets/img/IndigIrecruit/indigi-header.png">
+      <img src="../assets/img/{{ page.fname }}/{{ page.fname}}1.png">
     </div></div>
 
     <div class="row"><div class="col-6 offset-md-4" style="padding-top:15em; padding-bottom:15em">
