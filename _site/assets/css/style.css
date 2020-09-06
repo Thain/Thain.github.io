@@ -33,3 +33,5 @@ a { color: black; font-size: inherit }
 span.avoidwrap { display:inline-block; font-size: inherit }
 
 .w { color: white }
+
+.proj-prev { transition: 1s ease }

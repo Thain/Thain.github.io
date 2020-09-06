@@ -6,15 +6,15 @@ Sofia is the Campaigns Director at My Media. She works with clients and creative
 
 // Ella is the Art Director at My Media. llll She loves cooking, playing the cello, and all kinds of design.
 
-// Max
+As the Director of Video Production at My Media, Max helps to shoot, edit, direct, and oversee all of the organization’s video content, as well as teaching technical and artistic skills through workshops. He is a student filmmaker, and believes passionately in the power of activism through storytelling.
 
 Rachael is the Director of Outreach at My Media, forging connections with change making non-profits and creatives alike to push us forward in our goal to amplify impact. She loves writing music, mindfulness, and markets.
 
 Ana is the Director of Operations at My Media. She makes sure the team functions and operates smoothly and designs the digital media education program. Ana loves her dog, Bee, running, and sweet potatoes.
 
-// Nikhita is a Director of Events at My Media. She works to plan workshops, festivals, and any other kind of event for My Media. She likes cooking, eating, and buying more plants than she has space for.
+// Nikhita is a Director of Education at My Media. She works to plan workshops, festivals, and any other kind of event for My Media. She likes cooking, eating, and buying more plants than she has space for.
 
-// Mako is the Director of Events at My Media. He works with external organizations to set up workshops, parties, and festivals. His main interests are in neuroscience and social activism, but what he loves most are people.
+// Mako is the Director of Education at My Media. He works with external organizations to set up workshops, parties, and festivals. His main interests are in neuroscience and social activism, but what he loves most are people.
 
 Julia is the Director of Social Media at My Media, planning and managing the organization's social media accounts, and interacting with clients, community members, and creatives. She loves going to the beach, detective tv shows, and going barefoot.
 

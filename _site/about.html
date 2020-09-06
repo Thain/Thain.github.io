@@ -11,7 +11,7 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>About</title>
+  <title>About | My Media</title>
 
   <link rel="stylesheet" href="../assets/css/bootstrap.css">
   <link rel="stylesheet" href="../assets/css/style.css">
@@ -29,7 +29,7 @@
     <div class="container-fluid show-mobile" id="myNav" style="background-color:var(--grey); padding-left: 8vw; padding-right:8vw; overflow: hidden">
       <div class="row align-items-center justify-content-end" style="height:30em; margin-left:-4vw; margin-right:-4vw; position: relative; z-index: 5">
             <div class="col-xs-2 mt-2 mx-4">
-              <img src="../assets/icons/hamburger.png" style="height: 4vw; min-height: 20px; min-width: 20px" onclick="closeNav()">
+              <img src="../assets/icons/hamburger-x.png" style="height: 6vw; min-height: 25px; min-width: 25px" onclick="closeNav()">
             </div>
       </div>
       <div class="row align-items-center justify-content-center">
@@ -44,12 +44,6 @@
         </div>
       </div>
     </div>
-
-    <script>
-    $(document).ready(function(){
-        $(this).scrollTop(0);
-    });
-    </script>
 
     <!-- Header -->
 <div class="container-fluid" style="background-color:var(--dblue); padding-left: 8vw; padding-right:8vw">
@@ -99,12 +93,10 @@
 document.getElementById("about").innerHTML = "<a id='menubold' class='w' href='/about'>about<span class='big-period' style='color:var(--navy)'>.</span></a>";
 </script>
 
-    <div class="row">
-        <div class="col-9 header w">
+    <div class="row"><div class="col-9 offset-md-1 header w">
           <h1>My Media is a youth-run creative agency for the unheard<span class='big-period' style='color:var(--dorange)'>.</span></h1>
           <h2>We work with nonprofits, social enterprises, community organizations, and activist groups to tell compelling stories.</h2>
-        </div>
-    </div>
+    </div></div>
     <div class="circle rellax hide-mobile" style="background-color: var(--navy);
                            width: 20vw;
                            height: 20vw;
@@ -208,7 +200,7 @@ document.getElementById("about").innerHTML = "<a id='menubold' class='w' href='/
 <div class="container-fluid" style="background-color:var(--grey); position: relative; z-index: 2; padding-left: 12vw; padding-right:12vw">
       <div class="row" style="padding-top: 20em; padding-bottom: 20em">
           <h1>We know that great stories make <span class="avoidwrap">real change.</span></h1>
-          <h2><br> We want to help you stand out, advocate, disrupt, and grow. None of this happens by sticking to the status quo. Our job is creative innovation. Our tools are video, design, and strategy. <a class="uf ul" href="#">Our purpose is you</a>.</h2>
+          <h2><br> We want to help you stand out, advocate, disrupt, and grow. None of this happens by sticking to the status quo. Our job is creative innovation. Our tools are video, design, and strategy. <a class="uf ul" href="/work">Our purpose is you</a>.</h2>
       </div>
 
       <div class="row" style="margin-bottom: 8em">
@@ -245,60 +237,32 @@ document.getElementById("about").innerHTML = "<a id='menubold' class='w' href='/
   <div class="row" style="padding-bottom: 5em">
       <div class="col" style="display: inline; padding-left: 0">
         <div id="filterby" style="display:inline">
-          <button class="filter" onclick="filterSelection('all)">all</button>
+          <button id="all" class="filter" onclick="filterSelection('all')">all</button>
           <p class="filter-line">|</p>
           <button class="filter" onclick="filterSelection('exec')">executive</button>
           <button class="filter" onclick="filterSelection('creat')">creative</button>
         </div>
       </div>
   </div>
+  <div class="proj-prev exec creat all">
   <div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-10">
-    <h1 class="title">Tristan Surman, <span class="position">Executive Director</span></h1>
-    <h3 class="desc">Tristan is the Executive Director at My Media, helping the team get access to the strategies, tools and opportunities that drive the organization forward. He loves making music, writing, and learning.</h3>
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Tristan Surman, <span class="position avoidwrap">Executive Director</span></h1>
+      <h3 class="desc">Tristan is the Executive Director at My Media, helping the team get access to the strategies, tools and opportunities that drive the organization forward. He loves making music, writing, and learning.</h3>
+    </div>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Tristan Surman.jpg" style="max-height:100%; max-width: 100%">
+    </div>
   </div>
-  <div class="col-2">
-    <img src="../assets/img/portraits/Tristan Surman.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-</div>
-
-<div class="row " style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-2">
-    <img src="../assets/img/portraits/Tristan Surman.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-  <div class="col-10">
-    <h1 class="title">Tristan Surman, <span class="position">Executive Director</span></h1>
-    <h3 class="desc">Tristan is the Executive Director at My Media, helping the team get access to the strategies, tools and opportunities that drive the organization forward. He loves making music, writing, and learning.</h3>
-  </div>
-</div>
-
-
-
-<style>
-  .desc { font-size: 2.7em }
-  .title { font-size: 3.7em }
-  .position { font-family: Montserrat-R; font-size: inherit }
-
-  .hide { display: none }
-</style>
 
   <div class="row " style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-10">
-    <h1 class="title">Tony Wang, <span class="position">Creative Director</span></h1>
-    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
-  </div>
-  <div class="col-2">
-    <img src="../assets/img/portraits/Tony Wang.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-</div>
-
-<div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-2">
-    <img src="../assets/img/portraits/Tony Wang.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-  <div class="col-10">
-    <h1 class="title">Tony Wang, <span class="position">Creative Director</span></h1>
-    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Tristan Surman.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Tristan Surman, <span class="position avoidwrap">Executive Director</span></h1>
+      <h3 class="desc">Tristan is the Executive Director at My Media, helping the team get access to the strategies, tools and opportunities that drive the organization forward. He loves making music, writing, and learning.</h3>
+    </div>
   </div>
 </div>
 
@@ -311,24 +275,27 @@ document.getElementById("about").innerHTML = "<a id='menubold' class='w' href='/
 
   .hide { display: none }
 </style>
+
+
+  <div class="proj-prev exec creat all">
+  <div class="row " style="padding-top: 5em; padding-bottom: 5em">
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Tony Wang, <span class="position avoidwrap">Creative Director</span></h1>
+      <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+    </div>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Tony Wang.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+  </div>
 
   <div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-10">
-    <h1 class="title">Ella Roy, <span class="position">Art Director</span></h1>
-    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
-  </div>
-  <div class="col-2">
-    <img src="../assets/img/portraits/Ella Roy.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-</div>
-
-<div class="row " style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-2">
-    <img src="../assets/img/portraits/Ella Roy.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-  <div class="col-10">
-    <h1 class="title">Ella Roy, <span class="position">Art Director</span></h1>
-    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Tony Wang.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Tony Wang, <span class="position avoidwrap">Creative Director</span></h1>
+      <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+    </div>
   </div>
 </div>
 
@@ -341,24 +308,27 @@ document.getElementById("about").innerHTML = "<a id='menubold' class='w' href='/
 
   .hide { display: none }
 </style>
+
+
+  <div class="proj-prev exec creat all">
+  <div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Ella Roy, <span class="position avoidwrap">Art Director</span></h1>
+      <h3 class="desc">Ella is our Art and Brand Director. She’s here to oversee My Media’s brand, and works directly with clients to build visual identities and brand strategies. She loves all kinds of design, discovering new places in Montreal and binge-watching the office.” </h3>
+    </div>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Ella Roy.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+  </div>
 
   <div class="row " style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-10">
-    <h1 class="title">Sofia Mikton, <span class="position">Campaigns Director</span></h1>
-    <h3 class="desc">Sofia is the Campaigns Director at My Media. She works with clients and creatives to facilitate and coordinate campaigns. Sofia enjoys reading, baking and playing words with friends.</h3>
-  </div>
-  <div class="col-2">
-    <img src="../assets/img/portraits/Sofia Mikton.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-</div>
-
-<div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-2">
-    <img src="../assets/img/portraits/Sofia Mikton.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-  <div class="col-10">
-    <h1 class="title">Sofia Mikton, <span class="position">Campaigns Director</span></h1>
-    <h3 class="desc">Sofia is the Campaigns Director at My Media. She works with clients and creatives to facilitate and coordinate campaigns. Sofia enjoys reading, baking and playing words with friends.</h3>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Ella Roy.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Ella Roy, <span class="position avoidwrap">Art Director</span></h1>
+      <h3 class="desc">Ella is our Art and Brand Director. She’s here to oversee My Media’s brand, and works directly with clients to build visual identities and brand strategies. She loves all kinds of design, discovering new places in Montreal and binge-watching the office.” </h3>
+    </div>
   </div>
 </div>
 
@@ -371,24 +341,27 @@ document.getElementById("about").innerHTML = "<a id='menubold' class='w' href='/
 
   .hide { display: none }
 </style>
+
+
+  <div class="proj-prev exec creat all">
+  <div class="row " style="padding-top: 5em; padding-bottom: 5em">
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Sofia Mikton, <span class="position avoidwrap">Campaigns Director</span></h1>
+      <h3 class="desc">Sofia is the Campaigns Director at My Media. She works with clients and creatives to facilitate and coordinate campaigns. Sofia enjoys reading, baking and playing words with friends.</h3>
+    </div>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Sofia Mikton.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+  </div>
 
   <div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-10">
-    <h1 class="title">Max Brauch, <span class="position">Video Director</span></h1>
-    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
-  </div>
-  <div class="col-2">
-    <img src="../assets/img/portraits/Max Brauch.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-</div>
-
-<div class="row " style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-2">
-    <img src="../assets/img/portraits/Max Brauch.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-  <div class="col-10">
-    <h1 class="title">Max Brauch, <span class="position">Video Director</span></h1>
-    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Sofia Mikton.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Sofia Mikton, <span class="position avoidwrap">Campaigns Director</span></h1>
+      <h3 class="desc">Sofia is the Campaigns Director at My Media. She works with clients and creatives to facilitate and coordinate campaigns. Sofia enjoys reading, baking and playing words with friends.</h3>
+    </div>
   </div>
 </div>
 
@@ -401,24 +374,27 @@ document.getElementById("about").innerHTML = "<a id='menubold' class='w' href='/
 
   .hide { display: none }
 </style>
+
+
+  <div class="proj-prev exec creat all">
+  <div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Max Brauch, <span class="position avoidwrap">Video Director</span></h1>
+      <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+    </div>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Max Brauch.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+  </div>
 
   <div class="row " style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-10">
-    <h1 class="title">Liam Chung, <span class="position">Tech and Web Director</span></h1>
-    <h3 class="desc">Liam is the Director of Technology and Web at My Media, designing and developing the organization's website, and lending expertise in the technical aspects of modern activism. He loves hip hop, Lord of the Rings, and math.</h3>
-  </div>
-  <div class="col-2">
-    <img src="../assets/img/portraits/Liam Chung.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-</div>
-
-<div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-2">
-    <img src="../assets/img/portraits/Liam Chung.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-  <div class="col-10">
-    <h1 class="title">Liam Chung, <span class="position">Tech and Web Director</span></h1>
-    <h3 class="desc">Liam is the Director of Technology and Web at My Media, designing and developing the organization's website, and lending expertise in the technical aspects of modern activism. He loves hip hop, Lord of the Rings, and math.</h3>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Max Brauch.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Max Brauch, <span class="position avoidwrap">Video Director</span></h1>
+      <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+    </div>
   </div>
 </div>
 
@@ -431,24 +407,27 @@ document.getElementById("about").innerHTML = "<a id='menubold' class='w' href='/
 
   .hide { display: none }
 </style>
+
+
+  <div class="proj-prev exec creat all">
+  <div class="row " style="padding-top: 5em; padding-bottom: 5em">
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Liam Chung, <span class="position avoidwrap">Tech and Web Director</span></h1>
+      <h3 class="desc">Liam is the Director of Technology and Web at My Media, designing and developing the organization's website, and lending expertise in the technical aspects of modern activism. He loves hip hop, Lord of the Rings, and math.</h3>
+    </div>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Liam Chung.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+  </div>
 
   <div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-10">
-    <h1 class="title">Ana Earl, <span class="position">Director of Operations</span></h1>
-    <h3 class="desc">Ana is the Director of Operations at My Media. She makes sure the team functions and operates smoothly and designs the digital media education program. Ana loves her dog, Bee, running, and sweet potatoes.</h3>
-  </div>
-  <div class="col-2">
-    <img src="../assets/img/portraits/Ana Earl.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-</div>
-
-<div class="row " style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-2">
-    <img src="../assets/img/portraits/Ana Earl.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-  <div class="col-10">
-    <h1 class="title">Ana Earl, <span class="position">Director of Operations</span></h1>
-    <h3 class="desc">Ana is the Director of Operations at My Media. She makes sure the team functions and operates smoothly and designs the digital media education program. Ana loves her dog, Bee, running, and sweet potatoes.</h3>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Liam Chung.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Liam Chung, <span class="position avoidwrap">Tech and Web Director</span></h1>
+      <h3 class="desc">Liam is the Director of Technology and Web at My Media, designing and developing the organization's website, and lending expertise in the technical aspects of modern activism. He loves hip hop, Lord of the Rings, and math.</h3>
+    </div>
   </div>
 </div>
 
@@ -461,24 +440,27 @@ document.getElementById("about").innerHTML = "<a id='menubold' class='w' href='/
 
   .hide { display: none }
 </style>
+
+
+  <div class="proj-prev exec all">
+  <div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Ana Earl, <span class="position avoidwrap">Director of Operations</span></h1>
+      <h3 class="desc">Ana is the Director of Operations at My Media. She makes sure the team functions and operates smoothly and designs the digital media education program. Ana loves her dog, Bee, running, and sweet potatoes.</h3>
+    </div>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Ana Earl.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+  </div>
 
   <div class="row " style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-10">
-    <h1 class="title">Rachael Madore, <span class="position">Director of Outreach</span></h1>
-    <h3 class="desc">Rachael is the Director of Outreach at My Media, forging connections with change making non-profits and creatives alike to push us forward in our goal to amplify impact. She loves writing music, mindfulness, and markets.</h3>
-  </div>
-  <div class="col-2">
-    <img src="../assets/img/portraits/Rachael Madore.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-</div>
-
-<div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-2">
-    <img src="../assets/img/portraits/Rachael Madore.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-  <div class="col-10">
-    <h1 class="title">Rachael Madore, <span class="position">Director of Outreach</span></h1>
-    <h3 class="desc">Rachael is the Director of Outreach at My Media, forging connections with change making non-profits and creatives alike to push us forward in our goal to amplify impact. She loves writing music, mindfulness, and markets.</h3>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Ana Earl.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Ana Earl, <span class="position avoidwrap">Director of Operations</span></h1>
+      <h3 class="desc">Ana is the Director of Operations at My Media. She makes sure the team functions and operates smoothly and designs the digital media education program. Ana loves her dog, Bee, running, and sweet potatoes.</h3>
+    </div>
   </div>
 </div>
 
@@ -491,24 +473,27 @@ document.getElementById("about").innerHTML = "<a id='menubold' class='w' href='/
 
   .hide { display: none }
 </style>
+
+
+  <div class="proj-prev exec all">
+  <div class="row " style="padding-top: 5em; padding-bottom: 5em">
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Rachael Madore, <span class="position avoidwrap">Director of Outreach</span></h1>
+      <h3 class="desc">Rachael is the Director of Outreach at My Media, forging connections with change making non-profits and creatives alike to push us forward in our goal to amplify impact. She loves writing music, mindfulness, and markets.</h3>
+    </div>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Rachael Madore.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+  </div>
 
   <div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-10">
-    <h1 class="title">Mako Sorensen, <span class="position">Director of ???</span></h1>
-    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
-  </div>
-  <div class="col-2">
-    <img src="../assets/img/portraits/Mako Sorensen.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-</div>
-
-<div class="row " style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-2">
-    <img src="../assets/img/portraits/Mako Sorensen.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-  <div class="col-10">
-    <h1 class="title">Mako Sorensen, <span class="position">Director of ???</span></h1>
-    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Rachael Madore.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Rachael Madore, <span class="position avoidwrap">Director of Outreach</span></h1>
+      <h3 class="desc">Rachael is the Director of Outreach at My Media, forging connections with change making non-profits and creatives alike to push us forward in our goal to amplify impact. She loves writing music, mindfulness, and markets.</h3>
+    </div>
   </div>
 </div>
 
@@ -521,24 +506,27 @@ document.getElementById("about").innerHTML = "<a id='menubold' class='w' href='/
 
   .hide { display: none }
 </style>
+
+
+  <div class="proj-prev exec all">
+  <div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Mako Sorensen, <span class="position avoidwrap">Director of Education</span></h1>
+      <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+    </div>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Mako Sorensen.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+  </div>
 
   <div class="row " style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-10">
-    <h1 class="title">Nikhita Panwar, <span class="position">Director of ???</span></h1>
-    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
-  </div>
-  <div class="col-2">
-    <img src="../assets/img/portraits/Nikhita Panwar.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-</div>
-
-<div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-2">
-    <img src="../assets/img/portraits/Nikhita Panwar.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-  <div class="col-10">
-    <h1 class="title">Nikhita Panwar, <span class="position">Director of ???</span></h1>
-    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Mako Sorensen.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Mako Sorensen, <span class="position avoidwrap">Director of Education</span></h1>
+      <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+    </div>
   </div>
 </div>
 
@@ -551,24 +539,27 @@ document.getElementById("about").innerHTML = "<a id='menubold' class='w' href='/
 
   .hide { display: none }
 </style>
+
+
+  <div class="proj-prev exec all">
+  <div class="row " style="padding-top: 5em; padding-bottom: 5em">
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Nikhita Panwar, <span class="position avoidwrap">Director of Education</span></h1>
+      <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+    </div>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Nikhita Panwar.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+  </div>
 
   <div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-10">
-    <h1 class="title">Julia Drummond, <span class="position">Director of Social Media</span></h1>
-    <h3 class="desc">Julia is the Director of Social Media at My Media, planning and managing the organization's social media accounts, and interacting with clients, community members, and creatives. She loves going to the beach, detective tv shows, and going barefoot.</h3>
-  </div>
-  <div class="col-2">
-    <img src="../assets/img/portraits/Julia Drummond.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-</div>
-
-<div class="row " style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-2">
-    <img src="../assets/img/portraits/Julia Drummond.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-  <div class="col-10">
-    <h1 class="title">Julia Drummond, <span class="position">Director of Social Media</span></h1>
-    <h3 class="desc">Julia is the Director of Social Media at My Media, planning and managing the organization's social media accounts, and interacting with clients, community members, and creatives. She loves going to the beach, detective tv shows, and going barefoot.</h3>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Nikhita Panwar.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Nikhita Panwar, <span class="position avoidwrap">Director of Education</span></h1>
+      <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+    </div>
   </div>
 </div>
 
@@ -581,24 +572,27 @@ document.getElementById("about").innerHTML = "<a id='menubold' class='w' href='/
 
   .hide { display: none }
 </style>
+
+
+  <div class="proj-prev exec all">
+  <div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Julia Drummond, <span class="position avoidwrap">Director of Social Media</span></h1>
+      <h3 class="desc">Julia is the Director of Social Media at My Media, planning and managing the organization's social media accounts, and interacting with clients, community members, and creatives. She loves going to the beach, detective tv shows, and going barefoot.</h3>
+    </div>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Julia Drummond.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+  </div>
 
   <div class="row " style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-10">
-    <h1 class="title">Beatrice Dimaculangan, <span class="position">Director of Community</span></h1>
-    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
-  </div>
-  <div class="col-2">
-    <img src="../assets/img/portraits/Beatrice Dimaculangan.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-</div>
-
-<div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-2">
-    <img src="../assets/img/portraits/Beatrice Dimaculangan.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-  <div class="col-10">
-    <h1 class="title">Beatrice Dimaculangan, <span class="position">Director of Community</span></h1>
-    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Julia Drummond.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Julia Drummond, <span class="position avoidwrap">Director of Social Media</span></h1>
+      <h3 class="desc">Julia is the Director of Social Media at My Media, planning and managing the organization's social media accounts, and interacting with clients, community members, and creatives. She loves going to the beach, detective tv shows, and going barefoot.</h3>
+    </div>
   </div>
 </div>
 
@@ -611,24 +605,27 @@ document.getElementById("about").innerHTML = "<a id='menubold' class='w' href='/
 
   .hide { display: none }
 </style>
+
+
+  <div class="proj-prev exec all">
+  <div class="row " style="padding-top: 5em; padding-bottom: 5em">
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Beatrice Dimaculangan, <span class="position avoidwrap">Director of Community</span></h1>
+      <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+    </div>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Beatrice Dimaculangan.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+  </div>
 
   <div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-10">
-    <h1 class="title">Amy Cooper, <span class="position">Creative</span></h1>
-    <h3 class="desc">Amy is a Product Designer at My Media, creating pixel-perfect digital products and creative content with incredible user experiences. She enjoys listening to music, staying active, and reading.</h3>
-  </div>
-  <div class="col-2">
-    <img src="../assets/img/portraits/Amy Cooper.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-</div>
-
-<div class="row " style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-2">
-    <img src="../assets/img/portraits/Amy Cooper.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-  <div class="col-10">
-    <h1 class="title">Amy Cooper, <span class="position">Creative</span></h1>
-    <h3 class="desc">Amy is a Product Designer at My Media, creating pixel-perfect digital products and creative content with incredible user experiences. She enjoys listening to music, staying active, and reading.</h3>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Beatrice Dimaculangan.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Beatrice Dimaculangan, <span class="position avoidwrap">Director of Community</span></h1>
+      <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+    </div>
   </div>
 </div>
 
@@ -641,24 +638,27 @@ document.getElementById("about").innerHTML = "<a id='menubold' class='w' href='/
 
   .hide { display: none }
 </style>
+
+
+  <div class="proj-prev creat all">
+  <div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Amy Cooper, <span class="position avoidwrap">Creative</span></h1>
+      <h3 class="desc">Amy is a Product Designer at My Media, creating pixel-perfect digital products and creative content with incredible user experiences. She enjoys listening to music, staying active, and reading.</h3>
+    </div>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Amy Cooper.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+  </div>
 
   <div class="row " style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-10">
-    <h1 class="title">Camille Point, <span class="position">Creative</span></h1>
-    <h3 class="desc">Camille is a creative at My Media, specializing in graphic design and video making and ultimately driven to make a positive impact through creating compelling media content for purpose-driven organizations. She also enjoys bread and spending time with her cat.</h3>
-  </div>
-  <div class="col-2">
-    <img src="../assets/img/portraits/Camille Point.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-</div>
-
-<div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-2">
-    <img src="../assets/img/portraits/Camille Point.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-  <div class="col-10">
-    <h1 class="title">Camille Point, <span class="position">Creative</span></h1>
-    <h3 class="desc">Camille is a creative at My Media, specializing in graphic design and video making and ultimately driven to make a positive impact through creating compelling media content for purpose-driven organizations. She also enjoys bread and spending time with her cat.</h3>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Amy Cooper.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Amy Cooper, <span class="position avoidwrap">Creative</span></h1>
+      <h3 class="desc">Amy is a Product Designer at My Media, creating pixel-perfect digital products and creative content with incredible user experiences. She enjoys listening to music, staying active, and reading.</h3>
+    </div>
   </div>
 </div>
 
@@ -671,24 +671,27 @@ document.getElementById("about").innerHTML = "<a id='menubold' class='w' href='/
 
   .hide { display: none }
 </style>
+
+
+  <div class="proj-prev creat all">
+  <div class="row " style="padding-top: 5em; padding-bottom: 5em">
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Camille Point, <span class="position avoidwrap">Creative</span></h1>
+      <h3 class="desc">Camille is a creative at My Media, specializing in graphic design and video making and ultimately driven to make a positive impact through creating compelling media content for purpose-driven organizations. She also enjoys bread and spending time with her cat.</h3>
+    </div>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Camille Point.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+  </div>
 
   <div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-10">
-    <h1 class="title">Christian Younder, <span class="position">Creative</span></h1>
-    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
-  </div>
-  <div class="col-2">
-    <img src="../assets/img/portraits/Christian Younder.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-</div>
-
-<div class="row " style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-2">
-    <img src="../assets/img/portraits/Christian Younder.jpg" style="display: block; max-height:100%; max-width: 100%">
-  </div>
-  <div class="col-10">
-    <h1 class="title">Christian Younder, <span class="position">Creative</span></h1>
-    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Camille Point.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Camille Point, <span class="position avoidwrap">Creative</span></h1>
+      <h3 class="desc">Camille is a creative at My Media, specializing in graphic design and video making and ultimately driven to make a positive impact through creating compelling media content for purpose-driven organizations. She also enjoys bread and spending time with her cat.</h3>
+    </div>
   </div>
 </div>
 
@@ -702,23 +705,59 @@ document.getElementById("about").innerHTML = "<a id='menubold' class='w' href='/
   .hide { display: none }
 </style>
 
-  <div class="row " style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-10">
-    <h1 class="title">David Boot, <span class="position">Creative</span></h1>
-    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+
+  <div class="proj-prev creat all">
+  <div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Christian Younder, <span class="position avoidwrap">Creative</span></h1>
+      <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+    </div>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Christian Younder.jpg" style="max-height:100%; max-width: 100%">
+    </div>
   </div>
-  <div class="col-2">
-    <img src="../assets/img/portraits/David Boot.jpg" style="display: block; max-height:100%; max-width: 100%">
+
+  <div class="row " style="padding-top: 5em; padding-bottom: 5em">
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/Christian Younder.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">Christian Younder, <span class="position avoidwrap">Creative</span></h1>
+      <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+    </div>
   </div>
 </div>
 
-<div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-2">
-    <img src="../assets/img/portraits/David Boot.jpg" style="display: block; max-height:100%; max-width: 100%">
+
+
+<style>
+  .desc { font-size: 2.7em }
+  .title { font-size: 3.7em }
+  .position { font-family: Montserrat-R; font-size: inherit }
+
+  .hide { display: none }
+</style>
+
+
+  <div class="proj-prev creat all">
+  <div class="row " style="padding-top: 5em; padding-bottom: 5em">
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">David Boot, <span class="position avoidwrap">Creative</span></h1>
+      <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+    </div>
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/David Boot.jpg" style="max-height:100%; max-width: 100%">
+    </div>
   </div>
-  <div class="col-10">
-    <h1 class="title">David Boot, <span class="position">Creative</span></h1>
-    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+
+  <div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
+    <div class="col-4 col-lg-3">
+      <img src="../assets/img/portraits/David Boot.jpg" style="max-height:100%; max-width: 100%">
+    </div>
+    <div class="col-8 col-lg-9 align-self-center">
+      <h1 class="title">David Boot, <span class="position avoidwrap">Creative</span></h1>
+      <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+    </div>
   </div>
 </div>
 
@@ -768,6 +807,8 @@ document.getElementById("about").innerHTML = "<a id='menubold' class='w' href='/
 
 </div>
 
+<script src="../assets/js/filter.js"></script>
+
 <style>
   h1.icon-title { font-size: 3em; margin-bottom: .7em; margin-top: .7em }
   h2.icon-title { font-size: 2em }
@@ -778,6 +819,7 @@ document.getElementById("about").innerHTML = "<a id='menubold' class='w' href='/
   #filterby:hover .filter{ opacity: .2 }
   #filterby:hover .filter-line{ opacity: .2 }
   .filter:hover { opacity: 1 !important }
+  .filter:focus { outline: none; text-decoration: underline; opacity: 1 !important }
 
   .filter, .filter-line {
     pointer-events: auto;
@@ -788,9 +830,9 @@ document.getElementById("about").innerHTML = "<a id='menubold' class='w' href='/
     display: inline;
     color: black;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.5s;
   }
-  .filter, .filter-line { font-size: 3em; margin-right: 1vw}
+  .filter, .filter-line { font-size: 3em; margin-right: 1vw }
 
 </style>
 
@@ -819,9 +861,9 @@ document.getElementById("about").innerHTML = "<a id='menubold' class='w' href='/
         <div class="col-2 footer-text">
           <h1 class="mb-5">Contact</h1>
           <h2>
-              work with us <br>
-              join our team <br>
-              learn with us
+            <a href="https://mymediacreative.typeform.com/to/KeQjBw">work with us</a> <br>
+            <a href="https://mymediacreative.typeform.com/to/b9U3k7">join our team</a><br>
+            <a href="https://mymediacreative.typeform.com/to/d0WtUy">learn with us</a>
           </h2>
         </div>
         <div class="col-3 footer-text">
@@ -856,7 +898,7 @@ document.getElementById("about").innerHTML = "<a id='menubold' class='w' href='/
         <div class="col-6 footer-text">
           <h1 class="mb-5">Contact</h1>
           <h2>
-              <a href="https://mymediacreative.typeform.com/to/KeQjBw"></a>work with us <br>
+              <a href="https://mymediacreative.typeform.com/to/KeQjBw">work with us</a> <br>
               <a href="https://mymediacreative.typeform.com/to/b9U3k7">join our team</a><br>
               <a href="https://mymediacreative.typeform.com/to/d0WtUy">learn with us</a>
           </h2>
