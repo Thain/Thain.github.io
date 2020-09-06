@@ -31,3 +31,5 @@ a { color: black; font-size: inherit }
    font-size: 1.1em;
 }
 span.avoidwrap { display:inline-block; font-size: inherit }
+
+.w { color: white }

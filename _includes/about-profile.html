@@ -1,0 +1,29 @@
+<div class="row {{ include.right }}" style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-10">
+    <h1 class="title">{{ include.name }}, <span class="position">{{ include.title }}</span></h1>
+    <h3 class="desc">{{ include.content }}</h3>
+  </div>
+  <div class="col-2">
+    <img src="../assets/img/portraits/{{ include.name }}.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+</div>
+
+<div class="row {{ include.left }}" style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-2">
+    <img src="../assets/img/portraits/{{ include.name }}.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+  <div class="col-10">
+    <h1 class="title">{{ include.name }}, <span class="position">{{ include.title }}</span></h1>
+    <h3 class="desc">{{ include.content }}</h3>
+  </div>
+</div>
+
+
+
+<style>
+  .desc { font-size: 2.7em }
+  .title { font-size: 3.7em }
+  .position { font-family: Montserrat-R; font-size: inherit }
+
+  .hide { display: none }
+</style>

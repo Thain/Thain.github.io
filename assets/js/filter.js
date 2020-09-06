@@ -1,6 +1,5 @@
 x = document.getElementById("all")
 x.click();
-x.focus();
 
 // filterSelection("all")
 function filterSelection(c) {

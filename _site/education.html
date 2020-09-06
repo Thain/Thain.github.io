@@ -29,7 +29,7 @@
     <div class="container-fluid show-mobile" id="myNav" style="background-color:var(--grey); padding-left: 8vw; padding-right:8vw; overflow: hidden">
       <div class="row align-items-center justify-content-end" style="height:30em; margin-left:-4vw; margin-right:-4vw; position: relative; z-index: 5">
             <div class="col-xs-2 mt-2 mx-4">
-              <img src="../assets/icons/hamburger.png" style="height: 4vw; min-height: 20px" onclick="closeNav()">
+              <img src="../assets/icons/hamburger.png" style="height: 4vw; min-height: 20px; min-width: 20px" onclick="closeNav()">
             </div>
       </div>
       <div class="row align-items-center justify-content-center">
@@ -44,6 +44,13 @@
         </div>
       </div>
     </div>
+
+    <script>
+    $(document).ready(function(){
+        $(this).scrollTop(0);
+    });
+    </script>
+
     <!-- Header -->
 <div class="container-fluid" style="background-color:var(--navy); padding-left: 8vw; padding-right:8vw; position: relative; z-index: 2">
     <div class="row align-items-center justify-content-between" style="height:30em; margin-left:-4vw; margin-right:-4vw">
@@ -52,7 +59,7 @@
       </div>
 
       <div class="col-xs-2 mt-2 mx-4 show-mobile">
-        <img src="../assets/icons/hamburger-white.png" style="height: 4vw; min-height: 20px" onclick="openNav()">
+        <img src="../assets/icons/hamburger-white.png" style="height: 4vw; min-height: 20px; min-width: 20px" onclick="openNav()">
       </div>
 
       <div class="hide-mobile col-10 text-right">
@@ -89,7 +96,7 @@
 </style>
 
 <script>
-document.getElementById("education").innerHTML = "<a id='menubold' class='w' href='/education'>education<span class='big-period' style='color:var(--dblue)'>.</span></a>";
+document.getElementById("education").innerHTML = "<a id='menubold' class='w' href='/education'>education<span class='big-period' style='color:var(--lorange)'>.</span></a>";
 </script>
 
     <div class="row"><div class="col-11 offset-md-1 header w">
@@ -402,8 +409,6 @@ document.getElementById("education").innerHTML = "<a id='menubold' class='w' hre
   .edu-header { color: white }
   .after-map-text { line-height: 2.5 }
 
-  .w h1 { color: white }
-  .w h2 { color: white }
   .after-map-text { font-size: 2.5em }
 
   .numbered > h1 { font-size: 4.3em}

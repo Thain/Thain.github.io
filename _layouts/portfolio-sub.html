@@ -1,0 +1,25 @@
+---
+layout: "wrapper"
+---
+
+<!-- Header -->
+<div class="container-fluid" style="background-color:var(--white); padding-left: 8vw; padding-right:8vw">
+    {% include menu.html button="work"%}
+    <div class="row"><div class="col-lg-9" style="padding-top: 0; padding-bottom: 5em">
+      <h1 class="home-header">{{ page.title }}<span style="color:var(--dorange)" class="big-period">.</span></h1>
+      <p class="home-header">{{ page.type-work }}</p>
+    </div></div>
+
+    {{ content }}
+
+    {% include circle.html mobile="hide-mobile" color="lorange" size="6" top="70" left="6" z="0"%}
+    {% include circle.html mobile="hide-mobile" color="dorange" size="6" top="30" left="93" z="0"%}
+    {% include circle.html mobile="hide-mobile" color="lblue" size="21" top="170" left="31" z="0"%}
+    {% include circle.html mobile="hide-mobile" color="dorange" size="15" top="390" left="75" z="0"%}
+</div>
+
+<style>
+  h1.home-header { font-size: 9em }
+  p.home-header { font-size: 4em }
+  .img-port { display: inline; width: 100%; max-height: 100%; background-color: var(--grey) }
+</style>

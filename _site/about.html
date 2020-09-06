@@ -29,7 +29,7 @@
     <div class="container-fluid show-mobile" id="myNav" style="background-color:var(--grey); padding-left: 8vw; padding-right:8vw; overflow: hidden">
       <div class="row align-items-center justify-content-end" style="height:30em; margin-left:-4vw; margin-right:-4vw; position: relative; z-index: 5">
             <div class="col-xs-2 mt-2 mx-4">
-              <img src="../assets/icons/hamburger.png" style="height: 4vw; min-height: 20px" onclick="closeNav()">
+              <img src="../assets/icons/hamburger.png" style="height: 4vw; min-height: 20px; min-width: 20px" onclick="closeNav()">
             </div>
       </div>
       <div class="row align-items-center justify-content-center">
@@ -44,27 +44,34 @@
         </div>
       </div>
     </div>
+
+    <script>
+    $(document).ready(function(){
+        $(this).scrollTop(0);
+    });
+    </script>
+
     <!-- Header -->
-<div class="container-fluid" style="background-color:var(--white); padding-left: 8vw; padding-right:8vw">
-    <div class="row align-items-center justify-content-between" style="height:30em; margin-left:-4vw; margin-right:-4vw; position: relative; z-index: 5">
+<div class="container-fluid" style="background-color:var(--dblue); padding-left: 8vw; padding-right:8vw">
+    <div class="row align-items-center justify-content-between" style="height:30em; margin-left:-4vw; margin-right:-4vw">
       <div class="col-xs-2 mx-4">
-        <a href="/"><img src="../assets/icons/logo-small.png" style="height: 4.5vw; min-height: 40px; background-color:transparent"></a>
+        <a href="/"><img src="../assets/icons/logo-small-white-orng.png" style="height: 4.5vw; min-height: 40px; background-color:transparent"></a>
       </div>
 
       <div class="col-xs-2 mt-2 mx-4 show-mobile">
-        <img src="../assets/icons/hamburger.png" style="height: 4vw; min-height: 20px" onclick="openNav()">
+        <img src="../assets/icons/hamburger-white.png" style="height: 4vw; min-height: 20px; min-width: 20px" onclick="openNav()">
       </div>
 
       <div class="hide-mobile col-10 text-right">
         <div id="menubar" style="display: inline">
-          <div id="work"><a class="menubar" href="/work">work</a></div>
-          <div id="education"><a class="menubar" href="/education">education</a></div>
-          <div id="jobs"><a class="menubar" href="/jobs">jobs</a></div>
-          <div id="about"><a class="menubar" href="/about">about</a></div>
-          <div id="contact"><a class="menubar" href="/contact">contact</a></div>
+          <div id="work"><a class="menubar w" href="/work">work</a></div>
+          <div id="education"><a class="menubar w" href="/education">education</a></div>
+          <div id="jobs"><a class="menubar w" href="/jobs">jobs</a></div>
+          <div id="about"><a class="menubar w" href="/about">about</a></div>
+          <div id="contact"><a class="menubar w" href="/contact">contact</a></div>
         </div>
-        <p class="menubar">|</p>
-        <a class="menubar" style="margin-right: 0vw" href="/404.html">fr</a>
+        <p class="menubar w">|</p>
+        <a class="menubar w" style="margin-right: 0vw" href="/404.html">fr</a>
       </div>
 </div>
 
@@ -72,7 +79,7 @@
   #menubar{ pointer-events: none }
   #menubar:hover .menubar{ opacity: .2 }
   #menubar > div { display: inline }
-  .menubar:hover { color: black; opacity: 1 !important }
+  .menubar:hover { opacity: 1 !important }
   .menubar {
     pointer-events: auto;
     font-family: 'Montserrat-R';
@@ -80,38 +87,132 @@
     background-color: inherit;
     border: none;
     display: inline;
-    color: black;
+    color: white;
     text-decoration: none;
     transition: 0.4s;
     margin-right: 3vw;
   }
-  #menubold { font-family: Montserrat-S; display: inline; pointer-events:auto; color: black; margin-bottom: 0em; margin-right: 2.2vw }
+  #menubold { font-family: Montserrat-S; display: inline; pointer-events:auto; margin-bottom: 0em; margin-right: 2.2vw }
 </style>
 
 <script>
-document.getElementById("about").innerHTML = "<a id='menubold' href='/about'>about<span class='big-period' style='color:var(--dblue)'>.</span></a>";
+document.getElementById("about").innerHTML = "<a id='menubold' class='w' href='/about'>about<span class='big-period' style='color:var(--navy)'>.</span></a>";
 </script>
 
     <div class="row">
-        <div class="col-9 header">
-          <h1>My Media is a youth-run <br> creative agency for the unheard<span class='big-period' style='color:var(--dorange)'>.</span></h1>
-          <h2>We work with nonprofits, social enterprises, <br> community organizations, and activist <br> groups to tell compelling stories.</h2>
-        </div>
-        <div class="col-3 align-self-center">
-          <img src="../assets/icons/about.png" style="max-height: 100%; max-width: 100%; padding-top: 4em" class="float-right">
+        <div class="col-9 header w">
+          <h1>My Media is a youth-run creative agency for the unheard<span class='big-period' style='color:var(--dorange)'>.</span></h1>
+          <h2>We work with nonprofits, social enterprises, community organizations, and activist groups to tell compelling stories.</h2>
         </div>
     </div>
+    <div class="circle rellax hide-mobile" style="background-color: var(--navy);
+                           width: 20vw;
+                           height: 20vw;
+                           top: 20em;
+                           left: 5vw;
+                           z-index: 0;
+                           "></div>
+
+<style>
+  .circle{
+    border-radius: 50%;
+    position: absolute !important;
+    z-index: 1;
+  }
+</style>
+
+    <div class="circle rellax hide-mobile" style="background-color: var(--dorange);
+                           width: 15vw;
+                           height: 15vw;
+                           top: 80em;
+                           left: 60vw;
+                           z-index: 0;
+                           "></div>
+
+<style>
+  .circle{
+    border-radius: 50%;
+    position: absolute !important;
+    z-index: 1;
+  }
+</style>
+
+    <div class="circle rellax hide-mobile" style="background-color: var(--white);
+                           width: 7vw;
+                           height: 7vw;
+                           top: 30em;
+                           left: 75vw;
+                           z-index: 0;
+                           "></div>
+
+<style>
+  .circle{
+    border-radius: 50%;
+    position: absolute !important;
+    z-index: 1;
+  }
+</style>
+
+
+    <div class="circle rellax show-mobile" style="background-color: var(--navy);
+                           width: 25vw;
+                           height: 25vw;
+                           top: 20em;
+                           left: 5vw;
+                           z-index: 0;
+                           "></div>
+
+<style>
+  .circle{
+    border-radius: 50%;
+    position: absolute !important;
+    z-index: 1;
+  }
+</style>
+
+    <div class="circle rellax show-mobile" style="background-color: var(--dorange);
+                           width: 18vw;
+                           height: 18vw;
+                           top: 140em;
+                           left: 60vw;
+                           z-index: 0;
+                           "></div>
+
+<style>
+  .circle{
+    border-radius: 50%;
+    position: absolute !important;
+    z-index: 1;
+  }
+</style>
+
+    <div class="circle rellax show-mobile" style="background-color: var(--white);
+                           width: 12vw;
+                           height: 12vw;
+                           top: 40em;
+                           left: 75vw;
+                           z-index: 0;
+                           "></div>
+
+<style>
+  .circle{
+    border-radius: 50%;
+    position: absolute !important;
+    z-index: 1;
+  }
+</style>
+
 </div>
 
 <!-- "stories make change" through to icons -->
 <div class="container-fluid" style="background-color:var(--grey); position: relative; z-index: 2; padding-left: 12vw; padding-right:12vw">
       <div class="row" style="padding-top: 20em; padding-bottom: 20em">
-          <h1>We know that great stories make real change.</h1>
+          <h1>We know that great stories make <span class="avoidwrap">real change.</span></h1>
           <h2><br> We want to help you stand out, advocate, disrupt, and grow. None of this happens by sticking to the status quo. Our job is creative innovation. Our tools are video, design, and strategy. <a class="uf ul" href="#">Our purpose is you</a>.</h2>
       </div>
 
       <div class="row" style="margin-bottom: 8em">
-          <h1>We're all about coming up with great ideas.</h1>
+          <h1>We're all about coming up with <span class="avoidwrap">great ideas.</span></h1>
       </div>
       <div class="row justify-content-between" style="padding-bottom: 20em">
         <div class="col-3 ">
@@ -139,113 +240,498 @@ document.getElementById("about").innerHTML = "<a id='menubold' href='/about'>abo
         <br><br> <a href="/work" style="padding-right: 4em; font-family: Montserrat-S">Check out our portfolio.</a> <a style="padding-right: 4em; font-family: Montserrat-S" href="/contact">Get in touch with us.</a></h2>
   </div></div>
   <div class="row" style="padding-bottom: 5em">
-      <h1>Meet the team that makes it happen.</h1>
+      <h1>Meet the team that makes <span class="avoidwrap">it happen.</span></h1>
   </div>
   <div class="row" style="padding-bottom: 5em">
       <div class="col" style="display: inline; padding-left: 0">
         <div id="filterby" style="display:inline">
-          <button class="filter" onclick="clickAll()">all</button>
+          <button class="filter" onclick="filterSelection('all)">all</button>
           <p class="filter-line">|</p>
-          <button class="filter" onclick="clickVid()">executive</button>
-          <button class="filter" onclick="clickWeb()">creative</button>
+          <button class="filter" onclick="filterSelection('exec')">executive</button>
+          <button class="filter" onclick="filterSelection('creat')">creative</button>
         </div>
       </div>
   </div>
-  <div class="row markrow" style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-2 markcol">
-    <img src="../assets/img/bigyoshi-navy-portrait.png" style="display: block; max-height:100%; max-width: 100%">
+  <div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-10">
+    <h1 class="title">Tristan Surman, <span class="position">Executive Director</span></h1>
+    <h3 class="desc">Tristan is the Executive Director at My Media, helping the team get access to the strategies, tools and opportunities that drive the organization forward. He loves making music, writing, and learning.</h3>
   </div>
-  <div class="col-10 markcol">
-    <h1 class="title">Big Yoshi, <span class="position">Executive Yoshi</span></h1>
-    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+  <div class="col-2">
+    <img src="../assets/img/portraits/Tristan Surman.jpg" style="display: block; max-height:100%; max-width: 100%">
   </div>
 </div>
+
+<div class="row " style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-2">
+    <img src="../assets/img/portraits/Tristan Surman.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+  <div class="col-10">
+    <h1 class="title">Tristan Surman, <span class="position">Executive Director</span></h1>
+    <h3 class="desc">Tristan is the Executive Director at My Media, helping the team get access to the strategies, tools and opportunities that drive the organization forward. He loves making music, writing, and learning.</h3>
+  </div>
+</div>
+
+
 
 <style>
   .desc { font-size: 2.7em }
   .title { font-size: 3.7em }
   .position { font-family: Montserrat-R; font-size: inherit }
+
+  .hide { display: none }
 </style>
 
-  <div class="row markrow" style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-10 markcol">
-    <h1 class="title">Big Yoshi, <span class="position">Executive Yoshi</span></h1>
+  <div class="row " style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-10">
+    <h1 class="title">Tony Wang, <span class="position">Creative Director</span></h1>
     <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
   </div>
-  <div class="col-2 markcol">
-    <img src="../assets/img/bigyoshi-navy-portrait.png" style="display: block; max-height:100%; max-width: 100%">
+  <div class="col-2">
+    <img src="../assets/img/portraits/Tony Wang.jpg" style="display: block; max-height:100%; max-width: 100%">
   </div>
 </div>
+
+<div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-2">
+    <img src="../assets/img/portraits/Tony Wang.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+  <div class="col-10">
+    <h1 class="title">Tony Wang, <span class="position">Creative Director</span></h1>
+    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+  </div>
+</div>
+
+
 
 <style>
   .desc { font-size: 2.7em }
   .title { font-size: 3.7em }
   .position { font-family: Montserrat-R; font-size: inherit }
+
+  .hide { display: none }
 </style>
 
-  <div class="row markrow" style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-2 markcol">
-    <img src="../assets/img/bigyoshi-navy-portrait.png" style="display: block; max-height:100%; max-width: 100%">
+  <div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-10">
+    <h1 class="title">Ella Roy, <span class="position">Art Director</span></h1>
+    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
   </div>
-  <div class="col-10 markcol">
-    <h1 class="title">Big Yoshi, <span class="position">Executive Yoshi</span></h1>
+  <div class="col-2">
+    <img src="../assets/img/portraits/Ella Roy.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+</div>
+
+<div class="row " style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-2">
+    <img src="../assets/img/portraits/Ella Roy.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+  <div class="col-10">
+    <h1 class="title">Ella Roy, <span class="position">Art Director</span></h1>
     <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
   </div>
 </div>
+
+
 
 <style>
   .desc { font-size: 2.7em }
   .title { font-size: 3.7em }
   .position { font-family: Montserrat-R; font-size: inherit }
+
+  .hide { display: none }
 </style>
 
-  <div class="row markrow" style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-10 markcol">
-    <h1 class="title">Big Yoshi, <span class="position">Executive Yoshi</span></h1>
-    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+  <div class="row " style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-10">
+    <h1 class="title">Sofia Mikton, <span class="position">Campaigns Director</span></h1>
+    <h3 class="desc">Sofia is the Campaigns Director at My Media. She works with clients and creatives to facilitate and coordinate campaigns. Sofia enjoys reading, baking and playing words with friends.</h3>
   </div>
-  <div class="col-2 markcol">
-    <img src="../assets/img/bigyoshi-navy-portrait.png" style="display: block; max-height:100%; max-width: 100%">
+  <div class="col-2">
+    <img src="../assets/img/portraits/Sofia Mikton.jpg" style="display: block; max-height:100%; max-width: 100%">
   </div>
 </div>
+
+<div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-2">
+    <img src="../assets/img/portraits/Sofia Mikton.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+  <div class="col-10">
+    <h1 class="title">Sofia Mikton, <span class="position">Campaigns Director</span></h1>
+    <h3 class="desc">Sofia is the Campaigns Director at My Media. She works with clients and creatives to facilitate and coordinate campaigns. Sofia enjoys reading, baking and playing words with friends.</h3>
+  </div>
+</div>
+
+
 
 <style>
   .desc { font-size: 2.7em }
   .title { font-size: 3.7em }
   .position { font-family: Montserrat-R; font-size: inherit }
+
+  .hide { display: none }
 </style>
 
-  <div class="row markrow" style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-2 markcol">
-    <img src="../assets/img/bigyoshi-navy-portrait.png" style="display: block; max-height:100%; max-width: 100%">
+  <div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-10">
+    <h1 class="title">Max Brauch, <span class="position">Video Director</span></h1>
+    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
   </div>
-  <div class="col-10 markcol">
-    <h1 class="title">Big Yoshi, <span class="position">Executive Yoshi</span></h1>
+  <div class="col-2">
+    <img src="../assets/img/portraits/Max Brauch.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+</div>
+
+<div class="row " style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-2">
+    <img src="../assets/img/portraits/Max Brauch.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+  <div class="col-10">
+    <h1 class="title">Max Brauch, <span class="position">Video Director</span></h1>
     <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
   </div>
 </div>
+
+
 
 <style>
   .desc { font-size: 2.7em }
   .title { font-size: 3.7em }
   .position { font-family: Montserrat-R; font-size: inherit }
+
+  .hide { display: none }
 </style>
 
-  <div class="row markrow" style="padding-top: 5em; padding-bottom: 5em">
-  <div class="col-10 markcol">
-    <h1 class="title">Big Yoshi, <span class="position">Executive Yoshi</span></h1>
-    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+  <div class="row " style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-10">
+    <h1 class="title">Liam Chung, <span class="position">Tech and Web Director</span></h1>
+    <h3 class="desc">Liam is the Director of Technology and Web at My Media, designing and developing the organization's website, and lending expertise in the technical aspects of modern activism. He loves hip hop, Lord of the Rings, and math.</h3>
   </div>
-  <div class="col-2 markcol">
-    <img src="../assets/img/bigyoshi-navy-portrait.png" style="display: block; max-height:100%; max-width: 100%">
+  <div class="col-2">
+    <img src="../assets/img/portraits/Liam Chung.jpg" style="display: block; max-height:100%; max-width: 100%">
   </div>
 </div>
+
+<div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-2">
+    <img src="../assets/img/portraits/Liam Chung.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+  <div class="col-10">
+    <h1 class="title">Liam Chung, <span class="position">Tech and Web Director</span></h1>
+    <h3 class="desc">Liam is the Director of Technology and Web at My Media, designing and developing the organization's website, and lending expertise in the technical aspects of modern activism. He loves hip hop, Lord of the Rings, and math.</h3>
+  </div>
+</div>
+
+
 
 <style>
   .desc { font-size: 2.7em }
   .title { font-size: 3.7em }
   .position { font-family: Montserrat-R; font-size: inherit }
+
+  .hide { display: none }
 </style>
+
+  <div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-10">
+    <h1 class="title">Ana Earl, <span class="position">Director of Operations</span></h1>
+    <h3 class="desc">Ana is the Director of Operations at My Media. She makes sure the team functions and operates smoothly and designs the digital media education program. Ana loves her dog, Bee, running, and sweet potatoes.</h3>
+  </div>
+  <div class="col-2">
+    <img src="../assets/img/portraits/Ana Earl.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+</div>
+
+<div class="row " style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-2">
+    <img src="../assets/img/portraits/Ana Earl.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+  <div class="col-10">
+    <h1 class="title">Ana Earl, <span class="position">Director of Operations</span></h1>
+    <h3 class="desc">Ana is the Director of Operations at My Media. She makes sure the team functions and operates smoothly and designs the digital media education program. Ana loves her dog, Bee, running, and sweet potatoes.</h3>
+  </div>
+</div>
+
+
+
+<style>
+  .desc { font-size: 2.7em }
+  .title { font-size: 3.7em }
+  .position { font-family: Montserrat-R; font-size: inherit }
+
+  .hide { display: none }
+</style>
+
+  <div class="row " style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-10">
+    <h1 class="title">Rachael Madore, <span class="position">Director of Outreach</span></h1>
+    <h3 class="desc">Rachael is the Director of Outreach at My Media, forging connections with change making non-profits and creatives alike to push us forward in our goal to amplify impact. She loves writing music, mindfulness, and markets.</h3>
+  </div>
+  <div class="col-2">
+    <img src="../assets/img/portraits/Rachael Madore.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+</div>
+
+<div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-2">
+    <img src="../assets/img/portraits/Rachael Madore.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+  <div class="col-10">
+    <h1 class="title">Rachael Madore, <span class="position">Director of Outreach</span></h1>
+    <h3 class="desc">Rachael is the Director of Outreach at My Media, forging connections with change making non-profits and creatives alike to push us forward in our goal to amplify impact. She loves writing music, mindfulness, and markets.</h3>
+  </div>
+</div>
+
+
+
+<style>
+  .desc { font-size: 2.7em }
+  .title { font-size: 3.7em }
+  .position { font-family: Montserrat-R; font-size: inherit }
+
+  .hide { display: none }
+</style>
+
+  <div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-10">
+    <h1 class="title">Mako Sorensen, <span class="position">Director of ???</span></h1>
+    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+  </div>
+  <div class="col-2">
+    <img src="../assets/img/portraits/Mako Sorensen.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+</div>
+
+<div class="row " style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-2">
+    <img src="../assets/img/portraits/Mako Sorensen.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+  <div class="col-10">
+    <h1 class="title">Mako Sorensen, <span class="position">Director of ???</span></h1>
+    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+  </div>
+</div>
+
+
+
+<style>
+  .desc { font-size: 2.7em }
+  .title { font-size: 3.7em }
+  .position { font-family: Montserrat-R; font-size: inherit }
+
+  .hide { display: none }
+</style>
+
+  <div class="row " style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-10">
+    <h1 class="title">Nikhita Panwar, <span class="position">Director of ???</span></h1>
+    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+  </div>
+  <div class="col-2">
+    <img src="../assets/img/portraits/Nikhita Panwar.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+</div>
+
+<div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-2">
+    <img src="../assets/img/portraits/Nikhita Panwar.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+  <div class="col-10">
+    <h1 class="title">Nikhita Panwar, <span class="position">Director of ???</span></h1>
+    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+  </div>
+</div>
+
+
+
+<style>
+  .desc { font-size: 2.7em }
+  .title { font-size: 3.7em }
+  .position { font-family: Montserrat-R; font-size: inherit }
+
+  .hide { display: none }
+</style>
+
+  <div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-10">
+    <h1 class="title">Julia Drummond, <span class="position">Director of Social Media</span></h1>
+    <h3 class="desc">Julia is the Director of Social Media at My Media, planning and managing the organization's social media accounts, and interacting with clients, community members, and creatives. She loves going to the beach, detective tv shows, and going barefoot.</h3>
+  </div>
+  <div class="col-2">
+    <img src="../assets/img/portraits/Julia Drummond.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+</div>
+
+<div class="row " style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-2">
+    <img src="../assets/img/portraits/Julia Drummond.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+  <div class="col-10">
+    <h1 class="title">Julia Drummond, <span class="position">Director of Social Media</span></h1>
+    <h3 class="desc">Julia is the Director of Social Media at My Media, planning and managing the organization's social media accounts, and interacting with clients, community members, and creatives. She loves going to the beach, detective tv shows, and going barefoot.</h3>
+  </div>
+</div>
+
+
+
+<style>
+  .desc { font-size: 2.7em }
+  .title { font-size: 3.7em }
+  .position { font-family: Montserrat-R; font-size: inherit }
+
+  .hide { display: none }
+</style>
+
+  <div class="row " style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-10">
+    <h1 class="title">Beatrice Dimaculangan, <span class="position">Director of Community</span></h1>
+    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+  </div>
+  <div class="col-2">
+    <img src="../assets/img/portraits/Beatrice Dimaculangan.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+</div>
+
+<div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-2">
+    <img src="../assets/img/portraits/Beatrice Dimaculangan.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+  <div class="col-10">
+    <h1 class="title">Beatrice Dimaculangan, <span class="position">Director of Community</span></h1>
+    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+  </div>
+</div>
+
+
+
+<style>
+  .desc { font-size: 2.7em }
+  .title { font-size: 3.7em }
+  .position { font-family: Montserrat-R; font-size: inherit }
+
+  .hide { display: none }
+</style>
+
+  <div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-10">
+    <h1 class="title">Amy Cooper, <span class="position">Creative</span></h1>
+    <h3 class="desc">Amy is a Product Designer at My Media, creating pixel-perfect digital products and creative content with incredible user experiences. She enjoys listening to music, staying active, and reading.</h3>
+  </div>
+  <div class="col-2">
+    <img src="../assets/img/portraits/Amy Cooper.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+</div>
+
+<div class="row " style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-2">
+    <img src="../assets/img/portraits/Amy Cooper.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+  <div class="col-10">
+    <h1 class="title">Amy Cooper, <span class="position">Creative</span></h1>
+    <h3 class="desc">Amy is a Product Designer at My Media, creating pixel-perfect digital products and creative content with incredible user experiences. She enjoys listening to music, staying active, and reading.</h3>
+  </div>
+</div>
+
+
+
+<style>
+  .desc { font-size: 2.7em }
+  .title { font-size: 3.7em }
+  .position { font-family: Montserrat-R; font-size: inherit }
+
+  .hide { display: none }
+</style>
+
+  <div class="row " style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-10">
+    <h1 class="title">Camille Point, <span class="position">Creative</span></h1>
+    <h3 class="desc">Camille is a creative at My Media, specializing in graphic design and video making and ultimately driven to make a positive impact through creating compelling media content for purpose-driven organizations. She also enjoys bread and spending time with her cat.</h3>
+  </div>
+  <div class="col-2">
+    <img src="../assets/img/portraits/Camille Point.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+</div>
+
+<div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-2">
+    <img src="../assets/img/portraits/Camille Point.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+  <div class="col-10">
+    <h1 class="title">Camille Point, <span class="position">Creative</span></h1>
+    <h3 class="desc">Camille is a creative at My Media, specializing in graphic design and video making and ultimately driven to make a positive impact through creating compelling media content for purpose-driven organizations. She also enjoys bread and spending time with her cat.</h3>
+  </div>
+</div>
+
+
+
+<style>
+  .desc { font-size: 2.7em }
+  .title { font-size: 3.7em }
+  .position { font-family: Montserrat-R; font-size: inherit }
+
+  .hide { display: none }
+</style>
+
+  <div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-10">
+    <h1 class="title">Christian Younder, <span class="position">Creative</span></h1>
+    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+  </div>
+  <div class="col-2">
+    <img src="../assets/img/portraits/Christian Younder.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+</div>
+
+<div class="row " style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-2">
+    <img src="../assets/img/portraits/Christian Younder.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+  <div class="col-10">
+    <h1 class="title">Christian Younder, <span class="position">Creative</span></h1>
+    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+  </div>
+</div>
+
+
+
+<style>
+  .desc { font-size: 2.7em }
+  .title { font-size: 3.7em }
+  .position { font-family: Montserrat-R; font-size: inherit }
+
+  .hide { display: none }
+</style>
+
+  <div class="row " style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-10">
+    <h1 class="title">David Boot, <span class="position">Creative</span></h1>
+    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+  </div>
+  <div class="col-2">
+    <img src="../assets/img/portraits/David Boot.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+</div>
+
+<div class="row hide" style="padding-top: 5em; padding-bottom: 5em">
+  <div class="col-2">
+    <img src="../assets/img/portraits/David Boot.jpg" style="display: block; max-height:100%; max-width: 100%">
+  </div>
+  <div class="col-10">
+    <h1 class="title">David Boot, <span class="position">Creative</span></h1>
+    <h3 class="desc">Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone.</h3>
+  </div>
+</div>
+
+
+
+<style>
+  .desc { font-size: 2.7em }
+  .title { font-size: 3.7em }
+  .position { font-family: Montserrat-R; font-size: inherit }
+
+  .hide { display: none }
+</style>
+
 
   <div class="row" style="height: 15em"></div>
   <div class="circle rellax hide-mobile" style="background-color: var(--lblue);

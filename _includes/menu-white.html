@@ -1,10 +1,10 @@
 <div class="row align-items-center justify-content-between" style="height:30em; margin-left:-4vw; margin-right:-4vw">
       <div class="col-xs-2 mx-4">
-        <a href="/"><img src="../assets/icons/logo-small-white.png" style="height: 4.5vw; min-height: 40px; background-color:transparent"></a>
+        <a href="/"><img src="../assets/icons/logo-small-white{{ include.color }}.png" style="height: 4.5vw; min-height: 40px; background-color:transparent"></a>
       </div>
 
       <div class="col-xs-2 mt-2 mx-4 show-mobile">
-        <img src="../assets/icons/hamburger-white.png" style="height: 4vw; min-height: 20px" onclick="openNav()">
+        <img src="../assets/icons/hamburger-white.png" style="height: 4vw; min-height: 20px; min-width: 20px" onclick="openNav()">
       </div>
 
       <div class="hide-mobile col-10 text-right">
@@ -41,5 +41,5 @@
 </style>
 
 <script>
-document.getElementById("{{ include.button }}").innerHTML = "<a id='menubold' class='w' href='/{{include.button}}'>{{ include.button }}<span class='big-period' style='color:var(--dblue)'>.</span></a>";
+document.getElementById("{{ include.button }}").innerHTML = "<a id='menubold' class='w' href='/{{include.button}}'>{{ include.button }}<span class='big-period' style='color:var(--{{ include.percolor }})'>.</span></a>";
 </script>
