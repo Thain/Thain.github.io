@@ -18,4 +18,4 @@ permalink: /work/BSN
 
 {% include port-pgph.html title="The website" offset="4" color="dblue" content="This website is designed to be a resource for the community. An archive, filled with years of content created by the Black Students’ Network - easily navigable for the benefit of students. A way to point people towards relevant on-campus resources and events. Finally, a place to tell stories about the organization and the community that it exists to support." %}
 
-{% include port-img.html num="3" bottom-pad="20" %}
+{% include port-img.html num="3" %}

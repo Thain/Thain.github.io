@@ -14,4 +14,4 @@ permalink: /work/YOP
 
 {% include port-pgph.html title="The video" offset="4" color="dblue" content="The goal of this video is to tell stories about the impact that YOP has made in young people’s live, and speak to the rewarding experiences that volunteers have had. We did this by taking the stories of volunteers, and turning them into animated vignettes." %}
 
-{% include port-img.html num="3" bottom-pad="20" %}
+{% include port-img.html num="3" %}

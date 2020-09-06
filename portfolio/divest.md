@@ -18,4 +18,4 @@ permalink: /work/divest
 
 {% include port-pgph.html title="Website" offset="2" color="navy" content="When you’ve been around for more than 10 years, you have a lot of information to share and keep. That’s why we built Divest their website. It is designed to tell their story, express their perspective, present their research, and draw people into the movement." %}
 
-{% include port-img.html num="2" bottom-pad="20" %}
+{% include port-img.html num="2" %}
