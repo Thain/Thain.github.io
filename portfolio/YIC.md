@@ -1,21 +1,32 @@
 ---
-title: IndigIrecruit
-type-work: brand
-fname: indigirecruit
+title: Youth Impact Challenge
+type-work: brand + social media
+fname: YIC
 layout: portfolio-sub
-permalink: /work/indigirecruit
+permalink: /work/YIC
 ---
 
 {% include port-img.html num="1" %}
 
-{% include port-pgph.html title="The client" offset="2" color="dblue" content="Indigirecruit is a grassroots, Indigenous-led, organization that works with young Indigenous people to navigate through the college-application process. Their mission is to break down barriers for Indigenous youth trying to further their education. Right now, the application process is one of those barriers. They provide the tools and knowledge one might need to navigate that process successfully." %}
+{% include port-pgph.html title="The client" offset="2" offset-mobile="2" color="dblue" content="InvestEco and Renewal Funds are two of Canada’s largest impact investment funds. Together, they launched the Youth Impact Challenge. It’s an idea competition for young people across the country who want to make a social/environmental impact.
+
+This was their inaugural year - so they asked us to build a brand, a website, and run a national campaign that attracted 60+ high quality application. The only challenge: the application deadline was only a month away. So, we sprung into action. <br><br>
+
+182 applications, <br>
+More than tripling our goal. <br><br>
+
+9,000 website visits <br>
+Across 350+ Canadian cities. <br><br>
+
+Attracted 689 followers <br>
+from scratch in one month. " %}
 
 {% include port-img.html num="2" %}
 
-{% include port-pgph.html title="The project" offset="3" color="dorange" content="Indigirecruit, an emerging social enterprise, needed to build their brand from scratch. We worked with them to craft a visual identity that is true to their values and mission. After a lot of discovery and iteration, we landed on what you see before you. The icon, a book and a feather merged together, visually reflects the intersection between the organization’s two guiding principles: indigenous representation and access to education. With a bold typeface that introduces a modern twist, our goal was to capture the organization’s dynamic, ambitious, and community-driven spirit. In some variations of the logo, the feather replaces the third “i” of IndigIrecruit, emphasizing the message “I Recruit” and speaking to IndigIrecruit’s empowering nature. The identity also introduces a harmonious and bright color palette, including white and tones of purple – the colors of the Iroquois Confederacy." %}
+{% include port-pgph.html title="The project" offset="3" offset-mobile="1" color="dorange" content="We built a digital campaign that focused on the intersection between partnerships and content. We built symbiotic relationships brand partners, collaborated with relevant young influencers, and shared our content in digital community groups. Ultimately, we drove a massive Canada-wide campaign that engaged thousands of innovative young people.
+
+We built content that we knew would resonate with our audience, and drove them through social media to a website.
+
+The results speak for themselves." %}
 
 {% include port-img.html num="3" %}
-
-{% include port-pgph.html title="Testimonial" offset="4" color="dblue" content="&#8220;My Media Creative has perfectly responded to our needs with professionalism, efficiency and flexibility. Even though we provided them with very broad guidelines, they accurately grasp our vision and came up with a stunning final product. Working with a passionate team that cares about your project as much as you do is a delightful feeling.&#8221;" %}
-
-{% include port-img.html num="4" %}

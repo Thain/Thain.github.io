@@ -40,7 +40,7 @@
             <a class="hb-op" id="hb-jobs" href="/jobs">jobs</a>
             <a class="hb-op" id="hb-about" href="/about">about</a>
             <a class="hb-op" id="hb-contact" href="/contact">contact</a>
-            <a class="hb-op" id="hb-fr" href="#">fr</a>
+            <!-- <a class="hb-op" id="hb-fr" href="#">fr</a> -->
         </div>
       </div>
     </div>
@@ -64,8 +64,8 @@
           <div id="about"><a class="menubar" href="/about">about</a></div>
           <div id="contact"><a class="menubar" href="/contact">contact</a></div>
         </div>
-        <p class="menubar">|</p>
-        <a class="menubar" style="margin-right: 0vw" href="/404.html">fr</a>
+        <!-- <p class="menubar">|</p>
+        <a class="menubar" style="margin-right: 0vw" href="/404.html">fr</a> -->
       </div>
 </div>
 
@@ -93,31 +93,110 @@
 document.getElementById("work").innerHTML = "<a id='menubold' href='/work'>work<span class='big-period' style='color:var(--dblue)'>.</span></a>";
 </script>
 
-    <div class="row"><div class="col-1" style="padding-bottom: 2em"><a href="/work"><img style="height:3vw" src="../assets/icons/icon-arrow-left.png"></a></div></div>
+    <div class="row"><div class="col-1 arrow-wrap" style="padding-bottom: 2em; padding-right:0; margin-left: 2vw"><a href="/work"><img style="height:2.2vw; width:2.2vw" src="../assets/icons/icon-arrow-left.png"></a></div></div>
     <div class="row"><div class="col-lg-9" style="padding-top: 0; padding-bottom: 5em">
       <h1 class="home-header">Youth Outreach Program<span style="color:var(--dorange)" class="big-period">.</span></h1>
       <p class="home-header">brand</p>
     </div></div>
 
-    <div class="row"><div class="col-12" style="padding-bottom:em">
-  <img class="img-port" src="../assets/img/YOP/YOP1.png" />
-</div></div>
+    <div class="WrapOuter">
+  <div class="Wrap">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eRtaxmBnRXg?rel=0&amp;enablejsapi=1" frameborder="0" allowfullscreen=""></iframe>
+  </div>
+</div>
 
-<div class="row"><div class="col-6 offset-md-2" style="margin-top:15em; margin-bottom:15em">
+<style>
+  .WrapOuter { position: relative; z-index: 10 }
+  .Wrap { display: inline-block; position: relative; width: 84vw; height: calc(84vw / 1.77); }
+  .Wrap.ended::after {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px 64px;
+    background-image: url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgNTEwIDUxMCI+PHBhdGggZD0iTTI1NSAxMDJWMEwxMjcuNSAxMjcuNSAyNTUgMjU1VjE1M2M4NC4xNSAwIDE1MyA2OC44NSAxNTMgMTUzcy02OC44NSAxNTMtMTUzIDE1My0xNTMtNjguODUtMTUzLTE1M0g1MWMwIDExMi4yIDkxLjggMjA0IDIwNCAyMDRzMjA0LTkxLjggMjA0LTIwNC05MS44LTIwNC0yMDQtMjA0eiIgZmlsbD0iI0ZGRiIvPjwvc3ZnPg==);
+  }
+  .Wrap.paused::after {
+    content:"";
+    position: absolute;
+    top: 70px;
+    left: 0;
+    bottom: 50px;
+    right: 0;
+    cursor: pointer;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px 40px;
+    background-image: url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEiIHdpZHRoPSIxNzA2LjY2NyIgaGVpZ2h0PSIxNzA2LjY2NyIgdmlld0JveD0iMCAwIDEyODAgMTI4MCI+PHBhdGggZD0iTTE1Ny42MzUgMi45ODRMMTI2MC45NzkgNjQwIDE1Ny42MzUgMTI3Ny4wMTZ6IiBmaWxsPSIjZmZmIi8+PC9zdmc+);
+  }
+</style>
+
+<script>
+  "use strict";
+  document.addEventListener('DOMContentLoaded',
+      function(){
+        if (window.hideYTActivated) return;
+        let onYouTubeIframeAPIReadyCallbacks=[];
+        for (let playerWrap of document.querySelectorAll(".Wrap")) {
+          let playerFrame=playerWrap.querySelector("iframe");
+          let tag=document.createElement('script');
+          tag.src="https://www.youtube.com/iframe_api";
+          let firstScriptTag=document.getElementsByTagName('script')[0];
+          firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+          let onPlayerStateChange=function(event) {
+            if (event.data==YT.PlayerState.ENDED) {
+              playerWrap.classList.add("ended");
+            }
+            else if (event.data==YT.PlayerState.PAUSED) {
+              playerWrap.classList.add("paused");
+            }
+            else if (event.data==YT.PlayerState.PLAYING) {
+              playerWrap.classList.remove("ended");
+              playerWrap.classList.remove("paused");
+            }
+          };
+          let player;
+          onYouTubeIframeAPIReadyCallbacks.push(function() {
+            player=new YT.Player(playerFrame,{events:{'onStateChange': onPlayerStateChange}});
+          });
+          playerWrap.addEventListener("click", function(){
+            let playerState=player.getPlayerState();
+            if (playerState==YT.PlayerState.ENDED) {
+              player.seekTo(0);
+            }
+            else if (playerState==YT.PlayerState.PAUSED) {
+              player.playVideo();
+            }
+          });
+        }
+        window.onYouTubeIframeAPIReady=function() {
+          for (let callback of onYouTubeIframeAPIReadyCallbacks){callback();}
+        };
+        window.hideYTActivated=true;});
+</script>
+
+<div class="row"><div class="col-9 col-md-6 offset-1 offset-md-2" style="margin-top:15em; margin-bottom:15em">
   <h1 style="color: var(--dorange); font-size: 3.2em; padding-bottom: .3em">The client</h1>
   <p>Youth Outreach Program (YOP) reaches out to young people at risk. Their goal is to build meaningful relationships, while helping them develop soft skills like creativity, communication, and self-expression.</p>
 </div></div>
 
-<div class="row"><div class="col-12" style="padding-bottom:em">
+<div class="row"><div class="col-12 img-wrap" style="padding-bottom:em; text-align: center; position:relative; z-index: 5">
   <img class="img-port" src="../assets/img/YOP/YOP2.png" />
 </div></div>
 
-<div class="row"><div class="col-6 offset-md-4" style="margin-top:15em; margin-bottom:15em">
+<div class="row"><div class="col-9 col-md-6 offset-2 offset-md-4" style="margin-top:15em; margin-bottom:15em">
   <h1 style="color: var(--dblue); font-size: 3.2em; padding-bottom: .3em">The video</h1>
   <p>The goal of this video is to tell stories about the impact that YOP has made in young people’s live, and speak to the rewarding experiences that volunteers have had. We did this by taking the stories of volunteers, and turning them into animated vignettes.</p>
 </div></div>
 
-<div class="row"><div class="col-12" style="padding-bottom:em">
+<div class="row"><div class="col-12 img-wrap" style="padding-bottom:em; text-align: center; position:relative; z-index: 5">
   <img class="img-port" src="../assets/img/YOP/YOP3.png" />
 </div></div>
 
@@ -139,11 +218,11 @@ document.getElementById("work").innerHTML = "<a id='menubold' href='/work'>work<
   }
 </style>
 
-    <div class="circle rellax hide-mobile" style="background-color: var(--dorange);
-                           width: 6vw;
-                           height: 6vw;
+    <div class="circle rellax hide-mobile" style="background-color: var(--dblue);
+                           width: 12vw;
+                           height: 12vw;
                            top: 30em;
-                           left: 93vw;
+                           left: 83vw;
                            z-index: 0;
                            "></div>
 
@@ -171,6 +250,22 @@ document.getElementById("work").innerHTML = "<a id='menubold' href='/work'>work<
   }
 </style>
 
+    <div class="circle rellax hide-mobile" style="background-color: var(--dblue);
+                           width: 15vw;
+                           height: 15vw;
+                           top: 320em;
+                           left: 10vw;
+                           z-index: 0;
+                           "></div>
+
+<style>
+  .circle{
+    border-radius: 50%;
+    position: absolute !important;
+    z-index: 1;
+  }
+</style>
+
     <div class="circle rellax hide-mobile" style="background-color: var(--dorange);
                            width: 15vw;
                            height: 15vw;
@@ -187,14 +282,18 @@ document.getElementById("work").innerHTML = "<a id='menubold' href='/work'>work<
   }
 </style>
 
-    <div class="row"><div class="col-1" style="padding-bottom: 20em; padding-top:5em"><a href="/work"><img style="height:3vw" src="../assets/icons/icon-arrow-left.png"></a></div></div>
+    <div class="row"><div class="col-1 arrow-wrap" style="padding-bottom: 20em; padding-top:5em; padding-right:0; margin-left: 2vw"><a href="/work"><img style="height:2.2vw; width:2.2vw" src="../assets/icons/icon-arrow-left.png"></a></div></div>
 </div>
 
 <style>
   h1.home-header { font-size: 9em }
   p.home-header { font-size: 4em }
   img { display: inline; max-width: 100%; max-height: 100%; }
-  .img-port { width:100%; background-color: var(--grey) }
+  .img-wrap { width: 84vw; height: calc(84vw / 1.77); background-color: var(--grey) }
+
+  @media only screen and (max-width: 767px) { .arrow-wrap { padding-left: 2em } }
+  @media only screen and (min-width: 768px) { .arrow-wrap { padding-left: 0 } }
+
 </style>
 
     <script src="../assets/js/rellax/rellax.min.js"></script>

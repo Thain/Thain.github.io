@@ -30,19 +30,19 @@ permalink: /about
       <div class="row" style="margin-bottom: 8em">
           <h1>We're all about coming up with <span class="avoidwrap">great ideas.</span></h1>
       </div>
-      <div class="row justify-content-between" style="padding-bottom: 20em">
-        <div class="col-3 ">
-          <img src="../assets/icons/icon-learn.png" style="height: 5vw; min-height: 50px; margin-left: 3em">
+      <div class="row justify-content-between" style="padding-bottom: 10em">
+        <div class="col-md-3 " style="padding-bottom: 10em">
+          <img class="idea-icon"src="../assets/icons/icon-learn.png">
           <h1 class="icon-title">Learn.</h1>
           <h2 class="icon-title">We start by learning. Our creative process is rooted in research and discussion &mdash; so we can make something that is true to you. We’ll start by getting to know your org.</h2>
         </div>
-        <div class="col-3 ">
-          <img src="../assets/icons/icon-collab.png" style="height: 5vw; min-height: 50px; margin-left: 3em">
+        <div class="col-md-3 " style="padding-bottom: 10em">
+          <img class="idea-icon"src="../assets/icons/icon-collab.png">
           <h1 class="icon-title">Collaborate.</h1>
           <h2 class="icon-title">Community is the engine of our creativity. We’ll bring the project to our team of creatives, and think through a bunch of ideas. This collaborative approach unlocks innovate creativity.</h2>
         </div>
-        <div class="col-3 ">
-          <img src="../assets/icons/icon-create.png" style="height: 5vw; min-height: 50px; margin-left: 3em">
+        <div class="col-md-3 " style="padding-bottom: 10em">
+          <img class="idea-icon"src="../assets/icons/icon-create.png">
           <h1 class="icon-title">Create.</h1>
           <h2 class="icon-title">We execute with precision. Once we’ve pitched you an idea that you love, our passionate team of videographers, designers, and marketers will bring it to life (with your input).</h2>
         </div>
@@ -53,7 +53,7 @@ permalink: /about
   <div class="row" style="padding-top: 20em; padding-bottom: 20em"><div class="col">
       <h1>We want you to be heard.</h1>
       <h2><br> We want to work with you. Check out our work to learn more. If you're interested, just reach out! We'd love to get a discussion started.
-        <br><br> <a href="/work" style="padding-right: 4em; font-family: Montserrat-S">Check out our portfolio.</a> <a style="padding-right: 4em; font-family: Montserrat-S" href="/contact">Get in touch with us.</a></h2>
+        <br><br> <a href="/work" style="padding-right: 4em; font-family: Montserrat-S; color: var(--navy)">Check out our portfolio.</a> <a class="avoidwrap" style="padding-right: 4em; line-height: 5; font-family: Montserrat-S; color: var(--navy)" href="/contact">Get in touch with us.</a></h2>
   </div></div>
   <div class="row" style="padding-bottom: 5em">
       <h1>Meet the team that makes <span class="avoidwrap">it happen.</span></h1>
@@ -68,13 +68,33 @@ permalink: /about
         </div>
       </div>
   </div>
+
+  {% comment %}
+  {% include about-profile.html right="hide" type="creat first last"
+              name="Amy Cooper" title="Creative"
+              content="Amy is a Product Designer at My Media, creating pixel-perfect digital products and creative content with incredible user experiences. She enjoys listening to music, staying active, and reading." %}
+
+  {% include about-profile.html left="hide" type="creat first last"
+              name="Camille Point" title="Creative"
+              content="Camille is a creative at My Media, specializing in graphic design and video making and ultimately driven to make a positive impact through creating compelling media content for purpose-driven organizations. She also enjoys bread and spending time with her cat." %}
+
+  {% include about-profile.html right="hide" type="creat first last"
+              name="Christian Younder" title="Creative"
+              content="Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone." %}
+
+  {% include about-profile.html left="hide" type="creat first last"
+              name="David Boot" title="Creative"
+              content="Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone." %}
+  {% endcomment %}
+
+
   {% include about-profile.html right="hide" type="exec creat"
               name="Tristan Surman" title="Executive Director"
               content="Tristan is the Executive Director at My Media, helping the team get access to the strategies, tools and opportunities that drive the organization forward. He loves making music, writing, and learning." %}
 
   {% include about-profile.html left="hide" type="exec creat"
               name="Tony Wang" title="Creative Director"
-              content="Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone." %}
+              content="Tony is the Creative Director at My Media—he makes sure everything looks pretty and manages the Creative Team. He’s a big fan of horror films, Carly Rae Jepsen, and em dashes." %}
 
   {% include about-profile.html right="hide" type="exec creat"
               name="Ella Roy" title="Art Director"
@@ -116,19 +136,19 @@ permalink: /about
               name="Beatrice Dimaculangan" title="Director of Community"
               content="Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone." %}
 
-  {% include about-profile.html right="hide" type="creat"
+  {% include about-profile.html right="hide" type="creat last"
               name="Amy Cooper" title="Creative"
               content="Amy is a Product Designer at My Media, creating pixel-perfect digital products and creative content with incredible user experiences. She enjoys listening to music, staying active, and reading." %}
 
-  {% include about-profile.html left="hide" type="creat"
+  {% include about-profile.html left="hide" type="creat last"
               name="Camille Point" title="Creative"
               content="Camille is a creative at My Media, specializing in graphic design and video making and ultimately driven to make a positive impact through creating compelling media content for purpose-driven organizations. She also enjoys bread and spending time with her cat." %}
 
-  {% include about-profile.html right="hide" type="creat"
+  {% include about-profile.html right="hide" type="creat last"
               name="Christian Younder" title="Creative"
               content="Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone." %}
 
-  {% include about-profile.html left="hide" type="creat"
+  {% include about-profile.html left="hide" type="creat last"
               name="David Boot" title="Creative"
               content="Big Yoshi is the Executive Yoshi at My Media. He's a big ol' green guy. Yoshi! That's the sound he makes. Yeah, I mean, he's uh, he's sittin' there. Need the big one though. He also plays the saxophone." %}
 
@@ -140,9 +160,11 @@ permalink: /about
 <script src="../assets/js/filter.js"></script>
 
 <style>
-  h1.icon-title { font-size: 3em; margin-bottom: .7em; margin-top: .7em }
-  h2.icon-title { font-size: 2em }
+  h1.icon-title { margin-bottom: .7em; margin-top: .7em }
   img { display: inline; max-height: 100%; max-width: 100%; min-height: 50px; min-width: 50px }
+
+  @media only screen and (max-width: 767px) { h1.icon-title { font-size: 5em } h2.icon-title { font-size: 3em } .idea-icon { height: 15vw; min-height: 50px; margin-left: 3em } }
+  @media only screen and (min-width: 768px) { h1.icon-title { font-size: 3em } h2.icon-title { font-size: 2em } .idea-icon { height: 5vw; min-height: 50px; margin-left: 3em } }
 
   /* This is all menu things, from hover effects to general styling */
   #filterby{ pointer-events: none }

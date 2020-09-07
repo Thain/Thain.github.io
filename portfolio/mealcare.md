@@ -1,21 +1,21 @@
 ---
-title: IndigIrecruit
-type-work: brand
-fname: indigirecruit
+title: MealCare
+type-work: video
+fname: mealcare
 layout: portfolio-sub
-permalink: /work/indigirecruit
+permalink: /work/mealcare
 ---
+
+{% include port-vid.html src="S049pmQ6uKs" %}
+
+{% include port-pgph.html title="The client" offset="4" offset-mobile="2" color="dblue" content="MealCare is a national organization that works to reduce food waste and food insecurity in local communities. By partnering with university dining halls on campuses across Canada, MealCare has managed to prevent 25,000 meals worth of food from being wasted. Through partnerships with local food banks and soup kitchens, they’ve ensured that those meals go to people who need it." %}
 
 {% include port-img.html num="1" %}
 
-{% include port-pgph.html title="The client" offset="2" color="dblue" content="Indigirecruit is a grassroots, Indigenous-led, organization that works with young Indigenous people to navigate through the college-application process. Their mission is to break down barriers for Indigenous youth trying to further their education. Right now, the application process is one of those barriers. They provide the tools and knowledge one might need to navigate that process successfully." %}
+{% include port-pgph.html title="The project" offset="3" offset-mobile="1" color="lorange" content="MealCare needed a video that they could use to build partnerships, raise funds, grow awareness, and attract volunteers. We built them something that spoke to their central mission, and illustrated the awesome work that their volunteers do every week." %}
 
 {% include port-img.html num="2" %}
 
-{% include port-pgph.html title="The project" offset="3" color="dorange" content="Indigirecruit, an emerging social enterprise, needed to build their brand from scratch. We worked with them to craft a visual identity that is true to their values and mission. After a lot of discovery and iteration, we landed on what you see before you. The icon, a book and a feather merged together, visually reflects the intersection between the organization’s two guiding principles: indigenous representation and access to education. With a bold typeface that introduces a modern twist, our goal was to capture the organization’s dynamic, ambitious, and community-driven spirit. In some variations of the logo, the feather replaces the third “i” of IndigIrecruit, emphasizing the message “I Recruit” and speaking to IndigIrecruit’s empowering nature. The identity also introduces a harmonious and bright color palette, including white and tones of purple – the colors of the Iroquois Confederacy." %}
+{% include port-pgph.html title="Testimonial" offset="2" color="navy" content="“MealCare was very lucky to work with the very capable team at My Media Creative. From the very beginning they understood our message and our vision, and catered to the needs of our non-profit. They were dedicated to getting a large variety of quality footage, even if that meant having to join us on multiple evening deliveries. They listened to our feedback on the video and the final product is perfect. We cannot be happier with the work they did, and would be lucky to work with them again in the future! Definitely recommend My Media Creative for your video and campaign needs!”" %}
 
 {% include port-img.html num="3" %}
-
-{% include port-pgph.html title="Testimonial" offset="4" color="dblue" content="&#8220;My Media Creative has perfectly responded to our needs with professionalism, efficiency and flexibility. Even though we provided them with very broad guidelines, they accurately grasp our vision and came up with a stunning final product. Working with a passionate team that cares about your project as much as you do is a delightful feeling.&#8221;" %}
-
-{% include port-img.html num="4" %}
