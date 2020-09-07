@@ -34,4 +34,4 @@ a { color: black; font-size: inherit }
 
 .w { color: white }
 
-.proj-prev { transition: 1s ease }
+.proj-prev { transition: .5s linear }
