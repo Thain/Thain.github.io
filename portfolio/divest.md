@@ -20,3 +20,6 @@ link: divestmcgill.com
 {% include port-web.html title="Website" offset="2" color="navy" content="When you’ve been around for more than 10 years, you have a lot of information to share and keep. That’s why we built Divest their website. It is designed to tell their story, express their perspective, present their research, and draw people into the movement." %}
 
 {% include port-link-img.html num="2" %}
+
+{% include circle.html mobile="hide-mobile" color="navy" size="15" top="590" left="10" z="0"%}
+{% include circle.html mobile="hide-mobile" color="lblue" size="15" top="520" left="75" z="0"%}

@@ -19,3 +19,6 @@ permalink: /work/EDRSC
 {% include port-pgph.html title="Testimonial" offset="4" color="dblue" content="&#8220;The EDRSC was not just happy but impressed by the video My Media Creative made for us, it's a great, friendly and professional team and gives amazing results! Very fast, responsive, and incredibly talented.&#8221;" %}
 
 {% include port-img.html num="3" %}
+
+{% include circle.html mobile="hide-mobile" color="navy" size="15" top="590" left="10" z="0"%}
+{% include circle.html mobile="hide-mobile" color="lblue" size="15" top="520" left="75" z="0"%}

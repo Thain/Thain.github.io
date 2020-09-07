@@ -8,11 +8,14 @@ body {
     position: fixed;
     top: 0px;
     left: 0px;
-    background-color: var(--white);
     overflow-x: hidden;
     transition: 0.7s;
     opacity: 0;
     z-index: 0;
+    background-color:var(--grey);
+    padding-left: 8vw;
+    padding-right: 8vw;
+    overflow: hidden
 }
 
 .overlay-content {

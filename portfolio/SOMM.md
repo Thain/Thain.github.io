@@ -1,12 +1,12 @@
 ---
 title: School of Music Montreal
-type-work: video
+type-work: video + social media
 fname: SOMM
 layout: portfolio-sub
 permalink: /work/SOMM
 ---
 
-{% include port-vid.html src="S049pmQ6uKs" %}
+{% include port-vid.html src="2KyEParN54w" %}
 
 {% include port-pgph.html title="The client" offset="2" offset-mobile="2" color="dblue" content="The School of Music Montreal (SoMM) empowers young people through music. With an eye towards supporting those on the economic and social margins, SoMM provides free music lessons in classrooms across Montreal. They see music not just as a skill to develop, but also as a way that one can feel a sense of ownership and safety in their learning." %}
 
@@ -20,4 +20,5 @@ permalink: /work/SOMM
 
 I highly recommend My Media Creative for any media and design needs; on behalf of SoMM, thank you so much for everything!”" %}
 
-{% include port-img.html num="3" %}
+{% include circle.html mobile="hide-mobile" color="navy" size="15" top="590" left="10" z="0"%}
+{% include circle.html mobile="hide-mobile" color="lblue" size="15" top="520" left="75" z="0"%}

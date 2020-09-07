@@ -26,8 +26,8 @@
     <script> fadeInPage(); </script>
     <link rel="stylesheet" href="../assets/css/hamburger.css">
     <script src="../assets/js/hamburger.js"></script>
-    <div class="container-fluid show-mobile" id="myNav" style="background-color:var(--grey); padding-left: 8vw; padding-right:8vw; overflow: hidden">
-      <div class="row align-items-center justify-content-end" style="height:30em; margin-left:-4vw; margin-right:-4vw; position: relative; z-index: 5">
+    <div class="container-fluid show-mobile" id="myNav">
+      <div class="row align-items-center justify-content-end" style="height:30em; margin-left:-4vw; margin-right:-4vw">
             <div class="col-xs-2 mt-2 mx-4">
               <img src="../assets/icons/hamburger-x.png" style="height: 6vw; min-height: 25px; min-width: 25px" onclick="closeNav()">
             </div>
@@ -307,7 +307,7 @@ document.getElementById("work").innerHTML = "<a id='menubold' href='/work'>work<
       </div></div>
       </div>
       <div class="row py-5 justify-content-between proj-cont">
-        <div class="col-md-6 vid all proj-prev">
+        <div class="col-md-6 vid socmed all proj-prev">
   <div class="contain">
     <a href="/work/SOMM"><img src="../assets/img/SOMM/thumbnail.png" style="display: block" class="image"></a>
     <div class="mid">
@@ -315,7 +315,7 @@ document.getElementById("work").innerHTML = "<a id='menubold' href='/work'>work<
     </div>
   </div>
   <a href="/work/SOMM"><h1 class="pl-1 pt-3 thumbnail-title">The School of Music Montreal</h1></a>
-  <h3 class="thumbnail-title" style="padding-bottom: 3em">video</h3>
+  <h3 class="thumbnail-title" style="padding-bottom: 3em">video + social media</h3>
 </div>
 
 <style>
@@ -1163,7 +1163,10 @@ document.getElementById("work").innerHTML = "<a id='menubold' href='/work'>work<
 </style>
 
       </div>
-      <div class="row" style="height:25em"></div>
+
+      <!-- <div class="row"><div class="col showmore-wrap" style="display:inline; margin-bottom: 5em">
+              <button class="showmore" onclick="showMore()">show more</button>
+      </div></div> -->
 </div>
 
 <style>
@@ -1174,7 +1177,7 @@ document.getElementById("work").innerHTML = "<a id='menubold' href='/work'>work<
   .filter:hover { opacity: 1 !important }
   .filter:focus { outline: none; text-decoration: underline }
 
-  .filter, .filter-line {
+  .filter, .filter-line, .showmore {
     pointer-events: auto;
     font-family: 'Montserrat-R';
     text-align: left;
@@ -1184,8 +1187,13 @@ document.getElementById("work").innerHTML = "<a id='menubold' href='/work'>work<
     color: black;
     text-decoration: none;
     transition: 0.5s;
+    font-size: 3em;
+    margin-right: 1vw
   }
-  .filter, .filter-line { font-size: 3em; margin-right: 1vw }
+
+  .showmore-wrap{ text-align: center }
+  .showmore:hover { opacity: 1 !important }
+  .showmore { padding-bottom: 5em; text-decoration: underline }
 </style>
 
 <script src="../assets/js/filter.js"></script>
@@ -1196,7 +1204,7 @@ document.getElementById("work").innerHTML = "<a id='menubold' href='/work'>work<
       center: true
       });
     </script>
-    <div class="container-fluid hide-mobile" style="background-color:var(--grey); padding-left:5vw; padding-right:5vw; min-height:600px">
+    <div class="container-fluid hide-mobile" style="background-color:var(--grey); padding-left:5vw; padding-right:5vw; min-height:600px; position:relative; z-index: 5">
   <div class="row justify-content-between" style="padding-top: 100px; margin-left:2vw; margin-right:2vw">
         <div class="col-3">
           <h1 id='footer-connect'>Connect <br> with us<span class="big-period" style='color:var(--lorange)'>.</span></h1>

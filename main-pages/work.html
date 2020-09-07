@@ -41,9 +41,9 @@ permalink: /work
       </div></div>
       </div>
       <div class="row py-5 justify-content-between proj-cont">
-        {% include project-preview.html type="vid"
+        {% include project-preview.html type="vid socmed"
                                         fullname="The School of Music Montreal"
-                                        shortname="SOMM" subtitle="video" %}
+                                        shortname="SOMM" subtitle="video + social media" %}
         {% include project-preview.html type="brand"
                                         fullname="IndigIrecruit"
                                         shortname="indigirecruit" subtitle="brand" %}
@@ -99,7 +99,10 @@ permalink: /work
                                         fullname="Milton Parc Citizen's Committee"
                                         shortname="MPCC" subtitle="brand" %}
       </div>
-      <div class="row" style="height:25em"></div>
+
+      <!-- <div class="row"><div class="col showmore-wrap" style="display:inline; margin-bottom: 5em">
+              <button class="showmore" onclick="showMore()">show more</button>
+      </div></div> -->
 </div>
 
 <style>
@@ -110,7 +113,7 @@ permalink: /work
   .filter:hover { opacity: 1 !important }
   .filter:focus { outline: none; text-decoration: underline }
 
-  .filter, .filter-line {
+  .filter, .filter-line, .showmore {
     pointer-events: auto;
     font-family: 'Montserrat-R';
     text-align: left;
@@ -120,8 +123,13 @@ permalink: /work
     color: black;
     text-decoration: none;
     transition: 0.5s;
+    font-size: 3em;
+    margin-right: 1vw
   }
-  .filter, .filter-line { font-size: 3em; margin-right: 1vw }
+
+  .showmore-wrap{ text-align: center }
+  .showmore:hover { opacity: 1 !important }
+  .showmore { padding-bottom: 5em; text-decoration: underline }
 </style>
 
 <script src="../assets/js/filter.js"></script>

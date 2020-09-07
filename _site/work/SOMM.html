@@ -26,8 +26,8 @@
     <script> fadeInPage(); </script>
     <link rel="stylesheet" href="../assets/css/hamburger.css">
     <script src="../assets/js/hamburger.js"></script>
-    <div class="container-fluid show-mobile" id="myNav" style="background-color:var(--grey); padding-left: 8vw; padding-right:8vw; overflow: hidden">
-      <div class="row align-items-center justify-content-end" style="height:30em; margin-left:-4vw; margin-right:-4vw; position: relative; z-index: 5">
+    <div class="container-fluid show-mobile" id="myNav">
+      <div class="row align-items-center justify-content-end" style="height:30em; margin-left:-4vw; margin-right:-4vw">
             <div class="col-xs-2 mt-2 mx-4">
               <img src="../assets/icons/hamburger-x.png" style="height: 6vw; min-height: 25px; min-width: 25px" onclick="closeNav()">
             </div>
@@ -96,12 +96,12 @@ document.getElementById("work").innerHTML = "<a id='menubold' href='/work'>work<
     <div class="row"><div class="col-lg-9" style="padding-top: 0; padding-bottom: 5em">
       <a href="/work"><img style="height:2.2vw; width:2.2vw; margin-left:.8em" src="../assets/icons/icon-arrow-left.png"></a>
       <h1 class="home-header">School of Music Montreal<span style="color:var(--dorange)" class="big-period">.</span></h1>
-      <p class="home-header">video</p>
+      <p class="home-header">video + social media</p>
     </div></div>
 
     <div class="WrapOuter">
   <div class="Wrap">
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/S049pmQ6uKs?rel=0&amp;enablejsapi=1" frameborder="0" allowfullscreen=""></iframe>
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2KyEParN54w?rel=0&amp;enablejsapi=1" frameborder="0" allowfullscreen=""></iframe>
   </div>
 </div>
 
@@ -187,7 +187,7 @@ document.getElementById("work").innerHTML = "<a id='menubold' href='/work'>work<
   <p>The School of Music Montreal (SoMM) empowers young people through music. With an eye towards supporting those on the economic and social margins, SoMM provides free music lessons in classrooms across Montreal. They see music not just as a skill to develop, but also as a way that one can feel a sense of ownership and safety in their learning.</p>
 </div></div>
 
-<div class="row"><div class="col-12 img-wrap" style="padding-bottom:em; text-align: center; position:relative; z-index: 5">
+<div class="row"><div class="col-12 img-wrap" style="margin-bottom:em; text-align: center; position:relative; z-index: 5">
   <img class="img-port" src="../assets/img/SOMM/SOMM1.png" />
 </div></div>
 
@@ -196,7 +196,7 @@ document.getElementById("work").innerHTML = "<a id='menubold' href='/work'>work<
   <p>SoMM wanted a video that spoke to the things that they do, and the impact they have. The goal was to use it to attract volunteers and build meaningful partnerships with schools. We went into several classrooms to observe the learning process, and interviewed volunteers about the impact that they are having. The result? A beautiful video that speaks to the joy of music in one’s life.</p>
 </div></div>
 
-<div class="row"><div class="col-12 img-wrap" style="padding-bottom:em; text-align: center; position:relative; z-index: 5">
+<div class="row"><div class="col-12 img-wrap" style="margin-bottom:em; text-align: center; position:relative; z-index: 5">
   <img class="img-port" src="../assets/img/SOMM/SOMM2.png" />
 </div></div>
 
@@ -207,16 +207,44 @@ document.getElementById("work").innerHTML = "<a id='menubold' href='/work'>work<
 I highly recommend My Media Creative for any media and design needs; on behalf of SoMM, thank you so much for everything!”</p>
 </div></div>
 
-<div class="row"><div class="col-12 img-wrap" style="padding-bottom:em; text-align: center; position:relative; z-index: 5">
-  <img class="img-port" src="../assets/img/SOMM/SOMM3.png" />
-</div></div>
+<div class="circle rellax hide-mobile" style="background-color: var(--navy);
+                           width: 15vw;
+                           height: 15vw;
+                           top: 590em;
+                           left: 10vw;
+                           z-index: 0;
+                           "></div>
+
+<style>
+  .circle{
+    border-radius: 50%;
+    position: absolute !important;
+    z-index: 1;
+  }
+</style>
+
+<div class="circle rellax hide-mobile" style="background-color: var(--lblue);
+                           width: 15vw;
+                           height: 15vw;
+                           top: 520em;
+                           left: 75vw;
+                           z-index: 0;
+                           "></div>
+
+<style>
+  .circle{
+    border-radius: 50%;
+    position: absolute !important;
+    z-index: 1;
+  }
+</style>
 
 
 
-    <div class="circle rellax hide-mobile" style="background-color: var(--lorange);
+    <div class="circle rellax " style="background-color: var(--lorange);
                            width: 6vw;
                            height: 6vw;
-                           top: 70em;
+                           top: 80em;
                            left: 6vw;
                            z-index: 0;
                            "></div>
@@ -229,7 +257,7 @@ I highly recommend My Media Creative for any media and design needs; on behalf o
   }
 </style>
 
-    <div class="circle rellax hide-mobile" style="background-color: var(--dblue);
+    <div class="circle rellax " style="background-color: var(--dblue);
                            width: 12vw;
                            height: 12vw;
                            top: 30em;
@@ -245,7 +273,7 @@ I highly recommend My Media Creative for any media and design needs; on behalf o
   }
 </style>
 
-    <div class="circle rellax hide-mobile" style="background-color: var(--lblue);
+    <div class="circle rellax " style="background-color: var(--lblue);
                            width: 21vw;
                            height: 21vw;
                            top: 170em;
@@ -261,7 +289,7 @@ I highly recommend My Media Creative for any media and design needs; on behalf o
   }
 </style>
 
-    <div class="circle rellax hide-mobile" style="background-color: var(--dblue);
+    <div class="circle rellax " style="background-color: var(--dblue);
                            width: 15vw;
                            height: 15vw;
                            top: 320em;
@@ -277,7 +305,7 @@ I highly recommend My Media Creative for any media and design needs; on behalf o
   }
 </style>
 
-    <div class="circle rellax hide-mobile" style="background-color: var(--dorange);
+    <div class="circle rellax " style="background-color: var(--dorange);
                            width: 15vw;
                            height: 15vw;
                            top: 390em;
@@ -313,7 +341,7 @@ I highly recommend My Media Creative for any media and design needs; on behalf o
       center: true
       });
     </script>
-    <div class="container-fluid hide-mobile" style="background-color:var(--grey); padding-left:5vw; padding-right:5vw; min-height:600px">
+    <div class="container-fluid hide-mobile" style="background-color:var(--grey); padding-left:5vw; padding-right:5vw; min-height:600px; position:relative; z-index: 5">
   <div class="row justify-content-between" style="padding-top: 100px; margin-left:2vw; margin-right:2vw">
         <div class="col-3">
           <h1 id='footer-connect'>Connect <br> with us<span class="big-period" style='color:var(--lorange)'>.</span></h1>

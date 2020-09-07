@@ -1,6 +1,6 @@
 function openNav() {
   document.getElementById("myNav").style.opacity = "100%";
-  document.getElementById("myNav").style.zIndex = 10;
+  document.getElementById("myNav").style.zIndex = 50;
 
   document.getElementById("body").style.overflow = "hidden";
 

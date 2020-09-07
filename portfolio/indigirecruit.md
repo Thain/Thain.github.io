@@ -19,3 +19,6 @@ permalink: /work/indigirecruit
 {% include port-pgph.html title="Testimonial" offset="4" offset-mobile="2" color="dblue" content="&#8220;My Media Creative has perfectly responded to our needs with professionalism, efficiency and flexibility. Even though we provided them with very broad guidelines, they accurately grasp our vision and came up with a stunning final product. Working with a passionate team that cares about your project as much as you do is a delightful feeling.&#8221;" %}
 
 {% include port-img.html num="4" %}
+
+{% include circle.html mobile="hide-mobile" color="navy" size="15" top="590" left="10" z="0"%}
+{% include circle.html mobile="hide-mobile" color="lblue" size="15" top="520" left="75" z="0"%}
