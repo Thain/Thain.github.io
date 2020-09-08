@@ -6,7 +6,7 @@ layout: portfolio-sub
 permalink: /work/EDRSC
 ---
 
-{% include port-vid.html src="" %}
+{% include port-vid.html src="B-wPzvMcMmg" %}
 
 {% include port-pgph.html title="The client" offset="3" offset-mobile="1" color="navy" content="The Eating Disorder Resource and Support Centre (EDRSC) is a local resource for students struggling with eating disorders. Through community and peer-based support systems, they fill a genuine institutional gap for students. They also work in the community doing advocacy and running awareness campaigns." %}
 

@@ -4,10 +4,17 @@ title: Home
 permalink: /
 ---
 
+<script>
+   window.scrollTo(0, 0);
+</script>
+
 <!-- Header -->
-<div class="container-fluid" style="background-color:var(--grey); padding-left: 8vw; padding-right:8vw">
+<div class="container-fluid video-container" style="padding-left: 8vw; padding-right:8vw">
+    <video class="video-background" muted autoplay loop>
+        <source src="../assets/Header.mp4" type="video/mp4">
+    </video>
     {% include menu.html button="" percolor="dblue"%}
-    <div class="row" style="; min-height: 80vh"><div class="col-10 col-lg-9 offset-lg-1 align-self-end">
+    <div class="row" style="min-height: 80vh"><div class="col-10 col-lg-9 offset-lg-1 align-self-end">
           <h1 id="home-header">My Media tells stories for people who move the world forward.</h1>
     </div></div>
     <div class="mobile-spacer show-mobile"></div>
@@ -163,4 +170,19 @@ permalink: /
   }
 
   .hideThumbnail { display: none }
+
+    .video-container {
+        overflow: hidden;
+        position: relative;
+    }
+
+    video {
+      min-width: 100%;
+      min-height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
 </style>

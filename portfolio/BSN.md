@@ -13,7 +13,7 @@ link: bsnmcgill.com
 
 {% include port-link-img.html num="1" %}
 
-{% include port-pgph.html title="The video" offset="3" offset-mobile="2" color="dorange" content="A recitation of Cora Lee Conway’s “White Hallways”. A video to look critically at the lack of diversity on the McGill campus, and acknowledge the injustice upon which the school was founded. Also, a way to encourage Black students to take up the space that they have rightfully earned. To be heard, and make a path for those that come after them." %}
+{% include port-pgph.html title="The video" offset="3" offset-mobile="2" color="dorange" content="A recitation of Cora Lee Conway’s &#8220;White Hallways&#8221;. A video to look critically at the lack of diversity on the McGill campus, and acknowledge the injustice upon which the school was founded. Also, a way to encourage Black students to take up the space that they have rightfully earned. To be heard, and make a path for those that come after them." %}
 
 {% include port-link-img.html num="2" link="bsnmcgill.com" %}
 

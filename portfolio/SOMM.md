@@ -16,9 +16,9 @@ permalink: /work/SOMM
 
 {% include port-img.html num="2" %}
 
-{% include port-pgph.html title="Testimonial" offset="4" color="dblue" content="“Working with this group was awesome! They were flexible, professional, open to ideas, and easy to communicate with. Their enthusiastic team is full of creative ideas, and their passion for our cause made our vision truly come to life. We were amazed by the quality of their content, and LOVED the promotional video they made for us at SoMM. <br> <br>
+{% include port-pgph.html title="Testimonial" offset="4" color="dblue" content="&#8220;Working with this group was awesome! They were flexible, professional, open to ideas, and easy to communicate with. Their enthusiastic team is full of creative ideas, and their passion for our cause made our vision truly come to life. We were amazed by the quality of their content, and LOVED the promotional video they made for us at SoMM. <br> <br>
 
-I highly recommend My Media Creative for any media and design needs; on behalf of SoMM, thank you so much for everything!”" %}
+I highly recommend My Media Creative for any media and design needs; on behalf of SoMM, thank you so much for everything!&#8221;" %}
 
 {% include circle.html mobile="hide-mobile" color="navy" size="15" top="590" left="10" z="0"%}
 {% include circle.html mobile="hide-mobile" color="lblue" size="15" top="520" left="75" z="0"%}

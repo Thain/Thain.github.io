@@ -7,13 +7,13 @@ permalink: /work/divest
 link: divestmcgill.com
 ---
 
-{% include port-vid.html src="kqmwq6WNJyE" %}
+{% include port-vid.html src="pCqnSohjhuQ" %}
 
 {% include port-pgph.html title="The client" offset="4" offset-mobile="1" color="dorange" content="Divest wants McGill to remove fossil fuels from their financial portfolio. Part of a broader international movement, Divest McGill has been one of the most active and outspoken climate-justice groups on campus for more than a decade. Through research, advocacy, and public demonstration, they actively pressure the administration to be a more sustainable institution." %}
 
-{% include port-vid.html src="pCqnSohjhuQ" %}
+{% include port-vid.html src="kqmwq6WNJyE" %}
 
-{% include port-pgph.html title="Paid by McGill" offset="3" offset-mobile="2" color="dblue" content="A parody of McGill’s “Made” campaign, this video racked up more than 50,000 views and close to 1000 shares in 7 days. It was a viral sensation in the local student community - speaking frankly to the lack of consideration that the institution has for the student body’s wishes, and the long term habitability of the planet." %}
+{% include port-pgph.html title="Paid by McGill" offset="3" offset-mobile="2" color="dblue" content="A parody of <a style='text-decoration:underline' href='https://www.youtube.com/watch?v=cuuMf7hp3PU' target='_blank'>McGill's &#8220;Made&#8221; campaign</a>, this video racked up more than 50,000 views and close to 1000 shares in 7 days.  It was a viral sensation in the local student community - speaking frankly to the lack of consideration that the institution has for the student body’s wishes, and the long term habitability of the planet. We did this alongside coverage of their McGill admin blockade." %}
 
 {% include port-link-img.html num="1" %}
 

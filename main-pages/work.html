@@ -4,6 +4,7 @@ title: Work
 permalink: /work
 ---
 
+<script src="../assets/js/filter-work.js"></script>
 <!-- Header -->
 <div class="container-fluid" style="background-color:var(--grey); padding-left: 8vw; padding-right:8vw; position: relative; overflow: hidden; min-height: 80vh">
     {% include menu.html button="work" percolor="dblue" %}
@@ -41,63 +42,82 @@ permalink: /work
       </div></div>
       </div>
       <div class="row py-5 justify-content-between proj-cont">
-        {% include project-preview.html type="vid socmed"
-                                        fullname="The School of Music Montreal"
-                                        shortname="SOMM" subtitle="video + social media" %}
-        {% include project-preview.html type="brand"
-                                        fullname="IndigIrecruit"
-                                        shortname="indigirecruit" subtitle="brand" %}
-        {% include project-preview.html type="brand"
-                                        fullname="Thrive Collective"
-                                        shortname="thrive" subtitle="brand" %}
+        {% include project-preview.html type="brand socmed web"
+                                        fullname="Youth Impact Challenge"
+                                        shortname="YIC" subtitle="website + brand + social media" %}
+
         {% include project-preview.html type="vid web"
                                         fullname="Divest McGill"
                                         shortname="divest" subtitle="video + website" %}
-        {% include project-preview.html type="vid"
-                                        fullname="Third Culture Apparel"
-                                        shortname="TCA" subtitle="video" %}
-        {% include project-preview.html type="vid web"
-                                        fullname="Black Students' Network"
-                                        shortname="BSN" subtitle="video + website" %}
+
         {% include project-preview.html type="vid"
                                         fullname="MealCare National"
                                         shortname="mealcare" subtitle="video" %}
-        {% include project-preview.html type="brand socmed"
-                                        fullname="Youth Impact Challenge"
-                                        shortname="YIC" subtitle="brand + social media" %}
-        {% include project-preview.html type="vid web"
-                                        fullname="Canadian Business Youth Council"
-                                        shortname="CBYC" subtitle="video + website" %}
-        {% include project-preview.html type="brand"
-                                        fullname="COVID-19 Response"
-                                        shortname="covid-response" subtitle="brand" %}
-        {% include project-preview.html type="vid"
-                                        fullname="DriveSafe"
-                                        shortname="drivesafe" subtitle="video" %}
-        {% include project-preview.html type="vid"
-                                        fullname="Eating Disorder Resource & Support Centre"
-                                        shortname="EDRSC" subtitle="video" %}
-        {% include project-preview.html type="vid"
-                                        fullname="Youth Outreach Program"
-                                        shortname="YOP" subtitle="video" %}
-        {% include project-preview.html type="vid"
-                                        fullname="McGill African Students Society"
-                                        shortname="MASS" subtitle="video" %}
-        {% include project-preview.html type="brand"
-                                        fullname="Welcomia"
-                                        shortname="welcomia" subtitle="brand" %}
-        {% include project-preview.html type="vid"
-                                        fullname="Kitchen 24"
-                                        shortname="kitchen-24" subtitle="video" %}
-        {% include project-preview.html type="vid"
-                                        fullname="Teacher's Life"
-                                        shortname="teachers-life" subtitle="video" %}
+
         {% include project-preview.html type="brand socmed"
                                         fullname="MMC Fest"
                                         shortname="mmc-fest" subtitle="brand + social media" %}
+
+        {% include project-preview.html type="vid socmed"
+                                        fullname="The School of Music Montreal"
+                                        shortname="SOMM" subtitle="video + social media" %}
+
         {% include project-preview.html type="brand"
+                                        fullname="IndigIrecruit"
+                                        shortname="indigirecruit" subtitle="brand" %}
+
+        {% include project-preview.html type="vid"
+                                        fullname="Third Culture Apparel"
+                                        shortname="TCA" subtitle="video" %}
+
+        {% include project-preview.html type="vid web"
+                                        fullname="Black Students' Network"
+                                        shortname="BSN" subtitle="video + website" %}
+
+        {% include project-preview.html type="vid"
+                                        fullname="Kitchen 24"
+                                        shortname="kitchen-24" subtitle="video" %}
+
+        {% include project-preview.html type="brand"
+                                        fullname="Thrive Collective"
+                                        shortname="thrive" subtitle="brand" %}
+
+        {% include project-preview.html type="vid"
+                                        fullname="Eating Disorder Resource & Support Centre"
+                                        shortname="EDRSC" subtitle="video" %}
+
+        {% include project-preview.html type="brand"
+                                        fullname="COVID-19 Response"
+                                        shortname="covid-response" subtitle="brand" %}
+
+        {% include project-preview.html type="vid web"
+                                        fullname="Canadian Business Youth Council"
+                                        shortname="CBYC" subtitle="video + website" %}
+
+        {% include project-preview.html type="brand"
+                                        fullname="Welcomia"
+                                        shortname="welcomia" subtitle="brand" %}
+
+        {% include project-preview.html type="vid"
+                                        fullname="DriveSafe"
+                                        shortname="drivesafe" subtitle="video" %}
+
+        {% include project-preview.html type="vid"
+                                        fullname="McGill African Students Society"
+                                        shortname="MASS" subtitle="video" %}
+
+        {% include project-preview.html type="vid"
+                                        fullname="Youth Outreach Program"
+                                        shortname="YOP" subtitle="video" %}
+
+
+{% comment %}        {% include project-preview.html type="vid"
+                                        fullname="Teacher's Life"
+                                        shortname="teachers-life" subtitle="video" %} {% endcomment %}
+
+{% comment %}        {% include project-preview.html type="brand"
                                         fullname="Milton Parc Citizen's Committee"
-                                        shortname="MPCC" subtitle="brand" %}
+                                        shortname="MPCC" subtitle="brand" %} {% endcomment %}
       </div>
 
       <!-- <div class="row"><div class="col showmore-wrap" style="display:inline; margin-bottom: 5em">
@@ -131,5 +151,3 @@ permalink: /work
   .showmore:hover { opacity: 1 !important }
   .showmore { padding-bottom: 5em; text-decoration: underline }
 </style>
-
-<script src="../assets/js/filter.js"></script>

@@ -17,7 +17,7 @@ link: businessyouthcouncil.ca
 
 {% include port-link-img.html num="2" %}
 
-{% include port-web.html title="The website" offset="4" color="lorange" content="The Youth Council wanted a website for two reasons. First, it would be the source of truth for engagement in their movement. It was the final step in their marketing funnel, and held the key to getting involved deeper. We delivered that for them. Second, they wanted to build a “Youth Guide” to sustainable business, a comprehensive look into the movement’s key ideas and leaders. We designed a system that made it easy for young people to navigate this wealth of ideas." %}
+{% include port-web.html title="The website" offset="4" color="lorange" content="The Youth Council wanted a website for two reasons. First, it would be the source of truth for engagement in their movement. It was the final step in their marketing funnel, and held the key to getting involved deeper. We delivered that for them. Second, they wanted to build a &#8220;Youth Guide&#8221; to sustainable business, a comprehensive look into the movement’s key ideas and leaders. We designed a system that made it easy for young people to navigate this wealth of ideas." %}
 
 {% include port-link-img.html num="3" %}
 

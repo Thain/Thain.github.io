@@ -1,6 +1,6 @@
 ---
 title: Youth Impact Challenge
-type-work: brand + social media
+type-work: brand + social media + website
 fname: YIC
 layout: portfolio-sub
 permalink: /work/YIC

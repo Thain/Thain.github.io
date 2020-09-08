@@ -16,7 +16,7 @@ permalink: /work/mealcare
 
 {% include port-img.html num="2" %}
 
-{% include port-pgph.html title="Testimonial" offset="2" color="navy" content="“MealCare was very lucky to work with the very capable team at My Media Creative. From the very beginning they understood our message and our vision, and catered to the needs of our non-profit. They were dedicated to getting a large variety of quality footage, even if that meant having to join us on multiple evening deliveries. They listened to our feedback on the video and the final product is perfect. We cannot be happier with the work they did, and would be lucky to work with them again in the future! Definitely recommend My Media Creative for your video and campaign needs!”" %}
+{% include port-pgph.html title="Testimonial" offset="2" color="navy" content="&#8220;MealCare was very lucky to work with the very capable team at My Media Creative. From the very beginning they understood our message and our vision, and catered to the needs of our non-profit. They were dedicated to getting a large variety of quality footage, even if that meant having to join us on multiple evening deliveries. They listened to our feedback on the video and the final product is perfect. We cannot be happier with the work they did, and would be lucky to work with them again in the future! Definitely recommend My Media Creative for your video and campaign needs!&#8221;" %}
 
 {% include circle.html mobile="hide-mobile" color="navy" size="15" top="590" left="10" z="0"%}
 {% include circle.html mobile="hide-mobile" color="lblue" size="15" top="520" left="75" z="0"%}
