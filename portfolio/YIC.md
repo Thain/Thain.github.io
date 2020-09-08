@@ -17,15 +17,13 @@ This was their inaugural year - so they asked us to build a brand, a website, an
 
 {% include port-img.html num="3" %}
 
-{% include port-pgph.html title="The campaign" offset="3" offset-mobile="1" color="dorange" content="We built a digital campaign that focused on the intersection between partnerships and content. We built symbiotic relationships brand partners, collaborated with relevant young influencers, and shared our content in digital community groups. Ultimately, we drove a massive Canada-wide campaign that engaged thousands of innovative young people.
+{% include port-web.html title="The campaign" offset="3" offset-mobile="1" color="dorange" content="We built a digital campaign that focused on the intersection between partnerships and content. We built symbiotic relationships brand partners, collaborated with relevant young influencers, and shared our content in digital community groups. Ultimately, we drove a massive Canada-wide campaign that engaged thousands of innovative young people.
 
 We built content that we knew would resonate with our audience, and drove them through social media to a website.
 
 The results speak for themselves." %}
 
-{% include port-link-img.html num="4" %}
-
-{% include port-web.html title="The website" offset="4" offset-mobile="2" color="navy" content="" %}
+{% include port-link-img.html num="4" bottom-mar="20"%}
 
 {% include port-link-img.html num="5" %}
 

@@ -1,11 +1,6 @@
-function loadWork(){
-  console.log("hello")
-  var all = document.getElementsByClassName("proj-prev");
-  for (i = 0; i < all.length; i++){
-    if(i < 7) all[i].style.display = 'block';
-    else all[i].style.display = 'none';
-  }
-}
+window.addEventListener("DOMContentLoaded", function() {
+      loadAbout();
+  }, false);
 
 function loadAbout(){
   var all = document.getElementsByClassName("proj-prev");

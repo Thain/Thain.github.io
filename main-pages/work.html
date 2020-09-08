@@ -86,9 +86,9 @@ permalink: /work
                                         fullname="Eating Disorder Resource & Support Centre"
                                         shortname="EDRSC" subtitle="video" %}
 
-        {% include project-preview.html type="brand"
+{% comment %}        {% include project-preview.html type="brand"
                                         fullname="COVID-19 Response"
-                                        shortname="covid-response" subtitle="brand" %}
+                                        shortname="covid-response" subtitle="brand" %}  {% endcomment %}
 
         {% include project-preview.html type="vid web"
                                         fullname="Canadian Business Youth Council"
@@ -120,7 +120,7 @@ permalink: /work
                                         shortname="MPCC" subtitle="brand" %} {% endcomment %}
       </div>
 
-      <!-- <div class="row"><div class="col showmore-wrap" style="display:inline; margin-bottom: 5em">
+      <!-- <div class="row"><div class="col showmore-wrap">
               <button class="showmore" onclick="showMore()">show more</button>
       </div></div> -->
 </div>
@@ -147,7 +147,7 @@ permalink: /work
     margin-right: 1vw
   }
 
-  .showmore-wrap{ text-align: center }
-  .showmore:hover { opacity: 1 !important }
-  .showmore { padding-bottom: 5em; text-decoration: underline }
+  .showmore-wrap{ text-align: center; display:inline; height: 15em }
+  .showmore { text-decoration: underline }
+  .showmore:focus { outline: none }
 </style>

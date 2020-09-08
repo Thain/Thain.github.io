@@ -12,6 +12,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Work | My Media</title>
+  <meta property="og:image" content="../assets/img/social-header.jpg">
 
   <link rel="stylesheet" href="../assets/css/bootstrap.css">
   <link rel="stylesheet" href="../assets/css/style.css">
@@ -814,50 +815,6 @@ document.getElementById("work").innerHTML = "<a id='menubold' href='/work'>work<
 </style>
 
 
-        <div class="col-md-6 brand all proj-prev">
-  <div class="contain">
-    <a href="/work/covid-response"><img src="../assets/img/covid-response/thumbnail.png" style="display: block" class="image"></a>
-    <div class="mid">
-        <img src="../assets/img/covid-response/logo.png" style="display: block; opacity: 1" class="image">
-    </div>
-  </div>
-  <a href="/work/covid-response"><h1 class="pl-1 pt-3 thumbnail-title">COVID-19 Response</h1></a>
-  <h3 class="thumbnail-title" style="padding-bottom: 3em">brand</h3>
-</div>
-
-<style>
-  h1.thumbnail-title {
-    text-align: center;
-    color: black;
-    margin-bottom: 0
-  }
-  h3.thumbnail-title { text-align: center }
-
-  /* This is ugly but it's what gives the hover logo effect */
-
-  .contain { position: relative }
-  .contain:hover .image { opacity: 0.1 }
-  .contain:hover .mid { opacity: 1 }
-  .image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .8s ease-out;
-    transition-delay: .1s;
-    backface-visibility: hidden;
-  }
-  .mid {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
-</style>
 
 
         <div class="col-md-6 vid web all proj-prev">
@@ -1096,7 +1053,7 @@ document.getElementById("work").innerHTML = "<a id='menubold' href='/work'>work<
 
       </div>
 
-      <!-- <div class="row"><div class="col showmore-wrap" style="display:inline; margin-bottom: 5em">
+      <!-- <div class="row"><div class="col showmore-wrap">
               <button class="showmore" onclick="showMore()">show more</button>
       </div></div> -->
 </div>
@@ -1123,9 +1080,9 @@ document.getElementById("work").innerHTML = "<a id='menubold' href='/work'>work<
     margin-right: 1vw
   }
 
-  .showmore-wrap{ text-align: center }
-  .showmore:hover { opacity: 1 !important }
-  .showmore { padding-bottom: 5em; text-decoration: underline }
+  .showmore-wrap{ text-align: center; display:inline; height: 15em }
+  .showmore { text-decoration: underline }
+  .showmore:focus { outline: none }
 </style>
 
     <script src="../assets/js/rellax/rellax.min.js"></script>
