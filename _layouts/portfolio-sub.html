@@ -3,31 +3,62 @@ layout: "wrapper"
 ---
 
 <!-- Header -->
-<div class="container-fluid" style="background-color:var(--white); padding-left: 8vw; padding-right:8vw">
-    {% include menu.html button="work" percolor="dblue"%}
-    <div class="row"><div class="col-lg-9" style="padding-top: 0; padding-bottom: 5em">
-      <a href="/work"><img style="height:2.2vw; width:2.2vw; margin-left:.8em; margin-bottom: 1em" src="../assets/icons/icon-arrow-left.png"></a>
-      <h1 class="home-header">{{ page.title }}<span style="color:var(--dorange)" class="big-period">.</span></h1>
-      <p class="home-header">{{ page.type-work }}</p>
-    </div></div>
 
-    {{ content }}
+<div class="container-fluid" style="background-color:var(--grey); padding-left: 8vw; padding-right:8vw">
+    {% include menu.html button="Home" href="" %}
+    <!-- need higher rez image here -->
+    <img src="../assets/img/headerimg.png" style="display:inline">
+    <div class="row justify-content-center" style="padding-bottom: 8em">
+      <div class="col-10">
+        <h1 class="r" id="home-header">Comité des Citoyen(ne)s Milton Parc</h1>
+        <h1 class="b" id="home-header">Milton Parc Citizen’s Committee</h1>
+      </div>
+    </div>
+</div>
 
-    {% include circle.html color="lorange" size="6" top="80" left="6" z="0"%}
-    {% include circle.html color="dblue" size="12" top="30" left="83" z="0"%}
-    {% include circle.html color="lblue" size="21" top="170" left="31" z="0"%}
-    {% include circle.html color="dblue" size="15" top="320" left="10" z="0"%}
-    {% include circle.html color="dorange" size="15" top="390" left="75" z="0"%}
-    <div class="row"><div class="col-1 arrow-wrap" style="padding-bottom: 20em; padding-top:5em; padding-right:0; margin-left: 1.3vw"><a href="/work"><img style="height:2.2vw; width:2.2vw" src="../assets/icons/icon-arrow-left.png"></a></div></div>
+<div class="container-fluid" style="padding-left:21vw; padding-right:21vw">
+  <div class="row" style="padding-bottom: 8em"><div class="col-10">
+      <h1 class="header">Contact Us</h1>
+  </div></div>
+
+  <!-- Contacting  -->
+  <div class="row" style="padding-bottom: 5em; padding-top: 10em"><div class="col">
+        <h2 class="b">Here are some ways to get in touch with us:</h2>
+  </div></div>
+
+  <div class="row" style="padding-top: 5em">
+   <div class="col-1"><img class="icon" src="../assets/icons/phone.png"></div>
+   <div class="col-10"><p class="icon">514 842 7432</p></div>
+  </div>
+
+  <div class="row" style="padding-top: 5em">
+   <div class="col-1"><img class="icon" src="../assets/icons/phone.png"></div>
+   <div class="col-10"><p class="icon">514 842 7432</p></div>
+  </div>
+
+  <div class="row" style="padding-top: 5em">
+   <div class="col-1"><img class="icon" src="../assets/icons/phone.png"></div>
+   <div class="col-10"><p class="icon">514 842 7432</p></div>
+  </div>
+
+  <div class="row" style="padding-top: 5em">
+   <div class="col-1"><img class="icon" src="../assets/icons/phone.png"></div>
+   <div class="col-10"><p class="icon">514 842 7432</p></div>
+  </div>
+
+  <!-- Become a member -->
+  <div class="row" style="padding-bottom: 5em; padding-top: 10em"><div class="col">
+        <h2 class="b">Become a member</h2>
+  </div></div>
+
+  <div class="row" style="background-color: var(--grey); height: 80em; margin-bottom: 20em">
+    <div class="col-12"><p style="text-align:center">form goes here</p>
+    </div>
+  </div>
 </div>
 
 <style>
-  h1.home-header { font-size: 9em }
-  p.home-header { font-size: 4em }
-  img { display: inline; max-width: 100%; max-height: 100%; }
-  .img-wrap { width: 84vw; height: calc(84vw / 1.77); background-color: var(--grey) }
-
-  @media only screen and (max-width: 767px) { .arrow-wrap { padding-left: 2em } }
-  @media only screen and (min-width: 768px) { .arrow-wrap { padding-left: 0 } }
-
+  img { display: inline; max-height: 100%; max-width: 100%; min-height: 50px; min-width: 50px }
+  img.icon { height: 3vw }
+  p.icon { padding-top: 3em; padding-bottom: 1.5em; display: inline }
 </style>
