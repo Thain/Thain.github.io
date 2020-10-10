@@ -1,0 +1,113 @@
+---
+layout: "wrapper"
+title: Home
+permalink: /
+---
+
+
+
+<!-- Header -->
+<div class="container-fluid" style="background-color:var(--grey); padding-left: 8vw; padding-right:8vw">
+    {% include menu.html button="Home" href="" %}
+    <!-- need higher rez image here -->
+    <img src="../assets/img/headerimg.png" style="display:inline">
+    <div class="row justify-content-center" style="padding-bottom: 8em">
+      <div class="col-10">
+        <h1 class="r" id="home-header">Comité des Citoyen(ne)s Milton Parc</h1>
+        <h1 class="b" id="home-header">Milton Parc Citizen’s Committee</h1>
+      </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="padding-left:21vw; padding-right:21vw">
+  <!-- Paragraph -->
+  <div class="row" style="padding-top:20em; padding-bottom:20em"><div class="col">
+        <p>We are a membership-based, not-for-profit and non-partisan organization, which strives to encourage and help create grassroots democracy and collective autonomy.</p>
+  </div></div>
+
+  <!-- Projects  -->
+  <div class="row"><div class="col">
+        <h2 class="b" style="padding-bottom: 1.5em">Projects</h2>
+  </div></div>
+
+  <!-- Project previews -->
+  <div class="row" style="padding-bottom:20em">
+    {% include project-preview.html shortname="hoteldieu" longname="Hotel Dieu <br> Hospital" %}
+    {% include project-preview.html shortname="royalvic" longname="Royal Vic for the <br> Public Coalition" %}
+    {% include project-preview.html shortname="neighbors" longname="Neighbours Helping <br>Neighbours" %}
+    {% include project-preview.html shortname="mpeco" longname="Milton Parc Ecology<br> Committee" %}
+    <div class="col"><p>View the rest of our projects <a class="ul" href="/projects">here</a>.</p></div>
+  </div>
+
+  <div class="row"><div class="col">
+    <h2 class="b" style="padding-bottom: 1.5em">Get Involved</h2>
+  </div></div>
+</div>
+
+<!-- Get Involved -->
+<div class="container-fluid" style="padding-left: 12vw; padding-right: 12vw">
+  <div class="row" style="padding-bottom: 30em">
+    <div class="col-3">
+      <a href="#"><img src="../assets/icons/cal.png"></a>
+      <p class="icon-title">View our calendar</p>
+    </div>
+    <div class="col-3">
+      <a href="#"><img src="../assets/icons/donate.png"></a>
+      <p class="icon-title">Donate</p>
+    </div>
+    <div class="col-3">
+      <a href="#"><img src="../assets/icons/mail.png"></a>
+      <p class="icon-title">Sign up to our newsletter</p>
+    </div>
+    <div class="col-3">
+      <a href="#"><img src="../assets/icons/member.png"></a>
+      <p class="icon-title">Become a member</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .thumbnail-title {
+    font-size: 4.5em;
+    text-align: center;
+    color: var(--dred);
+  }
+  .icon-title{
+    font-size: 4em;
+    text-align: center;
+    color: var(--blue);
+  }
+
+  #home-header{ text-align: center; padding-bottom: .1em }
+  /* @media only screen and (max-width: 600px) { #home-header { font-size: 10em; padding-bottom: 20vh } }
+  @media only screen and (min-width: 601px) { #home-header { font-size: 7em; padding-bottom: 20vh } }
+  @media only screen and (min-width: 992px) { .icon-row { margin-right: 3em } #home-header { font-size: 6.5em; padding-bottom: 20vh } .prev-row { padding-left: 4em } }
+  @media only screen and (min-width: 1640px) { .icon-row { margin-right: 3em } #home-header { font-size: 8em; padding-bottom: 20vh } .prev-row { padding-left: 4em } } */
+
+  /* This is ugly but it's what gives the hover logo effect */
+
+  .contain { position: relative }
+  .contain:hover .image { opacity: 0.1 }
+  .contain:hover .mid { opacity: 1 }
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .6s ease-out;
+    transition-delay: .1s;
+    backface-visibility: hidden;
+  }
+  .mid {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  img { display: inline; max-height: 100%; max-width: 100%; min-height: 50px; min-width: 50px }
+</style>

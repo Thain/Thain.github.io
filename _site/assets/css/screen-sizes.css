@@ -1,0 +1,70 @@
+/* This determines when the screen is small enough for certain fonts, and to trade the normal menu for the hamburger */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .show-mobile { display: block; }
+  .hide-mobile { display: none; }
+
+  * { font-size: 3px }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+  .show-mobile { display: block; }
+  .hide-mobile { display: none; }
+
+  * { font-size: 3.5px }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .show-mobile { display: block; }
+  .hide-mobile { display: none; }
+
+  * { font-size: 4px }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .show-mobile { display: none }
+  .hide-mobile { display: block }
+
+  * { font-size: 4.5px }
+}
+
+ /* Extra large devices */
+@media only screen and (min-width: 1200px) {
+  .show-mobile { display: none }
+  .hide-mobile { display: block }
+
+  * { font-size: 5px }
+}
+
+/* Extra EXTRA Large devices */
+@media only screen and (min-width: 1640px) {
+  .show-mobile { display: none }
+  .hide-mobile { display: block }
+
+  * { font-size: 7px }
+}
+
+.icon-title { font-size: 3em }
+
+/* Headings */
+h1 { font-size: 7em }
+/* Subheadings */
+h2 { font-size: 5em }
+/* Footer heading */
+h3 { font-size: 7em }
+/* Thumbnail titles */
+h4 { font-size: 4em }
+/* Body text */
+p  { font-size: 5em }
+
+.footer-text > h1 { font-size: 3em }
+.footer-text > h2 { font-size: 2.2em }
+#footer-connect { font-size: 5em }
+
+.menubar, #menubold { font-size: 3em }
+
+body { overflow-x: hidden }
