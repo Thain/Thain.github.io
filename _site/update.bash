@@ -2,7 +2,7 @@ cd ../../mymedia/thain.github.io
 for i in $( ls ); do
 	rm -r $i
 done
-cd ../../../websites/ccmp
+cd ../../websites/ccmp
 for i in $( ls ); do
 	cp -r $i ../../mymedia/thain.github.io
 done
