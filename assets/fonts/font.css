@@ -23,7 +23,7 @@ src: local('Baskerville Light'), url('BASKE9.woff') format('woff'), url() format
 font-family: 'Baskerville Bold';
 font-style: normal;
 font-weight: normal;
-src: local('Baskerville Bold'), url('BASKE1.woff') format('woff'), url('Baskerville Bold font.ttf') format('truetype');
+src: local('Baskerville Bold'), url('BASKE1.woff') format('woff'), url('BASKE1.ttf') format('truetype');
 }
 
 /*
