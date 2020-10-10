@@ -5,8 +5,10 @@ h1, h2, h3, h4, p, img {
   letter-spacing: .04em;
   position: relative;
   z-index: 4 !important;
-  font-family: Baskerville
 }
+
+h1, h2, h3, h4 { font-family: 'Baskerville Bold'}
+p { font-family: 'Baskerville Normal'}
 
 a:hover { text-decoration: none; color: inherit }
 a.ul { text-decoration : underline }
