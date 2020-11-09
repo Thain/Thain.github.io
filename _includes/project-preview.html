@@ -1,17 +1,21 @@
-<div class="col-md-6" style="padding-bottom:8em">
-  <div class="contain" style="background-color: var(--grey)">
-    <a href="/work/{{ include.shortname }}"><img src="../assets/img/{{ include.shortname }}/{{ include.shortname }}-thumbnail.png" style="display: block" class="image"></a>
-    <div class="mid"><img src="../assets/img/{{ include.shortname }}/{{ include.shortname }}-hover.png" style="display: block; opacity: 1" class="image"></div>
+<div class="col-md-6 {{ include.type }} all proj-prev">
+  <div class="contain">
+    <a href="/work/{{ include.shortname }}"><img src="../assets/img/{{ include.shortname }}/thumbnail.png" style="display: block" class="image"></a>
+    <div class="mid">
+        <img src="../assets/img/{{ include.shortname }}/logo.png" style="display: block; opacity: 1" class="image">
+    </div>
   </div>
-  <a href="/work/{{ include.shortname }}"><h2 class="pt-5 thumbnail-title">{{ include.longname }}</h2></a>
+  <a href="/work/{{ include.shortname }}"><h1 class="pl-1 pt-3 thumbnail-title">{{ include.fullname }}</h1></a>
+  <h3 class="thumbnail-title" style="padding-bottom: 3em">{{ include.subtitle }}</h3>
 </div>
 
 <style>
-  .thumbnail-title {
-    font-size: 4em;
+  h1.thumbnail-title {
     text-align: center;
-    color: var(--dred);
+    color: black;
+    margin-bottom: 0
   }
+  h3.thumbnail-title { text-align: center }
 
   /* This is ugly but it's what gives the hover logo effect */
 

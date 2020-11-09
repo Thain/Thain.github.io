@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <!-- <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
   <link rel="manifest" href="../assets/favicon/site.webmanifest">
   <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff"> -->
+  <meta name="theme-color" content="#ffffff">
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="My Media is a youth-run creative agency for the unheard.">
-  <title>{{ page.title }} | CCMP/MPCC</title>
-  <!-- <meta property="og:image" content="../assets/img/social-header.jpg"> -->
+  <title>{{ page.title }} | My Media</title>
+  <meta property="og:image" content="../assets/img/social-header.jpg">
 
   <link rel="stylesheet" href="../assets/css/bootstrap.css">
   <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="../assets/css/colours.css">
+  <link rel="stylesheet" href="../assets/css/fonts.css">
   <link rel="stylesheet" href="../assets/css/fader.css">
   <link rel="stylesheet" href="../assets/css/screen-sizes.css">
-  <link rel="stylesheet" href="../assets/fonts/font.css">
 
 </head>
 <body id="body">
@@ -39,7 +38,7 @@
         <div class="overlay-content">
             <a class="hb-op" id="hb-home" href="/">home</a>
             <a class="hb-op" id="hb-work" href="/work">work</a>
-            <a class="hb-op" id="hb-education" href="/education">education</a>
+            <a class="hb-op" id="hb-skills" href="/skills">skills</a>
             <a class="hb-op" id="hb-jobs" href="/jobs">jobs</a>
             <a class="hb-op" id="hb-about" href="/about">about</a>
             <a class="hb-op" id="hb-contact" href="/contact">contact</a>
@@ -49,7 +48,12 @@
     </div>
 
     {{ content }}
-
+    <script src="../assets/js/rellax/rellax.min.js"></script>
+    <script>
+      var rellax = new Rellax('.rellax', {
+      center: true
+      });
+    </script>
     {% include footer.html %}
 
 </body>
