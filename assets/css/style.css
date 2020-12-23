@@ -8,14 +8,14 @@ h1, h2, h3, h4, p, img {
 }
 
 /* Semi bold, headings */
-h1 { font-family: 'Montserrat-S' }
+h1 { font-family: tahoma, arial, helvetica, sans-serif }
 /* Regular, for body text */
-h2 { font-family: 'Montserrat-R' }
+h2 { font-family: tahoma, arial, helvetica, sans-serif }
 /* Regular, for sub-headings */
-h3 { font-family: 'Montserrat-R' }
+h3 { font-family: tahoma, arial, helvetica, sans-serif }
 /* Light, for style */
-h4 { font-family: 'Montserrat-L' }
-p  { font-family: 'Montserrat-L' }
+h4 { font-family: tahoma, arial, helvetica, sans-serif }
+p  { font-family: tahoma, arial, helvetica, sans-serif }
 
 p.w { color: white }
 a.w { color: white }
@@ -25,13 +25,6 @@ a:hover { text-decoration: none; color: inherit }
 a.ul { text-decoration : underline }
 a { color: black; font-size: inherit }
 
-.big-period {
-   font-weight: bold;
-   line-height: .1;
-   font-size: 1.1em;
-}
 .avoidwrap { display:inline-block; font-size: inherit }
 
 .w { color: white }
-
-.proj-prev { transition: .5s linear }
