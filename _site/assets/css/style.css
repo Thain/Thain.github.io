@@ -8,14 +8,14 @@ h1, h2, h3, h4, p, img {
 }
 
 /* Semi bold, headings */
-h1 { font-family: tahoma, arial, helvetica, sans-serif }
+h1 { font-family: 'Montserrat-M' }
 /* Regular, for body text */
-h2 { font-family: tahoma, arial, helvetica, sans-serif }
+h2 { font-family: 'Montserrat-M' }
 /* Regular, for sub-headings */
-h3 { font-family: tahoma, arial, helvetica, sans-serif }
+h3 { font-family: 'Montserrat-M' }
 /* Light, for style */
-h4 { font-family: tahoma, arial, helvetica, sans-serif }
-p  { font-family: tahoma, arial, helvetica, sans-serif }
+h4 { font-family: 'Montserrat-M' }
+p  { font-family: 'Montserrat-M' }
 
 p.w { color: white }
 a.w { color: white }
