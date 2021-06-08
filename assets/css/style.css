@@ -138,7 +138,7 @@ ul.menubar { margin-bottom: 0 }
 .current-menu-item a { text-decoration: none } /*EDIT THIS?*/
 .current-menu-item { opacity: 1 !important }
 
-.header-logo { height: 7vw; min-height: 75px; min-width: 75px; max-height: 300px; max-width: 300px; z-index: 20 }
+.header-logo { min-height: 75px; min-width: 75px; max-height: 300px; max-width: 300px; z-index: 20 }
 .header-hamburger { height: 4vw; min-height: 30px; min-width: 30px; margin-right:0.5rem }
 
 
