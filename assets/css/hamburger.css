@@ -1,0 +1,48 @@
+#navContainer {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    transition: 0.7s;
+    opacity: 0;
+    z-index: 0;
+    background-color:var(--grey);
+    overflow: hidden;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    pointer-events: none;
+}
+
+#myNav {
+    width:100%;
+    position: fixed;
+    left: 0px;
+    margin-top: 6rem;
+}
+
+#myNav ul {   list-style-type: none; }
+
+#myNav li {
+  position: relative;
+  z-index: 10;
+  font-family: 'Nunito-BD';
+  text-align: center;
+  background-color: inherit;
+  border: none;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+#myNav a {
+  text-decoration: none;
+  z-index: 20;
+  color: var(--black);
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px) { .overlay-content { padding-top:10vh } }
+
+#myNav a:hover,
+#myNav a:focus {
+    text-decoration: none;
+}

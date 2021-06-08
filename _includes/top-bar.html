@@ -1,0 +1,48 @@
+<!-- hamburger dropdown -->
+<div style="height:5rem" class="mobile" id="navContainer">
+  <div class="row align-items-center justify-content-between" style="height:6em">
+        <!-- logo -->
+        <div class="col-6 header-logo">
+          <img src="../assets/icon/LogoText.png" alt="">
+        </div>
+
+        <!-- hamburger-x -->
+        <div class="col-6" style="text-align:right">
+          <img src="<../assets/icon/hamburger-x.png" class="header-hamburger" onclick="closeNav()">
+        </div>
+  </div>
+
+  <div id="myNav" class="row align-items-center justify-content-center">
+      <!-- <?php wp_nav_menu(
+        array(
+          'menu' => 'Hamburger Menu',
+          'menu_class' => 'ham-menu'
+        )
+      );?> -->
+  </div>
+</div>
+
+<!-- Header -->
+<div style="height:5rem; padding-left: 6vw; padding-right: 6vw">
+  <div class="row align-items-center justify-content-between" style="height:6em">
+    <!-- logo -->
+    <div class="col-2 header-logo" style="padding-top: .5rem; padding-bottom: .5rem">
+      <img src="..assets/icon/LogoText.png" alt="">
+    </div>
+
+    <!-- hamburger -->
+    <div class="col-10 mobile" style="z-index:5; text-align: right"><img src="../assets/icon/hamburger.png" class="header-hamburger" onclick="openNav()"></div>
+
+    <!-- nav menu -->
+    <div class="reg col-10 text-right" style="z-index: 20">
+      <div id="menubar" style="display: inline">
+        <!-- <?php wp_nav_menu(
+          array(
+            'theme_location' => 'top-menu',
+            'menu_class' => 'menubar'
+          )
+        );?> -->
+      </div>
+    </div>
+  </div>
+</div>

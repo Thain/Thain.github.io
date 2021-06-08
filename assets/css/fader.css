@@ -7,8 +7,8 @@
     z-index: 999999;
     pointer-events: none;
     background: white;
-    animation-duration: 1.3s;
-    animation-timing-function: ease-in;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes fade-out {

@@ -1,0 +1,34 @@
+:root {
+  --white: #ffffff;
+  --pink: #C23269;
+  --blue: #0093D5;
+  --yellow: #FDC03D;
+  --teal: #1C9A93;
+  --grey: #979797;
+  --gran: #1F1D1D;
+  --black: #0a0a0a;
+}
+
+a.w:hover { color: white }
+
+h1, h3, p, a { color: var(--white) }
+.bk { color: var(--gran) }
+
+.has-white-color { color: var(--white) !important }
+.has-pink-color { color: var(--pink) !important }
+.has-blue-color { color: var(--blue) !important }
+.has-yellow-color { color: var(--yellow) !important }
+.has-teal-color { color: var(--teal) !important }
+.has-grey-color { color: var(--grey) !important}
+.has-black-color { color: var(--black) !important}
+.has-gran-color { color: var(--gran) !important}
+
+
+.has-white-background-color { background-color: var(--white) !important }
+.has-pink-background-color { background-color: var(--pink) !important }
+.has-blue-background-color { background-color: var(--blue) !important }
+.has-yellow-background-color { background-color: var(--yellow) !important }
+.has-teal-background-color { background-color: var(--teal) !important }
+.has-grey-background-color { background-color: var(--grey) !important }
+.has-black-background-color { background-color: var(--black) !important }
+.has-gran-background-color { background-color: var(--gran) !important }

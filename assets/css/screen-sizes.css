@@ -1,78 +1,34 @@
-/* This determines when the screen is small enough for certain fonts, and to trade the normal menu for the hamburger */
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .show-mobile { display: block; }
-  .hide-mobile { display: none; }
-  .hide-row { display: none; }
-  * { font-size: 4px }
-
-  .header { margin-bottom: 60em; margin-top: 20em }
-  .header h1 { font-size: 8em; padding-bottom:1em }
-  .header h2 { font-size: 4.5em }
+/* Extra small devices (phones, 575px and down) */
+@media only screen and (max-width: 575px) {
+  html { font-size: 15px }
+  p, a { font-size: 1.2rem; }
+  .mobile { display: block }
+  .reg { display: none }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 601px) {
-  .show-mobile { display: block; }
-  .hide-mobile { display: none; }
-  .hide-row { display: none; }
-  * { font-size: 6px }
-
-  .header { margin-bottom: 40em; margin-top: 4em }
-  .header h1 { font-size: 6em; padding-bottom: .6em }
-  .header h2 { font-size: 3.7em }
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+  html { font-size: 15px }
+  .mobile { display: none }
+  .reg { display: block }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .show-mobile { display: block; }
-  .hide-mobile { display: none; }
-  .hide-row { display: none; }
-  * { font-size: 6.5px }
-
-  .header { margin-bottom: 40em; margin-top: 2.5em }
-  .header h1 { font-size: 6em; padding-bottom: .6em }
-  .header h2 { font-size: 3.7em }
+  html { font-size: 18px }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .show-mobile { display: none }
-  .hide-mobile { display: block }
-  .hide-row { display: inline-flex; }
-  * { font-size: 7px }
+  html { font-size: 24px }
 }
 
  /* Extra large devices */
 @media only screen and (min-width: 1200px) {
-  .show-mobile { display: none }
-  .hide-mobile { display: block }
-  .hide-row { display: inline-flex; }
-  * { font-size: 7.5px }
+  html { font-size: 28px }
 }
 
 /* Extra EXTRA Large devices */
 @media only screen and (min-width: 1640px) {
-  .show-mobile { display: none }
-  .hide-mobile { display: block }
-  .hide-row { display: inline-flex; }
-  * { font-size: 10px }
+  html { font-size: 24px }
 }
-
-.icon-title { font-size: 3em }
-
-h1 { font-size: 5.4em }
-h2 { font-size: 3.2em }
-p { font-size: 3.2em }
-
-h1.thumbnail-title { font-size: 3.7em }
-h3.thumbnail-title { font-size: 3em }
-
-.footer-text > h1 { font-size: 3em }
-.footer-text > h2 { font-size: 2.2em }
-#footer-connect { font-size: 5em }
-
-.menubar, #menubold { font-size: 3em }
-
-body { overflow-x: hidden }

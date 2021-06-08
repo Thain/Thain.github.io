@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'DM-Mono-R';
+  src: url(./DM_Mono/DMMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'DM-Sans-R';
+  src: url(./DM_Sans/DMSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'DM-Sans-B';
+  src: url(./DM_Sans/DMSans-Bold.ttf);
+}
+
+h1 { font-family: 'DM-Mono-R' }
+h2 { font-family: 'DM-Mono-R' }
+h3 { font-family: 'DM-Sans-R' }
+h4 { font-family: 'DM-Sans' }
+h5 { font-family: 'DM-Sans' }
+h6 { font-family: 'DM-Sans'}
+p  { font-family: 'DM-Sans-R' }
+a  { font-family: 'DM-Mono-R' }
