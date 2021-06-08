@@ -111,7 +111,6 @@ p:empty{ display: none; }
     height:30rem;
 }
 
-#menubar{ pointer-events: none }
 #menubar:hover .menubar li{ opacity: .2 }
 #menubar > div { display: inline }
 .menubar li:hover { color: var(--white); opacity: 1 !important }
